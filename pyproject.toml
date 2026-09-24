@@ -1,0 +1,71 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cabbage-detection"
+version = "1.0.0"
+description = "Reproducible utilities for cabbage detection and counting in UAV imagery"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+  "PyYAML>=6.0,<7",
+  "numpy>=2.0,<3",
+  "matplotlib>=3.9,<4",
+  "Pillow>=10,<12",
+  "pycocotools>=2.0,<3",
+  "tqdm>=4.66,<5",
+]
+authors = [
+  {name = "Panyapat Wongdee"},
+  {name = "Kasemsit Teeyapan"},
+]
+keywords = ["object detection", "cabbage counting", "UAV imagery", "reproducibility"]
+
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+]
+
+[project.urls]
+Repository = "https://github.com/panyapat-wongdee/cabbage-detection-counting"
+Issues = "https://github.com/panyapat-wongdee/cabbage-detection-counting/issues"
+
+[project.optional-dependencies]
+torchvision = [
+  "torch>=2.5,<3",
+  "torchvision>=0.20,<1",
+  "albumentations==1.4.21",
+]
+ultralytics = [
+  "ultralytics>=8.4,<9",
+]
+training = [
+  "torch>=2.5,<3",
+  "torchvision>=0.20,<1",
+  "albumentations==1.4.21",
+  "ultralytics>=8.4,<9",
+]
+# torchinfo counts torchvision parameters and FLOPs for
+# scripts/measure_complexity.py; Ultralytics counts its own models.
+analysis = [
+  "torchinfo>=1.8,<2",
+]
+dev = [
+  "pytest>=8,<10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-ra"
+markers = [
+  "integration: exercises optional framework wiring with local assets",
+  "requires_weights: requires an explicitly present local model weight",
+  "requires_cuda: requires an available CUDA device",
+]
+[project.scripts]
+cabbage-detection = "cabbage_detection.cli:main"

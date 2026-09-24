@@ -1,0 +1,90 @@
+# Repository extension: yolo26n was not part of the original study. Every
+# training and evaluation setting equals configs/ultralytics/yolo11n.yaml, except that YOLO26's end-to-end
+# head applies no NMS (evaluation.nms_owner: none, as for RT-DETR-L).
+# Provenance reads repository_protocol where the parent reads historical_code,
+# because no historical code exists for this model.
+model:
+  name: yolo26n
+  framework: ultralytics
+
+dataset:
+  format: yolo
+  root: prepared/fold1_yolo
+  split_manifest: splits/fold1_recovered.csv
+  yaml: prepared/fold1_yolo/data.yaml
+  labels_dirname: null
+  class_names:
+    - Cabbage
+
+initialization:
+  weights: yolo26n.pt
+  num_classes: 1
+
+training:
+  image_size:
+    - 512
+    - 512
+  optimizer: SGD
+  learning_rate: 0.001
+  momentum: 0.9
+  weight_decay: 0.0005
+  batch_size: 16
+  epochs: 500
+
+augmentation:
+  profile: reproduction_augmented
+  horizontal_flip: 0.5
+  vertical_flip: 0.5
+  translate: 0.1
+  scale: 0.1
+  degrees: 15.0
+  hsv_h: 0.1
+  hsv_s: 0.05
+  hsv_v: 0.05
+  mosaic: 0.0
+  normalize: false
+  border_value: 114
+
+scheduler:
+  name: constant
+  step_size: null
+  gamma: null
+  final_lr_factor: 1.0
+
+postprocess:
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+
+evaluation:
+  max_detections: 100
+  area_threshold: 0.0
+  confidence_owner: ultralytics
+  nms_owner: none
+  backend: repository_ap_101
+
+native_training:
+  patience: 500
+  cache: true
+  train_shuffle: true
+  validation_shuffle: false
+
+artifacts:
+  output_dir: runs/reproduced/yolo26n
+
+execution:
+  device: cuda:0
+  workers: 2
+  seed: 42
+
+provenance:
+  training.epochs: repository_protocol
+  dataset.path: repository_protocol
+  initialization.weights: repository_protocol
+  augmentation: repository_protocol
+  scheduler: repository_protocol
+  native_training: repository_protocol
+  evaluation: repository_protocol
+  execution.device: repository_default
+  execution.workers: repository_default
+  training.seed: repository_default
+  training.checkpoint_selection: framework_default

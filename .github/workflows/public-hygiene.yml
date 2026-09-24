@@ -1,0 +1,52 @@
+name: Public hygiene
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hygiene:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - name: Reject prohibited tracked artifacts
+        shell: bash
+        run: |
+          # runs/reproduced/ carries the small evidence files a
+          # reproduced_verified claim rests on, so it is tracked on purpose. The
+          # heavy subtrees inside it -- weights, Ultralytics native output, raw
+          # prediction dumps -- stay out, as do the other generated, private, and
+          # external trees.
+          tracked=$(git ls-files | grep -vE '/\.gitkeep$' || true)
+          prohibited=$(printf '%s\n' "$tracked" | grep -E \
+            '^(original_dataset[^/]*|prepared|cabbages_dataset|cabbages_YOLO|dist)/|^runs/reproduced/[^/]+/(checkpoints|framework)/|/records/|\.(pt|pth|onnx|safetensors|ipynb|zip)$|(^|/)(__pycache__|\.ipynb_checkpoints)/' || true)
+          stray_runs=$(printf '%s\n' "$tracked" | grep -E '^runs/' | grep -vE '^runs/reproduced/' || true)
+          if [ -n "$prohibited" ] || [ -n "$stray_runs" ]; then
+            printf '%s\n' "$prohibited" "$stray_runs" >&2
+            echo "Prohibited generated, private, or external artifacts are tracked" >&2
+            exit 1
+          fi
+      - name: Reject absolute local paths in supported source
+        shell: bash
+        run: |
+          # Scan what is tracked rather than the working tree: untracked run
+          # output such as the Ultralytics framework/args.yaml legitimately
+          # contains the training machine's paths, and is never published.
+          # This file and tests/test_public_docs.py spell the patterns out in
+          # order to search for them, so they are excluded from the search.
+          if git ls-files -z \
+             | grep -zZvE '^(tests/test_public_docs\.py|\.github/workflows/public-hygiene\.yml)$' \
+             | xargs -0 grep -InE '/home/|/Users/|[A-Za-z]:\\\\' -- ; then
+            echo "Absolute local paths found in tracked files" >&2
+            exit 1
+          fi
+      - name: Audit citation-only publication boundary
+        shell: bash
+        run: |
+          python -m pip install --disable-pip-version-check pyyaml
+          PYTHONPATH=src python scripts/audit_publication_boundary.py --root .
+      - name: Audit release license boundary
+        shell: bash
+        run: |
+          PYTHONPATH=src python scripts/audit_release_licenses.py --root .

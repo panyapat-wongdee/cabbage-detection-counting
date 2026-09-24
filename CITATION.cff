@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated research paper."
+title: "Cabbage Detection and Counting"
+type: software
+license: Apache-2.0
+version: 1.0.0
+date-released: 2026-09-24
+repository-code: "https://github.com/panyapat-wongdee/cabbage-detection-counting"
+authors:
+  - family-names: Wongdee
+    given-names: P.
+  - family-names: Teeyapan
+    given-names: K.
+preferred-citation:
+  type: conference-paper
+  title: "A Comparative Study of Deep Learning Models for Cabbage Detection and Counting in Drone Imagery"
+  authors:
+    - family-names: Wongdee
+      given-names: Panyapat
+    - family-names: Teeyapan
+      given-names: Kasemsit
+  collection-title: "2025 17th International Conference on Knowledge and Smart Technology (KST)"
+  year: 2025
+  doi: 10.1109/KST65016.2025.11003298

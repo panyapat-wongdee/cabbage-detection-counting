@@ -1,0 +1,2 @@
+# Development-only dependency; runtime dependencies are declared in pyproject.toml.
+pytest>=8,<10

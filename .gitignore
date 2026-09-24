@@ -1,0 +1,88 @@
+# Local Codex planning artifacts
+docs/superpowers/
+.superpowers/
+.claude/
+
+# Official external dataset and reproducibly generated layouts
+original_dataset/
+prepared/
+
+# Track only empty-directory placeholders; keep downloaded/generated contents ignored.
+!original_dataset/
+original_dataset/*
+!original_dataset/.gitkeep
+!prepared/
+prepared/*
+!prepared/.gitkeep
+
+# Historical local layouts retained only until migration is verified
+cabbages_dataset/
+cabbages_YOLO/
+data/fold1_coco/
+data/fold1_pascal/
+data/fold1_yolo/
+
+# Keep only legacy non-dataset metadata while migration is in progress
+data/
+!data/
+data/*
+!data/manifests/
+!data/manifests/*.csv
+
+# Training run outputs. The evidence a `reproduced_verified` claim rests on
+# (metadata.json, config.yaml, logs/, plots/, evaluation/*.json) is tracked, so
+# the claim can be audited from immutable Git history rather than from a release
+# asset that can be replaced. The weights, the Ultralytics native outputs, and
+# the staged prediction dumps are large and are published as release assets
+# instead; their SHA-256 digests are in the tracked metadata.
+runs/*
+!runs/reproduced/
+runs/reproduced/*
+!runs/reproduced/README.md
+!runs/reproduced/*/
+runs/reproduced/*/checkpoints/
+runs/reproduced/*/framework/
+runs/reproduced/*/evaluation/*_predictions.json
+# One-epoch wiring checks are operational only, never evidence.
+runs/reproduced/smoke/
+# Evaluation outputs: the metric reports, per-image rows, plots, and per-split
+# provenance under results/reproduced/ are tracked so a published number can be
+# audited without re-running inference. The raw per-image prediction/target
+# dumps are large and regenerable from the tracked checkpoint, so they are not.
+/results/reproduced/**/records/
+/dist/
+*.pt
+*.pth
+*.onnx
+*.safetensors
+
+# Python, notebook, and tool caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tmp/
+*.egg-info/
+*.sarif
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# temp
+docs/references/
+docs/reports/
+docs/private/
+private_research_inputs/

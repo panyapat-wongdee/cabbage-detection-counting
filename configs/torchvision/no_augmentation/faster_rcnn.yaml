@@ -1,0 +1,106 @@
+model:
+  name: faster_rcnn
+  framework: torchvision
+
+dataset:
+  format: coco
+  root: original_dataset
+  split_manifest: splits/fold1_recovered.csv
+  yaml: null
+  labels_dirname: null
+  class_names:
+    - Cabbage
+
+initialization:
+  weights: COCO_V1
+  num_classes: 2
+
+training:
+  image_size:
+    - 512
+    - 512
+  optimizer: SGD
+  learning_rate: 0.001
+  momentum: 0.9
+  weight_decay: 0.0005
+  batch_size: 16
+  epochs: 500
+
+augmentation:
+  profile: recovered_no_augmentation
+  horizontal_flip: 0.0
+  vertical_flip: 0.0
+  translate: 0.0
+  scale: 0.0
+  degrees: 0.0
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  mosaic: 0.0
+  normalize: true
+  border_value: 114
+
+scheduler:
+  name: step_lr
+  step_size: 1000
+  gamma: 0.1
+  final_lr_factor: null
+
+postprocess:
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+
+evaluation:
+  max_detections: 100
+  area_threshold: 0.0
+  confidence_owner: repository
+  nms_owner: repository
+  backend: pycocotools_coco_eval
+
+validation_postprocess:
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+  area_threshold: 0.0
+  confidence_owner: repository
+  nms_owner: repository
+  native_nms_applied: true
+
+final_postprocess:
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+  area_threshold: 0.0
+  confidence_owner: repository
+  nms_owner: repository
+  native_nms_applied: true
+
+native_training:
+  patience: 500
+  cache: true
+  train_shuffle: true
+  validation_shuffle: false
+  warmup_first_epoch: true
+  empty_target_policy: include
+
+artifacts:
+  output_dir: runs/reproduced/no_augmentation/faster_rcnn
+
+execution:
+  device: cuda:0
+  workers: 2
+  seed: 42
+
+checkpoint:
+  metric: val_map_50_95
+  mode: max
+
+provenance:
+  training.epochs: repository_protocol
+  dataset.path: historical_code
+  initialization.weights: historical_code
+  augmentation: historical_code
+  scheduler: historical_code
+  evaluation: historical_code
+  execution.device: repository_default
+  execution.workers: repository_default
+  training.seed: repository_default
+  training.checkpoint_selection: historical_code

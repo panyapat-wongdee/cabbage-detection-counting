@@ -1,0 +1,24 @@
+{
+  "release_tag": "reproduced-checkpoints-v1.0.0",
+  "dataset_doi": "10.17632/5cp2dyjczk.2",
+  "checkpoints": [
+    {
+      "model_name": "faster_rcnn",
+      "framework": "torchvision",
+      "study_scope": "paper_model",
+      "condition": "augmented",
+      "run_id": "faster_rcnn",
+      "result_status": "reproduced_verified",
+      "source_path": "runs/reproduced/faster_rcnn/checkpoints/best.pt",
+      "metadata_path": "runs/reproduced/faster_rcnn/metadata.json",
+      "size_bytes": 1,
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "fine_tuned_license": "Apache-2.0",
+      "base_identifier": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+      "base_source_url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+      "base_artifact_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "config_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "git_commit": "3333333333333333333333333333333333333333"
+    }
+  ]
+}

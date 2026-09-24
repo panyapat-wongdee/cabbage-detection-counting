@@ -1,0 +1,13 @@
+This repository contains original source code and materials released under the
+Apache License 2.0 only where those materials are explicitly identified as
+Apache-2.0.
+
+The Apache License 2.0 does not relicense the IEEE paper, external dataset or
+dataset publication, third-party software, pretrained weights, or
+Ultralytics-derived models. See docs/licensing-and-attribution.md and
+weights/provenance.yaml for the terms and attribution applicable to those
+materials.
+
+The revised repository source is released under Apache-2.0. Historical source
+archives and checkpoints used for published paper results are not part of this
+repository or its releases.

@@ -1,0 +1,301 @@
+models:
+  faster_rcnn:
+    framework: torchvision
+    framework_version: "0.20.1"
+    study_scope: paper_model
+    pretrained:
+      identifier: FasterRCNN_ResNet50_FPN_Weights.COCO_V1
+      expected_filename: fasterrcnn_resnet50_fpn_coco-258fb6c6.pth
+      source_url: https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth
+      source_terms_url: https://github.com/pytorch/vision/tree/v0.20.1#pre-trained-model-license
+      software_license: BSD-3-Clause
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: Apache-2.0
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - BSD-3-Clause
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  ssd:
+    framework: torchvision
+    framework_version: "0.20.1"
+    study_scope: paper_model
+    pretrained:
+      identifier: SSD300_VGG16_Weights.COCO_V1
+      expected_filename: ssd300_vgg16_coco-b556d3b4.pth
+      source_url: https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth
+      source_terms_url: https://github.com/pytorch/vision/tree/v0.20.1#pre-trained-model-license
+      software_license: BSD-3-Clause
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: Apache-2.0
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - BSD-3-Clause
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  ssdlite:
+    framework: torchvision
+    framework_version: "0.20.1"
+    study_scope: supplementary_unreported
+    pretrained:
+      identifier: SSDLite320_MobileNet_V3_Large_Weights.COCO_V1
+      expected_filename: ssdlite320_mobilenet_v3_large_coco-a79551df.pth
+      source_url: https://download.pytorch.org/models/ssdlite320_mobilenet_v3_large_coco-a79551df.pth
+      source_terms_url: https://github.com/pytorch/vision/tree/v0.20.1#pre-trained-model-license
+      software_license: BSD-3-Clause
+      training_dataset: MS COCO
+      redistributed: false
+    architecture_reference_urls:
+      - https://arxiv.org/abs/1512.02325
+      - https://arxiv.org/abs/1801.04381
+      - https://arxiv.org/abs/1905.02244
+    fine_tuned:
+      license: Apache-2.0
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - BSD-3-Clause
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  retinanet:
+    framework: torchvision
+    framework_version: "0.20.1"
+    study_scope: paper_model
+    pretrained:
+      identifier: RetinaNet_ResNet50_FPN_Weights.COCO_V1
+      expected_filename: retinanet_resnet50_fpn_coco-eeacb38b.pth
+      source_url: https://download.pytorch.org/models/retinanet_resnet50_fpn_coco-eeacb38b.pth
+      source_terms_url: https://github.com/pytorch/vision/tree/v0.20.1#pre-trained-model-license
+      software_license: BSD-3-Clause
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: Apache-2.0
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - BSD-3-Clause
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  fcos:
+    framework: torchvision
+    framework_version: "0.20.1"
+    study_scope: paper_model
+    pretrained:
+      identifier: FCOS_ResNet50_FPN_Weights.COCO_V1
+      expected_filename: fcos_resnet50_fpn_coco-99b0c9b7.pth
+      source_url: https://download.pytorch.org/models/fcos_resnet50_fpn_coco-99b0c9b7.pth
+      source_terms_url: https://github.com/pytorch/vision/tree/v0.20.1#pre-trained-model-license
+      software_license: BSD-3-Clause
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: Apache-2.0
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - BSD-3-Clause
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolov8n:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: paper_model
+    pretrained:
+      identifier: yolov8n.pt
+      expected_filename: yolov8n.pt
+      source_url: https://docs.ultralytics.com/models/yolov8/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolov8m:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: paper_model
+    pretrained:
+      identifier: yolov8m.pt
+      expected_filename: yolov8m.pt
+      source_url: https://docs.ultralytics.com/models/yolov8/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo11n:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: paper_model
+    pretrained:
+      identifier: yolo11n.pt
+      expected_filename: yolo11n.pt
+      source_url: https://docs.ultralytics.com/models/yolo11/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo11m:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: paper_model
+    pretrained:
+      identifier: yolo11m.pt
+      expected_filename: yolo11m.pt
+      source_url: https://docs.ultralytics.com/models/yolo11/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  rt-detr-l:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: paper_model
+    pretrained:
+      identifier: rtdetr-l.pt
+      expected_filename: rtdetr-l.pt
+      source_url: https://docs.ultralytics.com/models/rtdetr/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    architecture_source_url: https://github.com/lyuwenyu/RT-DETR
+    architecture_license: Apache-2.0
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo12n:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: repository_extension
+    pretrained:
+      identifier: yolo12n.pt
+      expected_filename: yolo12n.pt
+      source_url: https://docs.ultralytics.com/models/yolo12/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo12m:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: repository_extension
+    pretrained:
+      identifier: yolo12m.pt
+      expected_filename: yolo12m.pt
+      source_url: https://docs.ultralytics.com/models/yolo12/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo26n:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: repository_extension
+    pretrained:
+      identifier: yolo26n.pt
+      expected_filename: yolo26n.pt
+      source_url: https://docs.ultralytics.com/models/yolo26/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution
+  yolo26m:
+    framework: ultralytics
+    framework_version: "8.4.9"
+    study_scope: repository_extension
+    pretrained:
+      identifier: yolo26m.pt
+      expected_filename: yolo26m.pt
+      source_url: https://docs.ultralytics.com/models/yolo26/
+      source_terms_url: https://www.ultralytics.com/license
+      software_license: AGPL-3.0-only
+      training_dataset: MS COCO
+      redistributed: false
+    fine_tuned:
+      license: AGPL-3.0-only
+      distribution: external_release_asset
+      release_status: released
+      release_tag: reproduced-checkpoints-v1.0.0
+    required_notices:
+      - AGPL-3.0-only
+      - MS-COCO-provenance
+      - cabbage-dataset-CC-BY-4.0-attribution

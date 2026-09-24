@@ -1,0 +1,61 @@
+allowed_doi_paths:
+  - README.md
+  - CITATION.cff
+  - docs/publication-reference.md
+  - docs/publication-boundary.md
+  - docs/dataset.md
+  - docs/licensing-and-attribution.md
+  - docs/source-provenance.md
+  - docs/artifact-inventory.md
+  - docs/reproducibility.md
+  - weights/README.md
+  - weights/provenance.yaml
+  - weights/notices/cabbage-dataset.md
+  - docs/releases/reproduced-checkpoints-v1.0.0.md
+  - src/cabbage_detection/release_artifacts.py
+  - scripts/audit_release_licenses.py
+  - tests/test_artifacts.py
+  - tests/test_publication_boundary.py
+  - tests/test_public_docs.py
+  - tests/release/fixture-manifest.json
+  - weights/releases/reproduced-checkpoints-v1.0.0.json
+
+# Paths whose generated evidence may carry the dataset DOI as provenance.
+# This never relaxes the IEEE publication DOI, which stays on the exact list above.
+allowed_dataset_doi_prefixes:
+  - runs/reproduced/
+  - results/reproduced/
+
+forbidden_path_prefixes:
+  - results/published/
+  - runs/published/
+  - docs/reports/
+  - docs/references/
+  - original_dataset/
+  - prepared/
+
+forbidden_path_fragments:
+  - published-results
+
+publication_asset_qualifiers:
+  - paper
+  - published
+  - publication
+
+model_asset_terms:
+  - checkpoint
+  - checkpoints
+  - weight
+  - weights
+
+forbidden_suffixes:
+  - .pdf
+  - .ipynb
+
+forbidden_text_markers:
+  - Published highlights
+  - Published Detection Results
+  - Published Counting Results
+
+publication_doi: 10.1109/KST65016.2025.11003298
+dataset_doi: 10.17632/5cp2dyjczk.2
