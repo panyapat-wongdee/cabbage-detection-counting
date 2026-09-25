@@ -1,0 +1,190 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [],
+  "results_dir": "results/reproduced/yolo26m",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/yolo26m",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.022813688212927757,
+        "f1": 0.9456333140543667,
+        "false_negatives": 149,
+        "false_positives": 227,
+        "fdr": 0.06491278238490135,
+        "fnr": 0.04357999415033636,
+        "predicted_count": 3497,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 3270
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9687038122582113,
+        "map50_95": 0.7288525008290581,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/yolo26m/test/records/predictions.json",
+          "sha256": "4643b43c7ef9c1e6024f32eac52136f3d3c824c9d79310d2db95c1ea2911f788"
+        },
+        "targets": {
+          "path": "results/reproduced/yolo26m/test/records/targets.json",
+          "sha256": "4895be6df09851a4124689e40818b9971c7d57424d7193ea06fd70363fcdcf43"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/yolo26m",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.027264660805033477,
+        "f1": 0.9607671494508992,
+        "false_negatives": 324,
+        "false_positives": 662,
+        "fdr": 0.05198272477424421,
+        "fnr": 0.026135355327901913,
+        "predicted_count": 12735,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 12073
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9845191996519445,
+        "map50_95": 0.8035227853896695,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/yolo26m/train/records/predictions.json",
+          "sha256": "bc295a6b4c678f55febd4dadb474954080f62e2af23849947fe1818ab1a8d9c5"
+        },
+        "targets": {
+          "path": "results/reproduced/yolo26m/train/records/targets.json",
+          "sha256": "fdc1e488b2824bf889a2008f44b2c20799537ab1fa4ace8bdb72a464210c598b"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/yolo26m",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.02548476454293629,
+        "f1": 0.9562363238512035,
+        "false_negatives": 57,
+        "false_positives": 103,
+        "fdr": 0.05564559697460832,
+        "fnr": 0.031578947368421054,
+        "predicted_count": 1851,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1748
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9798780025770406,
+        "map50_95": 0.7432642943907934,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/yolo26m/val/records/predictions.json",
+          "sha256": "1608eb93f3f33b8dff11896d40cb3f6d3bb95f2b780d27ad1ff4304cd37c0cd3"
+        },
+        "targets": {
+          "path": "results/reproduced/yolo26m/val/records/targets.json",
+          "sha256": "e21b2534cb0b1c86b760832c27517269df3d69da439f559d6fc23c305994333b"
+        }
+      }
+    }
+  },
+  "summary_sha256": "06bb2daa9f74c86a0344866198f39fcd4a69a1611850d39b77adcfde34d9aec4"
+}

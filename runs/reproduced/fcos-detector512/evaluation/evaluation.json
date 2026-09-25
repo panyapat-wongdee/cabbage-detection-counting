@@ -1,0 +1,198 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "results_dir": "results/reproduced/fcos-detector512",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/fcos-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.03217315004387248,
+        "f1": 0.9493379389752447,
+        "false_negatives": 121,
+        "false_positives": 231,
+        "fdr": 0.0654576367242845,
+        "fnr": 0.035390465048259726,
+        "predicted_count": 3529,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 3298
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9723113500489088,
+        "map50_95": 0.6789263540362043,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/fcos-detector512/test/records/predictions.json",
+          "sha256": "9f30cace7cfcd7aa2a978d9c20c1970f932157c3d4a4528b824109eccfe9811b"
+        },
+        "targets": {
+          "path": "results/reproduced/fcos-detector512/test/records/targets.json",
+          "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/fcos-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.019762845849802372,
+        "f1": 0.970565917169216,
+        "false_negatives": 246,
+        "false_positives": 491,
+        "fdr": 0.038838791330485685,
+        "fnr": 0.01984351052674034,
+        "predicted_count": 12642,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 12151
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.98598210560027,
+        "map50_95": 0.7540792121790931,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/fcos-detector512/train/records/predictions.json",
+          "sha256": "d714c68c707a8cdeef6d05512a67f3e4fc75e83a71db6db654e751808b4882f4"
+        },
+        "targets": {
+          "path": "results/reproduced/fcos-detector512/train/records/targets.json",
+          "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/fcos-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.027146814404432132,
+        "f1": 0.9581852965291063,
+        "false_negatives": 52,
+        "false_positives": 101,
+        "fdr": 0.05447680690399137,
+        "fnr": 0.028808864265927978,
+        "predicted_count": 1854,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1753
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9728987881857661,
+        "map50_95": 0.6824703186096966,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/fcos-detector512/val/records/predictions.json",
+          "sha256": "a5d3c5d5de077193d2624f5ae385e383fd6683cb0b0e9dbac955a70c7840938a"
+        },
+        "targets": {
+          "path": "results/reproduced/fcos-detector512/val/records/targets.json",
+          "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+        }
+      }
+    }
+  },
+  "summary_sha256": "f9a2a9a19283ef8ed4e12d0e9426fd6b0d40a47b3e3c89c29600acbe9190fec1"
+}

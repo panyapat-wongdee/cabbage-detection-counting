@@ -1,0 +1,26 @@
+{
+  "task": "detection",
+  "input_schema": "canonical",
+  "scope": {
+    "image_count": 92
+  },
+  "metrics": {
+    "map50": 0.7108246894632364,
+    "map50_95": 0.4351594064404525,
+    "backend": "cabbage_detection.ap_101"
+  },
+  "evaluation": {
+    "ap_iou_threshold": 0.5,
+    "ap_iou_range": "0.50:0.95 step 0.05",
+    "backend": "cabbage_detection.ap_101",
+    "backend_selection": "repository_ap_101",
+    "configured_backend": "pycocotools_coco_eval",
+    "export_confidence_threshold": 0.001,
+    "native_score_threshold": 0.001,
+    "max_detections": 100
+  },
+  "units": {
+    "map50": "fraction",
+    "map50_95": "fraction"
+  }
+}

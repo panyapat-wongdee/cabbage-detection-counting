@@ -1,0 +1,393 @@
+{
+  "flops_definition": "2 x multiply-accumulates; post-processing (NMS) not counted",
+  "note": "All models are counted at flops_input. run_detector_input is the input the released run's detector actually received, which differs for torchvision models.",
+  "versions": {
+    "torch": "2.5.1+cu118",
+    "torchvision": "0.20.1+cu118",
+    "ultralytics": "8.4.9",
+    "torchinfo": "1.8.0",
+    "ultralytics-thop": "2.0.20"
+  },
+  "models": [
+    {
+      "model": "faster_rcnn",
+      "run": "faster_rcnn",
+      "framework": "torchvision",
+      "params": 41299161,
+      "gflops": 126.160292768,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        800,
+        800
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 126.12206592,
+      "checkpoint_sha256": "daa54e9c454aa06aa62d37efcead10548b3902fb58c38495bbe38a9865a5cd12",
+      "proposals": 1000,
+      "run_gflops": 267.93548378
+    },
+    {
+      "model": "ssd",
+      "run": "ssd",
+      "framework": "torchvision",
+      "params": 23745908,
+      "gflops": 175.250902976,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        300,
+        300
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 175.10391808,
+      "checkpoint_sha256": "6a41b9a472b88393878dde65566b864c16185b679b836d0b658e35ce80612e9b",
+      "proposals": null,
+      "run_gflops": 60.906094928
+    },
+    {
+      "model": "retinanet",
+      "run": "retinanet",
+      "framework": "torchvision",
+      "params": 32168694,
+      "gflops": 103.896997312,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        800,
+        800
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 103.868514304,
+      "checkpoint_sha256": "a1b0c6ec24908ef880f313d26825209cb33368e0686fc45be912a8927d849a7b",
+      "proposals": null,
+      "run_gflops": 253.90140034
+    },
+    {
+      "model": "fcos",
+      "run": "fcos",
+      "framework": "torchvision",
+      "params": 32064455,
+      "gflops": 102.714886752,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        800,
+        800
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 102.686875648,
+      "checkpoint_sha256": "aa1dd2acdb2fd5bec5c675ae94b095f69fc5b072a6837a97d8549aff06a2456b",
+      "proposals": null,
+      "run_gflops": 251.01041349
+    },
+    {
+      "model": "ssdlite",
+      "run": "ssdlite",
+      "framework": "torchvision",
+      "params": 2206520,
+      "gflops": 2.07088156,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        320,
+        320
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 2.070709632,
+      "checkpoint_sha256": "e40611aba7a74b99f873c1cbb7d93a7ca5dd64f2d308d84ffa715035f8839364",
+      "proposals": null,
+      "run_gflops": 0.810752456
+    },
+    {
+      "model": "yolov8n",
+      "run": "yolov8n",
+      "framework": "ultralytics",
+      "params": 3005843,
+      "gflops": 5.174525952,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 5.172953088,
+      "checkpoint_sha256": "771bf2238f0a47f0c83322371a6ecb6e2cbe51f0a87c0842d2efb0b63b88d53c",
+      "proposals": null,
+      "run_gflops": 5.174525952
+    },
+    {
+      "model": "yolov8m",
+      "run": "yolov8m",
+      "framework": "ultralytics",
+      "params": 25840339,
+      "gflops": 50.360745984,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 50.356420608,
+      "checkpoint_sha256": "ec9a26429efccaf01bc4012fe215602bd5ae2f4487c0ddafcb80491bf51066f0",
+      "proposals": null,
+      "run_gflops": 50.360745984
+    },
+    {
+      "model": "yolo11n",
+      "run": "yolo11n",
+      "framework": "ultralytics",
+      "params": 2582347,
+      "gflops": 4.040327168,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 4.063920128,
+      "checkpoint_sha256": "8ce5b66a3a9bdd9d3a49e7393f03b843b2f7fab464631bacf711b154feb311ab",
+      "proposals": null,
+      "run_gflops": 4.040327168
+    },
+    {
+      "model": "yolo11m",
+      "run": "yolo11m",
+      "framework": "ultralytics",
+      "params": 20030803,
+      "gflops": 43.295997952,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 43.34108672,
+      "checkpoint_sha256": "5c541fe645ac914775c4facd20176ba16dd17a89cda79d27f63c41f54f1993fb",
+      "proposals": null,
+      "run_gflops": 43.295997952
+    },
+    {
+      "model": "rt-detr-l",
+      "run": "rt-detr-l",
+      "framework": "ultralytics",
+      "params": 31985795,
+      "gflops": 67.433347072,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 69.094668288,
+      "checkpoint_sha256": "cb8c8e86c2fb4e9641d173b3c8667c50a1e352e6029b5458e89e9a03ba114f36",
+      "proposals": null,
+      "run_gflops": 67.433347072
+    },
+    {
+      "model": "yolo12n",
+      "run": "yolo12n",
+      "framework": "ultralytics",
+      "params": 2556923,
+      "gflops": 4.04471808,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 4.4457984,
+      "checkpoint_sha256": "3ff71415b28fecea7c3e000a8099f1e0ead58110c2cd00782e8951d4e6f0a530",
+      "proposals": null,
+      "run_gflops": 4.04471808
+    },
+    {
+      "model": "yolo12m",
+      "run": "yolo12m",
+      "framework": "ultralytics",
+      "params": 20105683,
+      "gflops": 42.953506816,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 44.290441216,
+      "checkpoint_sha256": "1253032376d2ccb95c9dfe7fade2bdbf1efddb0890d3a88e9d010f2a83ce51da",
+      "proposals": null,
+      "run_gflops": 42.953506816
+    },
+    {
+      "model": "yolo26n",
+      "run": "yolo26n",
+      "framework": "ultralytics",
+      "params": 2375031,
+      "gflops": 3.32120064,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 3.369959424,
+      "checkpoint_sha256": "82c99eaf8b55a98c73297576ca7508dbfa4dd865907657fdffb5138a8a210bea",
+      "proposals": null,
+      "run_gflops": 3.32120064
+    },
+    {
+      "model": "yolo26m",
+      "run": "yolo26m",
+      "framework": "ultralytics",
+      "params": 20350223,
+      "gflops": 43.422973952,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "ultralytics.utils.torch_utils.model_info (thop), fused",
+      "crosscheck_gflops": 43.518394368,
+      "checkpoint_sha256": "e036026e0f5587588152f4f6e25305575c5c3490c0a3892f66a9c9a8c1264003",
+      "proposals": null,
+      "run_gflops": 43.422973952
+    },
+    {
+      "model": "faster_rcnn",
+      "run": "faster_rcnn-detector512",
+      "framework": "torchvision",
+      "params": 41299161,
+      "gflops": 126.160292768,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 126.12206592,
+      "checkpoint_sha256": "00896d9d574dd4747872c7511418b7ea14024725766279bc0513ad9a1901863b",
+      "proposals": 1000,
+      "run_gflops": 126.160292768
+    },
+    {
+      "model": "ssd",
+      "run": "ssd-detector512",
+      "framework": "torchvision",
+      "params": 23745908,
+      "gflops": 175.250902976,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 175.10391808,
+      "checkpoint_sha256": "96b52e7ba863bc66648391c0134b435d90b5513cc5fa72b5d8dfe882aa2598f5",
+      "proposals": null,
+      "run_gflops": 175.250902976
+    },
+    {
+      "model": "retinanet",
+      "run": "retinanet-detector512",
+      "framework": "torchvision",
+      "params": 32168694,
+      "gflops": 103.896997312,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 103.868514304,
+      "checkpoint_sha256": "fecd7ebc2d7d66c742a9e9e300aeb286b896859afbf03aef8c186e849982bc58",
+      "proposals": null,
+      "run_gflops": 103.896997312
+    },
+    {
+      "model": "fcos",
+      "run": "fcos-detector512",
+      "framework": "torchvision",
+      "params": 32064455,
+      "gflops": 102.714886752,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 102.686875648,
+      "checkpoint_sha256": "2633d85351179edf4fd4d18e10602e5203a6bb1c195457ab32320bfefdc5950c",
+      "proposals": null,
+      "run_gflops": 102.714886752
+    },
+    {
+      "model": "ssdlite",
+      "run": "ssdlite-detector512",
+      "framework": "torchvision",
+      "params": 2206520,
+      "gflops": 2.07088156,
+      "flops_input": [
+        512,
+        512
+      ],
+      "run_detector_input": [
+        512,
+        512
+      ],
+      "counter": "torchinfo.summary total_mult_adds x 2",
+      "crosscheck_gflops": 2.070709632,
+      "checkpoint_sha256": "c1427d6324ad8a94a00e03deeb0d80a6028ed7b72870dce5ead240c6be1a471d",
+      "proposals": null,
+      "run_gflops": 2.07088156
+    }
+  ]
+}

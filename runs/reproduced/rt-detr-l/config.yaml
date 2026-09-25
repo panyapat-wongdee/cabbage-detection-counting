@@ -1,0 +1,102 @@
+artifacts:
+  output_dir: runs/reproduced/rt-detr-l
+  result_status: reproduction_candidate
+augmentation:
+  border_value: 114
+  degrees: 15.0
+  horizontal_flip: 0.5
+  hsv_h: 0.1
+  hsv_s: 0.05
+  hsv_v: 0.05
+  mosaic: 0.0
+  normalize: false
+  profile: reproduction_augmented
+  scale: 0.1
+  translate: 0.1
+  vertical_flip: 0.5
+checkpoint:
+  metric: null
+  mode: null
+  retain_each_epoch: false
+dataset:
+  annotations: null
+  class_names:
+  - Cabbage
+  format: yolo
+  labels_dirname: null
+  root: prepared/fold1_yolo
+  split_manifest: splits/fold1_recovered.csv
+  yaml: prepared/fold1_yolo/data.yaml
+evaluation:
+  area_threshold: 0.0
+  backend: repository_ap_101
+  confidence_owner: ultralytics
+  counting_iou_threshold: null
+  max_detections: 100
+  nms_owner: none
+execution:
+  device: cuda:0
+  seed: 42
+  workers: 2
+final_postprocess:
+  area_threshold: 0.0
+  confidence_owner: ultralytics
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+  native_nms_applied: false
+  nms_owner: none
+initialization:
+  num_classes: 1
+  weights: rtdetr-l.pt
+model:
+  detector_input: framework_default
+  framework: ultralytics
+  name: rt-detr-l
+native_training:
+  cache: true
+  empty_target_policy: include
+  patience: 500
+  train_shuffle: true
+  validation_shuffle: false
+  warmup_first_epoch: false
+overrides:
+  native_score_threshold: null
+postprocess:
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+provenance:
+  augmentation: repository_protocol
+  dataset.path: historical_code
+  evaluation: historical_code
+  execution.device: repository_default
+  execution.seed: unknown
+  execution.workers: repository_default
+  initialization.weights: historical_code
+  native_training: historical_code
+  scheduler: historical_code
+  training.checkpoint_selection: framework_default
+  training.epochs: repository_protocol
+  training.seed: repository_default
+  training.workers: unknown
+scheduler:
+  final_lr_factor: 1.0
+  gamma: null
+  name: constant
+  step_size: null
+training:
+  batch_size: 16
+  epochs: 500
+  image_size:
+  - 512
+  - 512
+  learning_rate: 0.001
+  momentum: 0.9
+  optimizer: SGD
+  weight_decay: 0.0005
+validation_postprocess:
+  area_threshold: 0.0
+  confidence_owner: ultralytics
+  confidence_threshold: 0.5
+  iou_threshold: 0.5
+  native_nms_applied: false
+  nms_owner: none

@@ -96,7 +96,10 @@ set `model.detector_input: image_size`, which forces the transform to keep
 the actual feature map). All five are trained and scored by
 `scripts/reproduce_all.py` as a separate repository experiment, reported in the
 README's *Controlled experiment: detector input size* and in
-`results/reproduced/model_comparison_test_detector512.{md,json}`.
+`results/reproduced/model_comparison_test_detector512.{md,json}`. At 512×512
+the 800-pixel detectors lose 0.032–0.040 mAP@50:95 while counting F1 moves by
+at most 0.008, and SSDLite's recall falls further, so its low recall is not a
+consequence of the 320-pixel input.
 
 Parameter and FLOP counts (`scripts/measure_complexity.py`) are taken at a
 common 512×512 detector input for every model, and each count records the

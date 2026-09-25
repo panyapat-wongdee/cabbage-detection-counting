@@ -441,8 +441,8 @@ def render_third_party_notices(
 
     ``source_commit`` is the published commit that serves as the corresponding
     source; ``git_commit`` is the revision the run recorded when it trained,
-    kept as provenance. The two differ because the development history was
-    consolidated into a single commit before publication.
+    kept as provenance. The two differ when the evidence of a run is committed
+    after the commit it trained at.
     """
     if model_name in TORCHVISION_MODELS:
         return (
@@ -459,12 +459,12 @@ def render_third_party_notices(
         raise ReleaseValidationError(
             f"{model_name}: an Ultralytics archive needs the published source commit (40 hex digits)"
         )
-    # The run's recorded revision predates the history consolidation; the
-    # training and inference code for every released run is unchanged at the
-    # published commit, which is therefore the corresponding source.
+    # The run's recorded revision is an ancestor of the published commit; the
+    # training and inference code for every released run is unchanged there,
+    # so the published commit is the corresponding source.
     trained = (
-        f" The revision recorded in CHECKPOINTS.json (`{git_commit}`) belongs to the "
-        "development history consolidated into this commit; the training and inference "
+        f" The revision recorded in CHECKPOINTS.json (`{git_commit}`) is the commit this "
+        "checkpoint was trained at, an ancestor of this commit; the training and inference "
         "code for this checkpoint is unchanged here."
         if git_commit and git_commit != source_commit
         else ""

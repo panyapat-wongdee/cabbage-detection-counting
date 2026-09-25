@@ -1,0 +1,198 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "results_dir": "results/reproduced/ssd-detector512",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssd-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": -0.09798186604270255,
+        "f1": 0.9198831308626788,
+        "false_negatives": 428,
+        "false_positives": 93,
+        "fdr": 0.030155642023346304,
+        "fnr": 0.12518280198888565,
+        "predicted_count": 3084,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 2991
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.8954006639214633,
+        "map50_95": 0.6131072084355049,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssd-detector512/test/records/predictions.json",
+          "sha256": "999601a96c5a146abc7e873c61793a805e7fe21f0091100ef652758b9c2c8c9b"
+        },
+        "targets": {
+          "path": "results/reproduced/ssd-detector512/test/records/targets.json",
+          "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssd-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": -0.137291280148423,
+        "f1": 0.9174605924129569,
+        "false_negatives": 1804,
+        "false_positives": 102,
+        "fdr": 0.009537166900420757,
+        "fnr": 0.14551907719609583,
+        "predicted_count": 10695,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 10593
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9291298193325648,
+        "map50_95": 0.7546855975254406,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssd-detector512/train/records/predictions.json",
+          "sha256": "0e25ef99ca246aeeeff76f19ea214bf14f743a693a69c607d356e22b23a1b13c"
+        },
+        "targets": {
+          "path": "results/reproduced/ssd-detector512/train/records/targets.json",
+          "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssd-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": -0.12797783933518006,
+        "f1": 0.9103284995560816,
+        "false_negatives": 267,
+        "false_positives": 36,
+        "fdr": 0.022871664548919948,
+        "fnr": 0.14792243767313018,
+        "predicted_count": 1574,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1538
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9151030113885951,
+        "map50_95": 0.6127574698564878,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssd-detector512/val/records/predictions.json",
+          "sha256": "c65833a9ef6d4026e20ca6d315d2fb909677ece8014438847b6a250a9f59406e"
+        },
+        "targets": {
+          "path": "results/reproduced/ssd-detector512/val/records/targets.json",
+          "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+        }
+      }
+    }
+  },
+  "summary_sha256": "4b34278b3ae2d9a94200762311c6259ff4f9f7f9ec0ba2c2c16aa48276f9ec64"
+}

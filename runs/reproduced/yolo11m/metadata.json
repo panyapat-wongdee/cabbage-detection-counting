@@ -1,0 +1,453 @@
+{
+  "command": [
+    "scripts/train.py",
+    "--config",
+    "configs/ultralytics/yolo11m.yaml"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/yolo11m",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": false,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": null,
+      "mode": null,
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "yolo",
+      "labels_dirname": null,
+      "root": "prepared/fold1_yolo",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": "prepared/fold1_yolo/data.yaml"
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "repository_ap_101",
+      "confidence_owner": "ultralytics",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "ultralytics"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "ultralytics"
+    },
+    "initialization": {
+      "num_classes": 1,
+      "weights": "yolo11m.pt"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "ultralytics",
+      "name": "yolo11m"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": false
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "historical_code",
+      "evaluation": "historical_code",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "historical_code",
+      "native_training": "historical_code",
+      "scheduler": "historical_code",
+      "training.checkpoint_selection": "framework_default",
+      "training.epochs": "repository_protocol",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": 1.0,
+      "gamma": null,
+      "name": "constant",
+      "step_size": null
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "ultralytics"
+    }
+  },
+  "config_resolved": {
+    "path": "config.yaml",
+    "sha256": "9c2ce0df9e923a56eac4a1d0957d7837b3de10d10666939dd9ca229489c3c064"
+  },
+  "config_sha256": "9c2ce0df9e923a56eac4a1d0957d7837b3de10d10666939dd9ca229489c3c064",
+  "created_at_utc": "2026-09-25T03:18:21.129878+00:00",
+  "dataset": {
+    "annotation_sha256": "f5bbb6bdffc198f782288b0320aa30d1b179384a7e6176bfdf7c8ca1a780e295",
+    "doi": "10.17632/5cp2dyjczk.2",
+    "license": "CC BY 4.0",
+    "redistributed": false,
+    "split_manifest": "splits/fold1_recovered.csv",
+    "split_manifest_sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+    "version": "2"
+  },
+  "deviations": [],
+  "environment": {
+    "cuda": {
+      "available": true,
+      "count": 1,
+      "version": "11.8"
+    },
+    "packages": {
+      "PyYAML": "6.0.2",
+      "albumentations": "1.4.21",
+      "cabbage-detection": "1.0.0",
+      "pycocotools": "2.0.8",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "ultralytics": "8.4.9"
+    },
+    "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+  },
+  "evaluation": {
+    "detection_backends": [
+      "cabbage_detection.ap_101"
+    ],
+    "deviations": [],
+    "results_dir": "results/reproduced/yolo11m",
+    "splits": {
+      "test": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/yolo11m",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 3419,
+          "count_error": 0.05381690552793214,
+          "f1": 0.946738820848761,
+          "false_negatives": 95,
+          "false_positives": 279,
+          "fdr": 0.07743547044129892,
+          "fnr": 0.02778590231061714,
+          "predicted_count": 3603,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 3324
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9723307259600272,
+          "map50_95": 0.7155686836415398,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 92,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/yolo11m/test/records/predictions.json",
+            "sha256": "6887c10578e30295b875c75d9663b4457c8d51e6a9f0d182dcee853e70d079b8"
+          },
+          "targets": {
+            "path": "results/reproduced/yolo11m/test/records/targets.json",
+            "sha256": "4895be6df09851a4124689e40818b9971c7d57424d7193ea06fd70363fcdcf43"
+          }
+        }
+      },
+      "train": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/yolo11m",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 12397,
+          "count_error": 0.047108171331773814,
+          "f1": 0.9673733154700922,
+          "false_negatives": 122,
+          "false_positives": 706,
+          "fdr": 0.05438718126492566,
+          "fnr": 0.009841090586432202,
+          "predicted_count": 12981,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 12275
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9873496629082571,
+          "map50_95": 0.82480183654842,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 320,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/yolo11m/train/records/predictions.json",
+            "sha256": "ef12da2a3067b72a11d8ee81bc465c53dab05c40a0ab2fbd5883cb545d0dc34e"
+          },
+          "targets": {
+            "path": "results/reproduced/yolo11m/train/records/targets.json",
+            "sha256": "fdc1e488b2824bf889a2008f44b2c20799537ab1fa4ace8bdb72a464210c598b"
+          }
+        }
+      },
+      "val": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/yolo11m",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 1805,
+          "count_error": 0.042105263157894736,
+          "f1": 0.9593054801953337,
+          "false_negatives": 37,
+          "false_positives": 113,
+          "fdr": 0.06007442849548113,
+          "fnr": 0.020498614958448753,
+          "predicted_count": 1881,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 1768
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9834968868623513,
+          "map50_95": 0.7379098264216164,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 46,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/yolo11m/val/records/predictions.json",
+            "sha256": "0322dc1218cb71e5485f688f83a3f7a12276eace1522b4c5b225b566e21be988"
+          },
+          "targets": {
+            "path": "results/reproduced/yolo11m/val/records/targets.json",
+            "sha256": "e21b2534cb0b1c86b760832c27517269df3d69da439f559d6fc23c305994333b"
+          }
+        }
+      }
+    },
+    "summary_sha256": "4122edb99cb9a5b151ebf594fae5b85b38346f2e74b35e85beab353d78686358"
+  },
+  "finished_at_utc": "2026-09-25T03:59:59.255336+00:00",
+  "git": {
+    "dirty": false,
+    "revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81"
+  },
+  "inputs": {
+    "split_manifest": {
+      "kind": "file",
+      "path": "splits/fold1_recovered.csv",
+      "sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+      "size_bytes": 67689
+    }
+  },
+  "outputs": {
+    "best_checkpoint": {
+      "path": "checkpoints/best.pt",
+      "sha256": "5c541fe645ac914775c4facd20176ba16dd17a89cda79d27f63c41f54f1993fb",
+      "size_bytes": 40552805
+    },
+    "best_epoch": {
+      "path": "logs/best_epoch.json",
+      "sha256": "bcab8d45e0601f7d7d7319938d28608ce570b751f1345ea020dadb6e9630bee9",
+      "size_bytes": 369
+    },
+    "epoch_metrics": {
+      "path": "logs/training_log.csv",
+      "sha256": "3336909d2128922a4481ebd89a69f58148ca134bd13885dc083d3af0b86c2ed7",
+      "size_bytes": 52798
+    },
+    "last_checkpoint": {
+      "path": "checkpoints/last.pt",
+      "sha256": "5a96ee0f1a4d4578f1f0b9ed61725d6913e9d848af0cc98508218dcb3f9bd2b5",
+      "size_bytes": 40552805
+    },
+    "metrics": {
+      "path": "evaluation/metrics.json",
+      "sha256": "4122edb99cb9a5b151ebf594fae5b85b38346f2e74b35e85beab353d78686358",
+      "size_bytes": 2713
+    },
+    "predictions": {
+      "path": "evaluation/test_predictions.json",
+      "sha256": "6887c10578e30295b875c75d9663b4457c8d51e6a9f0d182dcee853e70d079b8",
+      "size_bytes": 1847835
+    },
+    "resolved_config": {
+      "path": "config.yaml",
+      "sha256": "9c2ce0df9e923a56eac4a1d0957d7837b3de10d10666939dd9ca229489c3c064",
+      "size_bytes": 2278
+    },
+    "training_log": {
+      "path": "logs/console.log",
+      "sha256": "1967fe1d5801fdd61647a8312250f4f23acebf7dee2a312403ffdbdb9614b9e1",
+      "size_bytes": 76069
+    },
+    "training_loss_plot": {
+      "path": "plots/training_loss.png",
+      "sha256": "f9274c33d38872e1d875f6ad40f1de2bf3ed68e4b2320bec9c95f3ad7d5528be",
+      "size_bytes": 49968
+    },
+    "ultralytics_args": {
+      "path": "framework/args.yaml",
+      "sha256": "952a25306490dc0779d56a207a174b078f35b5700c1ab855fbf82c07d1d1d29e",
+      "size_bytes": 1691
+    },
+    "ultralytics_best_checkpoint": {
+      "path": "framework/weights/best.pt",
+      "sha256": "5c541fe645ac914775c4facd20176ba16dd17a89cda79d27f63c41f54f1993fb",
+      "size_bytes": 40552805
+    },
+    "ultralytics_last_checkpoint": {
+      "path": "framework/weights/last.pt",
+      "sha256": "5a96ee0f1a4d4578f1f0b9ed61725d6913e9d848af0cc98508218dcb3f9bd2b5",
+      "size_bytes": 40552805
+    },
+    "ultralytics_results": {
+      "path": "framework/results.csv",
+      "sha256": "0fb8df5d24d272d61f1a772e2c15a4e3e0349e321ccd8ab0e5031b235e90af76",
+      "size_bytes": 54506
+    },
+    "validation_metrics_plot": {
+      "path": "plots/validation_metrics.png",
+      "sha256": "73d3511bb7ec7acf6116529f1146789ad6dd28151038fd460b6b678dff539b50",
+      "size_bytes": 49774
+    }
+  },
+  "pretrained": {
+    "expected_filename": "yolo11m.pt",
+    "framework": "ultralytics",
+    "framework_version": "8.4.9",
+    "identifier": "yolo11m.pt",
+    "redistributed": false,
+    "sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95",
+    "size_bytes": 40684120,
+    "software_license": "AGPL-3.0-only",
+    "source_url": "https://docs.ultralytics.com/models/yolo11/",
+    "training_dataset": "MS COCO"
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]",
+  "result_status": "reproduced_verified",
+  "status": "succeeded",
+  "verified_at_utc": "2026-09-25T08:31:58.653446+00:00"
+}

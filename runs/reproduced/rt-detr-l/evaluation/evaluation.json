@@ -1,0 +1,190 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [],
+  "results_dir": "results/reproduced/rt-detr-l",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/rt-detr-l",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.130155016086575,
+        "f1": 0.919675957709735,
+        "false_negatives": 70,
+        "false_positives": 515,
+        "fdr": 0.1332815734989648,
+        "fnr": 0.020473822755191575,
+        "predicted_count": 3864,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 3349
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9721392997815842,
+        "map50_95": 0.7157316368379077,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/rt-detr-l/test/records/predictions.json",
+          "sha256": "81598bc25ac564ee90d23769ded4d62e086679583260ff18f54cab3485261072"
+        },
+        "targets": {
+          "path": "results/reproduced/rt-detr-l/test/records/targets.json",
+          "sha256": "4895be6df09851a4124689e40818b9971c7d57424d7193ea06fd70363fcdcf43"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/rt-detr-l",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.10478341534242155,
+        "f1": 0.9403288238224812,
+        "false_negatives": 129,
+        "false_positives": 1428,
+        "fdr": 0.10426401869158879,
+        "fnr": 0.010405743324997984,
+        "predicted_count": 13696,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 12268
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9853329012135937,
+        "map50_95": 0.7828164190182697,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/rt-detr-l/train/records/predictions.json",
+          "sha256": "5a8d44582261397fc0e24e5fbac9e06edadfa39a946e637d67b9aa73b674271b"
+        },
+        "targets": {
+          "path": "results/reproduced/rt-detr-l/train/records/targets.json",
+          "sha256": "fdc1e488b2824bf889a2008f44b2c20799537ab1fa4ace8bdb72a464210c598b"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/rt-detr-l",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.10193905817174516,
+        "f1": 0.9372693726937269,
+        "false_negatives": 27,
+        "false_positives": 211,
+        "fdr": 0.10608345902463549,
+        "fnr": 0.014958448753462604,
+        "predicted_count": 1989,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1778
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9793873059570503,
+        "map50_95": 0.7227991087205268,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/rt-detr-l/val/records/predictions.json",
+          "sha256": "514a5fa8b1049273e8ae1aa521ae08721d426e772126a6009fb2aaf9bb16ed97"
+        },
+        "targets": {
+          "path": "results/reproduced/rt-detr-l/val/records/targets.json",
+          "sha256": "e21b2534cb0b1c86b760832c27517269df3d69da439f559d6fc23c305994333b"
+        }
+      }
+    }
+  },
+  "summary_sha256": "ce5bc4cc1d68667fd4c6148d058d645b1443b76a07b1dbbe0da687ba14230ac6"
+}

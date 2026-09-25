@@ -1,0 +1,198 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "results_dir": "results/reproduced/retinanet-detector512",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/retinanet-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.09271716876279613,
+        "f1": 0.9087351502445842,
+        "false_negatives": 168,
+        "false_positives": 485,
+        "fdr": 0.12981798715203427,
+        "fnr": 0.04913717461245978,
+        "predicted_count": 3736,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 3251
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9546933456058878,
+        "map50_95": 0.6377969406550009,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/retinanet-detector512/test/records/predictions.json",
+          "sha256": "db6ef20d0312be9482bde8e123e74cf23838ebd442e82c5919d87c8918dbbd82"
+        },
+        "targets": {
+          "path": "results/reproduced/retinanet-detector512/test/records/targets.json",
+          "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/retinanet-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.06824231668952166,
+        "f1": 0.918408736349454,
+        "false_negatives": 623,
+        "false_positives": 1469,
+        "fdr": 0.11092652722192857,
+        "fnr": 0.0502540937323546,
+        "predicted_count": 13243,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 11774
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.965243816456967,
+        "map50_95": 0.6850941537812054,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/retinanet-detector512/train/records/predictions.json",
+          "sha256": "056648a4c92cc00af0075e698def6874968d930da8c887b58d53e3e24c4f7072"
+        },
+        "targets": {
+          "path": "results/reproduced/retinanet-detector512/train/records/targets.json",
+          "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/retinanet-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.09473684210526316,
+        "f1": 0.9166887066913515,
+        "false_negatives": 72,
+        "false_positives": 243,
+        "fdr": 0.12297570850202429,
+        "fnr": 0.039889196675900275,
+        "predicted_count": 1976,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1733
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9627573273216947,
+        "map50_95": 0.6435462716690854,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/retinanet-detector512/val/records/predictions.json",
+          "sha256": "5430e0b34868bd8c81f27be9280b72c33c5d98439a873b464fdfb082646b2a06"
+        },
+        "targets": {
+          "path": "results/reproduced/retinanet-detector512/val/records/targets.json",
+          "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+        }
+      }
+    }
+  },
+  "summary_sha256": "0a266bae1d9efb6bbeae7b3c4c2c59667baf5d10a61851716ebddf4ce520ad23"
+}

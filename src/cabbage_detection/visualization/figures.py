@@ -60,36 +60,36 @@ SCOPE_MARKS = {"paper_model": "", "supplementary_unreported": "†", "repository
 # Label anchors in data coordinates (GFLOPs, mAP@50:95), placed by eye so no
 # two labels collide; a thin leader joins each label to its marker.
 COMPUTE_LABEL_POSITIONS = {
-    "yolo12n": (1.25, 0.742, "left"),
-    "yolo11n": (1.25, 0.718, "left"),
-    "yolo26n": (1.25, 0.664, "left"),
-    "yolov8n": (1.25, 0.604, "left"),
-    "yolo12m": (8.5, 0.764, "left"),
-    "yolo26m": (8.5, 0.744, "left"),
-    "yolo11m": (8.5, 0.700, "left"),
-    "yolov8m": (12, 0.640, "left"),
-    "ssd": (20, 0.606, "left"),
-    "rt-detr-l": (95, 0.764, "left"),
-    "fcos": (420, 0.735, "left"),
-    "faster_rcnn": (420, 0.700, "left"),
-    "retinanet": (420, 0.668, "left"),
+    "yolo12n": (1.2, 0.716, "left"),
+    "yolo11n": (1.2, 0.689, "left"),
+    "yolo26n": (1.25, 0.672, "left"),
+    "yolov8n": (1.25, 0.606, "left"),
+    "yolo12m": (8.5, 0.758, "left"),
+    "yolo26m": (8.5, 0.740, "left"),
+    "yolo11m": (8.5, 0.712, "left"),
+    "yolov8m": (12, 0.650, "left"),
+    "ssd": (110, 0.590, "left"),
+    "rt-detr-l": (95, 0.752, "left"),
+    "fcos": (420, 0.728, "left"),
+    "faster_rcnn": (420, 0.698, "left"),
+    "retinanet": (420, 0.664, "left"),
 }
 COMPUTE_RANGE = {"x": (1.0, 3000), "y": (0.565, 0.775)}
-# Label offsets in points for panel (b), chosen by eye.
-COUNTING_LABEL_OFFSETS = {
-    "faster_rcnn": (-7, 4, "right"),
-    "ssd": (7, 0, "left"),
-    "retinanet": (7, -7, "left"),
-    "fcos": (-7, 5, "right"),
-    "yolov8n": (7, -2, "left"),
-    "yolov8m": (-7, -2, "right"),
-    "yolo11n": (-7, 4, "right"),
-    "yolo11m": (-6, -7, "right"),
-    "rt-detr-l": (-7, 3, "right"),
-    "yolo12n": (6, 6, "left"),
-    "yolo12m": (-7, -4, "right"),
-    "yolo26m": (6, 5, "left"),
-    "yolo26n": (-7, -3, "right"),
+# Label anchors for panel (b) in data coordinates (mAP@50:95, F1), chosen by eye.
+COUNTING_LABEL_POSITIONS = {
+    "fcos": (0.722, 0.9585, "left"),
+    "yolo11n": (0.690, 0.9585, "right"),
+    "faster_rcnn": (0.672, 0.951, "right"),
+    "yolo12n": (0.690, 0.9455, "right"),
+    "yolo11m": (0.745, 0.9535, "left"),
+    "yolo26m": (0.745, 0.9495, "left"),
+    "yolo12m": (0.745, 0.9395, "left"),
+    "yolov8n": (0.606, 0.943, "left"),
+    "yolov8m": (0.662, 0.9395, "right"),
+    "ssd": (0.598, 0.930, "left"),
+    "rt-detr-l": (0.722, 0.9197, "left"),
+    "yolo26n": (0.672, 0.9215, "right"),
+    "retinanet": (0.684, 0.9145, "left"),
 }
 LEADER = {"arrowstyle": "-", "color": "#8c8c8c", "linewidth": 0.5, "shrinkA": 0, "shrinkB": 3}
 
@@ -240,7 +240,7 @@ def plot_model_comparison(comparison_path: Path, complexity_path: Path, output_p
 
     # The supplementary SSDLite row lies far below the others on both axes;
     # the panel is zoomed on the nine paper models and SSDLite is annotated.
-    x_range, y_range = (0.575, 0.795), (0.915, 0.96)
+    x_range, y_range = (0.575, 0.795), (0.91, 0.962)
     outliers = []
     for record in models:
         x, y = record["detection"]["map50_95"], record["counting"]["f1"]
@@ -248,9 +248,10 @@ def plot_model_comparison(comparison_path: Path, complexity_path: Path, output_p
             outliers.append(f"{_label(record)}: ({x:.3f}, {y:.3f})")
             continue
         _scatter(counting, record, x, y)
-        dx, dy, align = COUNTING_LABEL_OFFSETS.get(record["model"], (7, 0, "left"))
-        counting.annotate(_label(record), (x, y), xytext=(dx, dy), textcoords="offset points",
-                          ha=align, va="center", fontsize=7.5)
+        label_x, label_y, align = COUNTING_LABEL_POSITIONS.get(record["model"], (x + 0.006, y, "left"))
+        leader = {**LEADER, "relpos": (1.0, 0.5) if label_x < x else (0.0, 0.5)}
+        counting.annotate(_label(record), (x, y), xytext=(label_x, label_y), textcoords="data",
+                          ha=align, va="center", fontsize=7.5, arrowprops=leader)
     counting.set_xlim(*x_range)
     counting.set_ylim(*y_range)
     counting.set_xlabel("mAP@50:95")

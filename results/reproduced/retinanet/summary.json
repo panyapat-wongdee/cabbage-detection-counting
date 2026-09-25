@@ -1,0 +1,97 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "notes": [
+    "counting metrics are micro-averaged over the split; macro holds the per-image mean",
+    "splits are scored separately and are never pooled into one figure"
+  ],
+  "splits": {
+    "test": {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.08248025738520035,
+        "f1": 0.9168539325842696,
+        "false_negatives": 155,
+        "false_positives": 437,
+        "fdr": 0.11807619562280465,
+        "fnr": 0.04533489324363849,
+        "image_count": 92,
+        "macro": {
+          "count_error": 0.09586592434595043,
+          "f1": 0.9178173447131439,
+          "fdr": 0.11676682458909368,
+          "fnr": 0.03971977112103107
+        },
+        "predicted_count": 3701,
+        "true_positives": 3264
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "image_count": 92,
+        "map50": 0.9607103456061153,
+        "map50_95": 0.6778506331225236
+      }
+    },
+    "train": {
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.07993869484552714,
+        "f1": 0.9296102385107621,
+        "false_negatives": 412,
+        "false_positives": 1403,
+        "fdr": 0.10479533910965043,
+        "fnr": 0.03323384689844317,
+        "image_count": 320,
+        "macro": {
+          "count_error": 0.09004341637622437,
+          "f1": 0.9298505022545281,
+          "fdr": 0.10348410911885542,
+          "fnr": 0.029418056328311966
+        },
+        "predicted_count": 13388,
+        "true_positives": 11985
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "image_count": 320,
+        "map50": 0.973581776364885,
+        "map50_95": 0.7278612438604455
+      }
+    },
+    "val": {
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.07977839335180055,
+        "f1": 0.9238145977623868,
+        "false_negatives": 71,
+        "false_positives": 215,
+        "fdr": 0.11031298101590559,
+        "fnr": 0.03933518005540166,
+        "image_count": 46,
+        "macro": {
+          "count_error": 0.0829374979978512,
+          "f1": 0.9253629006459202,
+          "fdr": 0.10515809537105873,
+          "fnr": 0.037155440124128296
+        },
+        "predicted_count": 1949,
+        "true_positives": 1734
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "image_count": 46,
+        "map50": 0.9695009830778667,
+        "map50_95": 0.6822072927573424
+      }
+    }
+  },
+  "units": {
+    "count_error": "signed_fraction_of_actual_count",
+    "f1": "fraction",
+    "fdr": "fraction",
+    "fnr": "fraction",
+    "map50": "fraction",
+    "map50_95": "fraction"
+  }
+}

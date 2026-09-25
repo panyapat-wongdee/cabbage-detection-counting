@@ -1,0 +1,447 @@
+{
+  "command": [
+    "scripts/train.py",
+    "--config",
+    "configs/torchvision/ssdlite.yaml"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/ssdlite",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": true,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": "val_map_50_95",
+      "mode": "max",
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "coco",
+      "labels_dirname": null,
+      "root": "original_dataset",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": null
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "pycocotools_coco_eval",
+      "confidence_owner": "repository",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "repository"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 100.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    },
+    "initialization": {
+      "num_classes": 2,
+      "weights": "COCO_V1"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "torchvision",
+      "name": "ssdlite"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": true
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "historical_code",
+      "evaluation": "historical_code",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "historical_code",
+      "scheduler": "historical_code",
+      "training.checkpoint_selection": "historical_code",
+      "training.epochs": "historical_code",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": null,
+      "gamma": 0.1,
+      "name": "step_lr",
+      "step_size": 1000
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    }
+  },
+  "config_resolved": {
+    "path": "config.yaml",
+    "sha256": "9594461286ac87c754c4ffc3d580031154ef30955ad3680a06353c47738c3fa2"
+  },
+  "config_sha256": "9594461286ac87c754c4ffc3d580031154ef30955ad3680a06353c47738c3fa2",
+  "created_at_utc": "2026-09-24T21:27:51.766879+00:00",
+  "dataset": {
+    "annotation_sha256": "f5bbb6bdffc198f782288b0320aa30d1b179384a7e6176bfdf7c8ca1a780e295",
+    "doi": "10.17632/5cp2dyjczk.2",
+    "license": "CC BY 4.0",
+    "redistributed": false,
+    "split_manifest": "splits/fold1_recovered.csv",
+    "split_manifest_sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+    "version": "2"
+  },
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "environment": {
+    "cuda": {
+      "available": true,
+      "count": 1,
+      "version": "11.8"
+    },
+    "packages": {
+      "PyYAML": "6.0.2",
+      "albumentations": "1.4.21",
+      "cabbage-detection": "1.0.0",
+      "pycocotools": "2.0.8",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "ultralytics": "8.4.9"
+    },
+    "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+  },
+  "evaluation": {
+    "detection_backends": [
+      "cabbage_detection.ap_101"
+    ],
+    "deviations": [
+      "native detector score threshold lowered for full-range AP"
+    ],
+    "results_dir": "results/reproduced/ssdlite",
+    "splits": {
+      "test": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssdlite",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 3419,
+          "count_error": -0.4466218192453934,
+          "f1": 0.6970438712106948,
+          "false_negatives": 1568,
+          "false_positives": 41,
+          "fdr": 0.021670190274841437,
+          "fnr": 0.4586136297162913,
+          "predicted_count": 1892,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 1851
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.8303861827819149,
+          "map50_95": 0.4780985968993348,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 92,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssdlite/test/records/predictions.json",
+            "sha256": "5e1f15cb489e484b1fa01df71f036ccc1ab51fb8f93ea25650316fb8cd86c2b0"
+          },
+          "targets": {
+            "path": "results/reproduced/ssdlite/test/records/targets.json",
+            "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+          }
+        }
+      },
+      "train": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssdlite",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 12397,
+          "count_error": -0.45704605953053157,
+          "f1": 0.6836051861145964,
+          "false_negatives": 5859,
+          "false_positives": 193,
+          "fdr": 0.02867330262962413,
+          "fnr": 0.47261434217955955,
+          "predicted_count": 6731,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 6538
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.7813657401031721,
+          "map50_95": 0.46556464443512197,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 320,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssdlite/train/records/predictions.json",
+            "sha256": "e2873f3ecaf6851474183e5036e309f73edf415ad0f43218ef91f2922dd563a0"
+          },
+          "targets": {
+            "path": "results/reproduced/ssdlite/train/records/targets.json",
+            "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+          }
+        }
+      },
+      "val": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssdlite",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 1805,
+          "count_error": -0.4515235457063712,
+          "f1": 0.6898032200357782,
+          "false_negatives": 841,
+          "false_positives": 26,
+          "fdr": 0.026262626262626262,
+          "fnr": 0.4659279778393352,
+          "predicted_count": 990,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 964
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.7866758505030115,
+          "map50_95": 0.45010235419734357,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 46,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssdlite/val/records/predictions.json",
+            "sha256": "7b89df1cacf098570d82e7a674fce8c83442fc5d75504d34bbe644c6a25007e4"
+          },
+          "targets": {
+            "path": "results/reproduced/ssdlite/val/records/targets.json",
+            "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+          }
+        }
+      }
+    },
+    "summary_sha256": "849b318193c491e2d7186a1ad520ad113e3bc2523bf22ae37814b46761572feb"
+  },
+  "finished_at_utc": "2026-09-24T22:27:52.897308+00:00",
+  "git": {
+    "dirty": false,
+    "revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81"
+  },
+  "inputs": {
+    "split_manifest": {
+      "kind": "file",
+      "path": "splits/fold1_recovered.csv",
+      "sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+      "size_bytes": 67689
+    }
+  },
+  "outputs": {
+    "best_checkpoint": {
+      "path": "checkpoints/best.pt",
+      "sha256": "e40611aba7a74b99f873c1cbb7d93a7ca5dd64f2d308d84ffa715035f8839364",
+      "size_bytes": 18004264
+    },
+    "best_epoch": {
+      "path": "logs/best_epoch.json",
+      "sha256": "9e6a21e54429baa532f58fd6f0ffe172dbddd4235689d80f49c64c0997a6e62f",
+      "size_bytes": 374
+    },
+    "epoch_metrics": {
+      "path": "logs/training_log.csv",
+      "sha256": "be65dc1d9a7f391a7ec9f34f70c457ae40ecba226ebfcf6d794297797c0c487b",
+      "size_bytes": 77356
+    },
+    "last_checkpoint": {
+      "path": "checkpoints/last.pt",
+      "sha256": "8c0104e5a698c6e7da0017df97a13427f610e3aec3ec9394c39d920ae505c892",
+      "size_bytes": 18004264
+    },
+    "metrics": {
+      "path": "evaluation/metrics.json",
+      "sha256": "849b318193c491e2d7186a1ad520ad113e3bc2523bf22ae37814b46761572feb",
+      "size_bytes": 2710
+    },
+    "predictions": {
+      "path": "evaluation/test_predictions.json",
+      "sha256": "5e1f15cb489e484b1fa01df71f036ccc1ab51fb8f93ea25650316fb8cd86c2b0",
+      "size_bytes": 1307070
+    },
+    "resolved_config": {
+      "path": "config.yaml",
+      "sha256": "9594461286ac87c754c4ffc3d580031154ef30955ad3680a06353c47738c3fa2",
+      "size_bytes": 2211
+    },
+    "training": {
+      "path": "checkpoints/best.pt",
+      "sha256": "e40611aba7a74b99f873c1cbb7d93a7ca5dd64f2d308d84ffa715035f8839364",
+      "size_bytes": 18004264
+    },
+    "training_log": {
+      "path": "logs/console.log",
+      "sha256": "89ebfcb20b0874fd3030f88a8c2a169d917d966691812da1331f5eab2ad18c5a",
+      "size_bytes": 167594
+    },
+    "training_loss_plot": {
+      "path": "plots/training_loss.png",
+      "sha256": "281c005c917d76dff21eb07143b6551286e270223d145a5c1533c451c3ae0bc5",
+      "size_bytes": 53432
+    },
+    "validation_metrics_plot": {
+      "path": "plots/validation_metrics.png",
+      "sha256": "9fe24c9a10e851f9d3a1b1c55d1ff58885099969548b329ec02233a086ddefba",
+      "size_bytes": 52355
+    }
+  },
+  "pretrained": {
+    "expected_filename": "ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+    "framework": "torchvision",
+    "framework_version": "0.20.1",
+    "identifier": "SSDLite320_MobileNet_V3_Large_Weights.COCO_V1",
+    "redistributed": false,
+    "sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+    "size_bytes": 14069355,
+    "software_license": "BSD-3-Clause",
+    "source_url": "https://download.pytorch.org/models/ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+    "training_dataset": "MS COCO"
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]",
+  "result_status": "reproduced_verified",
+  "status": "succeeded",
+  "verified_at_utc": "2026-09-25T08:31:54.990260+00:00"
+}

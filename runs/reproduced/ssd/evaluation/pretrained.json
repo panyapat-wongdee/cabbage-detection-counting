@@ -1,0 +1,12 @@
+{
+  "expected_filename": "ssd300_vgg16_coco-b556d3b4.pth",
+  "framework": "torchvision",
+  "framework_version": "0.20.1",
+  "identifier": "SSD300_VGG16_Weights.COCO_V1",
+  "redistributed": false,
+  "sha256": "b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d",
+  "size_bytes": 142594222,
+  "software_license": "BSD-3-Clause",
+  "source_url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+  "training_dataset": "MS COCO"
+}

@@ -1,0 +1,12 @@
+{
+  "expected_filename": "fcos_resnet50_fpn_coco-99b0c9b7.pth",
+  "framework": "torchvision",
+  "framework_version": "0.20.1",
+  "identifier": "FCOS_ResNet50_FPN_Weights.COCO_V1",
+  "redistributed": false,
+  "sha256": "99b0c9b7cfb1527d782db86b91d207f00547c792fb4103fc612b651d0a07b9e7",
+  "size_bytes": 129612099,
+  "software_license": "BSD-3-Clause",
+  "source_url": "https://download.pytorch.org/models/fcos_resnet50_fpn_coco-99b0c9b7.pth",
+  "training_dataset": "MS COCO"
+}

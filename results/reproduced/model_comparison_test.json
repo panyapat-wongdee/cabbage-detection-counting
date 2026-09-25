@@ -1,0 +1,655 @@
+{
+  "git_revisions": [
+    "b0ee13d218142bf8b59a40dd4c69349df99b9d81"
+  ],
+  "image_count": 92,
+  "models": [
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.033928049137174614,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9511072763876905,
+        "false_negatives": 112,
+        "false_positives": 228,
+        "fdr": 0.0644978783592645,
+        "fnr": 0.032758116408306524,
+        "image_count": 92,
+        "predicted_count": 3535,
+        "true_positives": 3307
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        },
+        "image_count": 92,
+        "map50": 0.9738684201614897,
+        "map50_95": 0.6811129478756437
+      },
+      "deviations": [
+        "native detector score threshold lowered for full-range AP"
+      ],
+      "framework": "torchvision",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "faster_rcnn",
+      "result_status": "reproduction_candidate",
+      "source": "faster_rcnn",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": -0.057326703714536416,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9295392953929539,
+        "false_negatives": 332,
+        "false_positives": 136,
+        "fdr": 0.04219671113869066,
+        "fnr": 0.09710441649605148,
+        "image_count": 92,
+        "predicted_count": 3223,
+        "true_positives": 3087
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        },
+        "image_count": 92,
+        "map50": 0.9497452994217417,
+        "map50_95": 0.5920495187254524
+      },
+      "deviations": [
+        "native detector score threshold lowered for full-range AP"
+      ],
+      "framework": "torchvision",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "ssd",
+      "result_status": "reproduction_candidate",
+      "source": "ssd",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.08248025738520035,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9168539325842696,
+        "false_negatives": 155,
+        "false_positives": 437,
+        "fdr": 0.11807619562280465,
+        "fnr": 0.04533489324363849,
+        "image_count": 92,
+        "predicted_count": 3701,
+        "true_positives": 3264
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        },
+        "image_count": 92,
+        "map50": 0.9607103456061153,
+        "map50_95": 0.6778506331225236
+      },
+      "deviations": [
+        "native detector score threshold lowered for full-range AP"
+      ],
+      "framework": "torchvision",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "retinanet",
+      "result_status": "reproduction_candidate",
+      "source": "retinanet",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.036560397777127815,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9561970415050983,
+        "false_negatives": 90,
+        "false_positives": 215,
+        "fdr": 0.06066591422121896,
+        "fnr": 0.026323486399532026,
+        "image_count": 92,
+        "predicted_count": 3544,
+        "true_positives": 3329
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        },
+        "image_count": 92,
+        "map50": 0.9732145654570538,
+        "map50_95": 0.7132743335675829
+      },
+      "deviations": [
+        "native detector score threshold lowered for full-range AP"
+      ],
+      "framework": "torchvision",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "fcos",
+      "result_status": "reproduction_candidate",
+      "source": "fcos",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.0441649605147704,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9429102875947918,
+        "false_negatives": 124,
+        "false_positives": 275,
+        "fdr": 0.07703081232492998,
+        "fnr": 0.03626791459491079,
+        "image_count": 92,
+        "predicted_count": 3570,
+        "true_positives": 3295
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9670273069556056,
+        "map50_95": 0.5998881624412469
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolov8n",
+      "result_status": "reproduction_candidate",
+      "source": "yolov8n",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.06844106463878327,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.939762443438914,
+        "false_negatives": 96,
+        "false_positives": 330,
+        "fdr": 0.0903367095537914,
+        "fnr": 0.028078385492834163,
+        "image_count": 92,
+        "predicted_count": 3653,
+        "true_positives": 3323
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9700229984173581,
+        "map50_95": 0.6675981350521404
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolov8m",
+      "result_status": "reproduction_candidate",
+      "source": "yolov8m",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.031588183679438435,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9524906420961704,
+        "false_negatives": 111,
+        "false_positives": 219,
+        "fdr": 0.06209242982704848,
+        "fnr": 0.0324656332260895,
+        "image_count": 92,
+        "predicted_count": 3527,
+        "true_positives": 3308
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9702623685053081,
+        "map50_95": 0.6956262182217114
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo11n",
+      "result_status": "reproduction_candidate",
+      "source": "yolo11n",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.05381690552793214,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.946738820848761,
+        "false_negatives": 95,
+        "false_positives": 279,
+        "fdr": 0.07743547044129892,
+        "fnr": 0.02778590231061714,
+        "image_count": 92,
+        "predicted_count": 3603,
+        "true_positives": 3324
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9723307259600272,
+        "map50_95": 0.7155686836415398
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo11m",
+      "result_status": "reproduction_candidate",
+      "source": "yolo11m",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.130155016086575,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.919675957709735,
+        "false_negatives": 70,
+        "false_positives": 515,
+        "fdr": 0.1332815734989648,
+        "fnr": 0.020473822755191575,
+        "image_count": 92,
+        "predicted_count": 3864,
+        "true_positives": 3349
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9721392997815842,
+        "map50_95": 0.7157316368379077
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "rt-detr-l",
+      "result_status": "reproduction_candidate",
+      "source": "rt-detr-l",
+      "study_scope": "paper_model"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": -0.4466218192453934,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.6970438712106948,
+        "false_negatives": 1568,
+        "false_positives": 41,
+        "fdr": 0.021670190274841437,
+        "fnr": 0.4586136297162913,
+        "image_count": 92,
+        "predicted_count": 1892,
+        "true_positives": 1851
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        },
+        "image_count": 92,
+        "map50": 0.8303861827819149,
+        "map50_95": 0.4780985968993348
+      },
+      "deviations": [
+        "native detector score threshold lowered for full-range AP"
+      ],
+      "framework": "torchvision",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "ssdlite",
+      "result_status": "reproduction_candidate",
+      "source": "ssdlite",
+      "study_scope": "supplementary_unreported"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.036560397777127815,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9493034611518024,
+        "false_negatives": 114,
+        "false_positives": 239,
+        "fdr": 0.06743792325056433,
+        "fnr": 0.03334308277274057,
+        "image_count": 92,
+        "predicted_count": 3544,
+        "true_positives": 3305
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9678601988842777,
+        "map50_95": 0.7047044753140375
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo12n",
+      "result_status": "reproduction_candidate",
+      "source": "yolo12n",
+      "study_scope": "repository_extension"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.05908160280783855,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9423295454545455,
+        "false_negatives": 102,
+        "false_positives": 304,
+        "fdr": 0.08395470864402099,
+        "fnr": 0.029833284586136297,
+        "image_count": 92,
+        "predicted_count": 3621,
+        "true_positives": 3317
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9684727731761709,
+        "map50_95": 0.7339808905856474
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo12m",
+      "result_status": "reproduction_candidate",
+      "source": "yolo12m",
+      "study_scope": "repository_extension"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": -0.04065516232816613,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9192416778623675,
+        "false_negatives": 340,
+        "false_positives": 201,
+        "fdr": 0.06128048780487805,
+        "fnr": 0.09944428195378766,
+        "image_count": 92,
+        "predicted_count": 3280,
+        "true_positives": 3079
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9585708559266132,
+        "map50_95": 0.6780074479080489
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo26n",
+      "result_status": "reproduction_candidate",
+      "source": "yolo26n",
+      "study_scope": "repository_extension"
+    },
+    {
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.022813688212927757,
+        "evaluation": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "f1": 0.9456333140543667,
+        "false_negatives": 149,
+        "false_positives": 227,
+        "fdr": 0.06491278238490135,
+        "fnr": 0.04357999415033636,
+        "image_count": 92,
+        "predicted_count": 3497,
+        "true_positives": 3270
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "evaluation": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "repository_ap_101",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": null
+        },
+        "image_count": 92,
+        "map50": 0.9687038122582113,
+        "map50_95": 0.7288525008290581
+      },
+      "deviations": [],
+      "framework": "ultralytics",
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "model": "yolo26m",
+      "result_status": "reproduction_candidate",
+      "source": "yolo26m",
+      "study_scope": "repository_extension"
+    }
+  ],
+  "notes": [
+    "every value was produced by this repository; no published number appears here",
+    "one AP backend and one counting threshold pair are enforced across the table",
+    "study_scope records publication scope only; every row is a primary repository model"
+  ],
+  "settings": {
+    "counting": {
+      "aggregation": "micro",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "matching": "one_to_one_greedy_highest_iou"
+    },
+    "detection": {
+      "ap_iou_range": "0.50:0.95 step 0.05",
+      "ap_iou_threshold": 0.5,
+      "backend": "cabbage_detection.ap_101",
+      "export_confidence_threshold": 0.001
+    }
+  },
+  "split": "test",
+  "variant": null
+}

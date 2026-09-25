@@ -1,0 +1,177 @@
+{
+  "command": [
+    "scripts/evaluate.py",
+    "--run",
+    "runs/reproduced/fcos",
+    "--dataset",
+    "original_dataset",
+    "--split",
+    "all",
+    "--detection-backend",
+    "repository_ap_101",
+    "--ap-confidence",
+    "0.001",
+    "--native-score-threshold",
+    "0.001"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/fcos",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": true,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": "val_map_50_95",
+      "mode": "max",
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "coco",
+      "labels_dirname": null,
+      "root": "original_dataset",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": null
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "pycocotools_coco_eval",
+      "confidence_owner": "repository",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "repository"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 100.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    },
+    "initialization": {
+      "num_classes": 2,
+      "weights": "COCO_V1"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "torchvision",
+      "name": "fcos"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": true
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "historical_code",
+      "evaluation": "historical_code",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "historical_code",
+      "scheduler": "historical_code",
+      "training.checkpoint_selection": "historical_code",
+      "training.epochs": "repository_protocol",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": null,
+      "gamma": 0.1,
+      "name": "step_lr",
+      "step_size": 1000
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    }
+  },
+  "created_at_utc": "2026-09-25T05:25:08.712221+00:00",
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "evaluation": {
+    "counting": {
+      "aggregation": "micro",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "matching": "one_to_one_greedy_highest_iou"
+    },
+    "detection": {
+      "ap_iou_range": "0.50:0.95 step 0.05",
+      "ap_iou_threshold": 0.5,
+      "backend": "cabbage_detection.ap_101",
+      "backend_selection": "repository_ap_101",
+      "configured_backend": "pycocotools_coco_eval",
+      "export_confidence_threshold": 0.001,
+      "max_detections": 100,
+      "native_score_threshold": 0.001
+    },
+    "tasks": [
+      "detection",
+      "counting"
+    ]
+  },
+  "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+  "input_schema": "canonical",
+  "inputs": {
+    "predictions": {
+      "path": "results/reproduced/fcos/test/records/predictions.json",
+      "sha256": "43e26e89c078fd46c680691e5b4cf30c807c53a5e1351fae6c975052d08be7ce"
+    },
+    "targets": {
+      "path": "results/reproduced/fcos/test/records/targets.json",
+      "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+    }
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+}

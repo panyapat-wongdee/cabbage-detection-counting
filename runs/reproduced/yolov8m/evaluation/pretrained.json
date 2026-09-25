@@ -1,0 +1,12 @@
+{
+  "expected_filename": "yolov8m.pt",
+  "framework": "ultralytics",
+  "framework_version": "8.4.9",
+  "identifier": "yolov8m.pt",
+  "redistributed": false,
+  "sha256": "5d4a90cdc7a21786cc59cd19778e9eafff836df9e2da32524737c7ee6efe4fe5",
+  "size_bytes": 52136884,
+  "software_license": "AGPL-3.0-only",
+  "source_url": "https://docs.ultralytics.com/models/yolov8/",
+  "training_dataset": "MS COCO"
+}

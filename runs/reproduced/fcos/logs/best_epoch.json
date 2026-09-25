@@ -1,0 +1,10 @@
+{
+  "checkpoint": "checkpoints/best.pt",
+  "epoch": 493,
+  "last_checkpoint": "checkpoints/last.pt",
+  "last_sha256": "069b76ad4058c4938d83a54b1a9ea44c4d8ae284574b6db17698a6804388d2a6",
+  "selection_metric": "val_map_50_95",
+  "selection_mode": "max",
+  "selection_value": 0.7159089668362844,
+  "sha256": "aa1dd2acdb2fd5bec5c675ae94b095f69fc5b072a6837a97d8549aff06a2456b"
+}

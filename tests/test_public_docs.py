@@ -141,7 +141,7 @@ def test_citation_links_to_repository():
     assert citation["repository-code"] == "https://github.com/panyapat-wongdee/cabbage-detection-counting"
     # The software version matches the release tag's version.
     assert citation["version"] == "1.0.0"
-    assert str(citation["date-released"]) == "2026-09-24"
+    assert str(citation["date-released"]) == "2026-09-25"
 
 
 @needs_evidence

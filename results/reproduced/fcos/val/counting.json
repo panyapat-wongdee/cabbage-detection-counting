@@ -1,0 +1,41 @@
+{
+  "task": "counting",
+  "input_schema": "canonical",
+  "scope": {
+    "image_count": 46
+  },
+  "metrics": {
+    "actual_count": 1805,
+    "predicted_count": 1870,
+    "true_positives": 1768,
+    "false_positives": 102,
+    "false_negatives": 37,
+    "count_error": 0.036011080332409975,
+    "fdr": 0.05454545454545454,
+    "fnr": 0.020498614958448753,
+    "f1": 0.9621768707482993
+  },
+  "metrics_macro": {
+    "count_error": 0.034854515844689564,
+    "fdr": 0.05060082213268921,
+    "fnr": 0.02008997818926181,
+    "f1": 0.9634902451860146
+  },
+  "evaluation": {
+    "iou_threshold": 0.5,
+    "confidence_threshold": 0.5,
+    "matching": "one_to_one_greedy_highest_iou",
+    "aggregation": "micro",
+    "macro_aggregation": "mean_over_images"
+  },
+  "units": {
+    "count_error": "signed_fraction_of_actual_count",
+    "fdr": "fraction",
+    "fnr": "fraction",
+    "f1": "fraction"
+  },
+  "files": {
+    "per_image_csv": "per_image.csv",
+    "plots": "plots"
+  }
+}

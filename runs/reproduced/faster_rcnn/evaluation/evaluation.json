@@ -1,0 +1,198 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "results_dir": "results/reproduced/faster_rcnn",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/faster_rcnn",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": 0.033928049137174614,
+        "f1": 0.9511072763876905,
+        "false_negatives": 112,
+        "false_positives": 228,
+        "fdr": 0.0644978783592645,
+        "fnr": 0.032758116408306524,
+        "predicted_count": 3535,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 3307
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9738684201614897,
+        "map50_95": 0.6811129478756437,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/faster_rcnn/test/records/predictions.json",
+          "sha256": "1592a4cac32397dc9ba533ed186a13aba34b235e54e3a58c335afe8aad9210b0"
+        },
+        "targets": {
+          "path": "results/reproduced/faster_rcnn/test/records/targets.json",
+          "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/faster_rcnn",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": 0.027425990158909414,
+        "f1": 0.9748547783878412,
+        "false_negatives": 146,
+        "false_positives": 486,
+        "fdr": 0.03815655177828374,
+        "fnr": 0.011777042832943454,
+        "predicted_count": 12737,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 12251
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9879928986125736,
+        "map50_95": 0.7430699307947894,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/faster_rcnn/train/records/predictions.json",
+          "sha256": "ef039673e9b1d9b1b569364868a0a8d08401b8bf47c87b132aa27b9ebfa49b61"
+        },
+        "targets": {
+          "path": "results/reproduced/faster_rcnn/train/records/targets.json",
+          "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/faster_rcnn",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": 0.026592797783933517,
+        "f1": 0.963914707490432,
+        "false_negatives": 42,
+        "false_positives": 90,
+        "fdr": 0.048569886670264434,
+        "fnr": 0.02326869806094183,
+        "predicted_count": 1853,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1763
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.9765849131548141,
+        "map50_95": 0.6895283323800776,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/faster_rcnn/val/records/predictions.json",
+          "sha256": "aea4bf4c5f878de6b977943a02184271f4a93cbe3fac653594a1745dbf5a0087"
+        },
+        "targets": {
+          "path": "results/reproduced/faster_rcnn/val/records/targets.json",
+          "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+        }
+      }
+    }
+  },
+  "summary_sha256": "a74690f005b2ff70b4289985a2f8188676d47bbe2cef7550cb0cd832808d5bfa"
+}

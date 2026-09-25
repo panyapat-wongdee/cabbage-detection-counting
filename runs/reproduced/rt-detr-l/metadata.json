@@ -1,0 +1,453 @@
+{
+  "command": [
+    "scripts/train.py",
+    "--config",
+    "configs/ultralytics/rt-detr-l.yaml"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/rt-detr-l",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": false,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": null,
+      "mode": null,
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "yolo",
+      "labels_dirname": null,
+      "root": "prepared/fold1_yolo",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": "prepared/fold1_yolo/data.yaml"
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "repository_ap_101",
+      "confidence_owner": "ultralytics",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "none"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": false,
+      "nms_owner": "none"
+    },
+    "initialization": {
+      "num_classes": 1,
+      "weights": "rtdetr-l.pt"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "ultralytics",
+      "name": "rt-detr-l"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": false
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "historical_code",
+      "evaluation": "historical_code",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "historical_code",
+      "native_training": "historical_code",
+      "scheduler": "historical_code",
+      "training.checkpoint_selection": "framework_default",
+      "training.epochs": "repository_protocol",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": 1.0,
+      "gamma": null,
+      "name": "constant",
+      "step_size": null
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": false,
+      "nms_owner": "none"
+    }
+  },
+  "config_resolved": {
+    "path": "config.yaml",
+    "sha256": "10c1eb06d8e14c3943a0faa5beaa1e61c65ee022b2c04ed03edecb8ae3c78c48"
+  },
+  "config_sha256": "10c1eb06d8e14c3943a0faa5beaa1e61c65ee022b2c04ed03edecb8ae3c78c48",
+  "created_at_utc": "2026-09-25T04:00:01.576262+00:00",
+  "dataset": {
+    "annotation_sha256": "f5bbb6bdffc198f782288b0320aa30d1b179384a7e6176bfdf7c8ca1a780e295",
+    "doi": "10.17632/5cp2dyjczk.2",
+    "license": "CC BY 4.0",
+    "redistributed": false,
+    "split_manifest": "splits/fold1_recovered.csv",
+    "split_manifest_sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+    "version": "2"
+  },
+  "deviations": [],
+  "environment": {
+    "cuda": {
+      "available": true,
+      "count": 1,
+      "version": "11.8"
+    },
+    "packages": {
+      "PyYAML": "6.0.2",
+      "albumentations": "1.4.21",
+      "cabbage-detection": "1.0.0",
+      "pycocotools": "2.0.8",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "ultralytics": "8.4.9"
+    },
+    "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+  },
+  "evaluation": {
+    "detection_backends": [
+      "cabbage_detection.ap_101"
+    ],
+    "deviations": [],
+    "results_dir": "results/reproduced/rt-detr-l",
+    "splits": {
+      "test": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/rt-detr-l",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 3419,
+          "count_error": 0.130155016086575,
+          "f1": 0.919675957709735,
+          "false_negatives": 70,
+          "false_positives": 515,
+          "fdr": 0.1332815734989648,
+          "fnr": 0.020473822755191575,
+          "predicted_count": 3864,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 3349
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9721392997815842,
+          "map50_95": 0.7157316368379077,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 92,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/rt-detr-l/test/records/predictions.json",
+            "sha256": "81598bc25ac564ee90d23769ded4d62e086679583260ff18f54cab3485261072"
+          },
+          "targets": {
+            "path": "results/reproduced/rt-detr-l/test/records/targets.json",
+            "sha256": "4895be6df09851a4124689e40818b9971c7d57424d7193ea06fd70363fcdcf43"
+          }
+        }
+      },
+      "train": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/rt-detr-l",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 12397,
+          "count_error": 0.10478341534242155,
+          "f1": 0.9403288238224812,
+          "false_negatives": 129,
+          "false_positives": 1428,
+          "fdr": 0.10426401869158879,
+          "fnr": 0.010405743324997984,
+          "predicted_count": 13696,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 12268
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9853329012135937,
+          "map50_95": 0.7828164190182697,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 320,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/rt-detr-l/train/records/predictions.json",
+            "sha256": "5a8d44582261397fc0e24e5fbac9e06edadfa39a946e637d67b9aa73b674271b"
+          },
+          "targets": {
+            "path": "results/reproduced/rt-detr-l/train/records/targets.json",
+            "sha256": "fdc1e488b2824bf889a2008f44b2c20799537ab1fa4ace8bdb72a464210c598b"
+          }
+        }
+      },
+      "val": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/rt-detr-l",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 1805,
+          "count_error": 0.10193905817174516,
+          "f1": 0.9372693726937269,
+          "false_negatives": 27,
+          "false_positives": 211,
+          "fdr": 0.10608345902463549,
+          "fnr": 0.014958448753462604,
+          "predicted_count": 1989,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 1778
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9793873059570503,
+          "map50_95": 0.7227991087205268,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "repository_ap_101",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": null
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 46,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/rt-detr-l/val/records/predictions.json",
+            "sha256": "514a5fa8b1049273e8ae1aa521ae08721d426e772126a6009fb2aaf9bb16ed97"
+          },
+          "targets": {
+            "path": "results/reproduced/rt-detr-l/val/records/targets.json",
+            "sha256": "e21b2534cb0b1c86b760832c27517269df3d69da439f559d6fc23c305994333b"
+          }
+        }
+      }
+    },
+    "summary_sha256": "ce5bc4cc1d68667fd4c6148d058d645b1443b76a07b1dbbe0da687ba14230ac6"
+  },
+  "finished_at_utc": "2026-09-25T05:20:09.876293+00:00",
+  "git": {
+    "dirty": false,
+    "revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81"
+  },
+  "inputs": {
+    "split_manifest": {
+      "kind": "file",
+      "path": "splits/fold1_recovered.csv",
+      "sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+      "size_bytes": 67689
+    }
+  },
+  "outputs": {
+    "best_checkpoint": {
+      "path": "checkpoints/best.pt",
+      "sha256": "cb8c8e86c2fb4e9641d173b3c8667c50a1e352e6029b5458e89e9a03ba114f36",
+      "size_bytes": 66246326
+    },
+    "best_epoch": {
+      "path": "logs/best_epoch.json",
+      "sha256": "8be72119e20b3e85c4c4e8592139e882c7c978c618e447f6ba0526d3e53e4111",
+      "size_bytes": 379
+    },
+    "epoch_metrics": {
+      "path": "logs/training_log.csv",
+      "sha256": "acaf12dbebbd59b897c0ba3b49fc7e052c553a021ee279c7ff5f2efbd374044e",
+      "size_bytes": 53146
+    },
+    "last_checkpoint": {
+      "path": "checkpoints/last.pt",
+      "sha256": "bf2bd2695628a65eadc1bf56688449ec09de9d78bc98d7dc1f55ccbc1783702a",
+      "size_bytes": 66246326
+    },
+    "metrics": {
+      "path": "evaluation/metrics.json",
+      "sha256": "ce5bc4cc1d68667fd4c6148d058d645b1443b76a07b1dbbe0da687ba14230ac6",
+      "size_bytes": 2708
+    },
+    "predictions": {
+      "path": "evaluation/test_predictions.json",
+      "sha256": "81598bc25ac564ee90d23769ded4d62e086679583260ff18f54cab3485261072",
+      "size_bytes": 2257726
+    },
+    "resolved_config": {
+      "path": "config.yaml",
+      "sha256": "10c1eb06d8e14c3943a0faa5beaa1e61c65ee022b2c04ed03edecb8ae3c78c48",
+      "size_bytes": 2264
+    },
+    "training_log": {
+      "path": "logs/console.log",
+      "sha256": "d52e69e51cb6bc8b7361e14e3590514da24fd59716bf3d307bfe917adf8ad5f0",
+      "size_bytes": 76209
+    },
+    "training_loss_plot": {
+      "path": "plots/training_loss.png",
+      "sha256": "40c497d17c85d13b9e4a5f0f3e6abbce0a58e717774ceffdb62d30abbbe6f7bf",
+      "size_bytes": 48688
+    },
+    "ultralytics_args": {
+      "path": "framework/args.yaml",
+      "sha256": "243cff0201bf0355452dd6ee4e333ec39235e69de3c6ae9123f183133a10d714",
+      "size_bytes": 1696
+    },
+    "ultralytics_best_checkpoint": {
+      "path": "framework/weights/best.pt",
+      "sha256": "cb8c8e86c2fb4e9641d173b3c8667c50a1e352e6029b5458e89e9a03ba114f36",
+      "size_bytes": 66246326
+    },
+    "ultralytics_last_checkpoint": {
+      "path": "framework/weights/last.pt",
+      "sha256": "bf2bd2695628a65eadc1bf56688449ec09de9d78bc98d7dc1f55ccbc1783702a",
+      "size_bytes": 66246326
+    },
+    "ultralytics_results": {
+      "path": "framework/results.csv",
+      "sha256": "00f21d4a0add3c609a8ac1a7fbd46da560eb6b4aaf3dd9d75f4af35731af20bb",
+      "size_bytes": 54448
+    },
+    "validation_metrics_plot": {
+      "path": "plots/validation_metrics.png",
+      "sha256": "69c211c297385952e28aa01474c6abc3ce39738a9c997ddf2b2d913c4d020ace",
+      "size_bytes": 56101
+    }
+  },
+  "pretrained": {
+    "expected_filename": "rtdetr-l.pt",
+    "framework": "ultralytics",
+    "framework_version": "8.4.9",
+    "identifier": "rtdetr-l.pt",
+    "redistributed": false,
+    "sha256": "6de60b10d4bc566f00cda0f5b4d64afe4b66d48dc9695d2171effb7859d8e73f",
+    "size_bytes": 66511432,
+    "software_license": "AGPL-3.0-only",
+    "source_url": "https://docs.ultralytics.com/models/rtdetr/",
+    "training_dataset": "MS COCO"
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]",
+  "result_status": "reproduced_verified",
+  "status": "succeeded",
+  "verified_at_utc": "2026-09-25T08:31:59.697433+00:00"
+}

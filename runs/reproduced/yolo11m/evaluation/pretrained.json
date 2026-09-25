@@ -1,0 +1,12 @@
+{
+  "expected_filename": "yolo11m.pt",
+  "framework": "ultralytics",
+  "framework_version": "8.4.9",
+  "identifier": "yolo11m.pt",
+  "redistributed": false,
+  "sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95",
+  "size_bytes": 40684120,
+  "software_license": "AGPL-3.0-only",
+  "source_url": "https://docs.ultralytics.com/models/yolo11/",
+  "training_dataset": "MS COCO"
+}

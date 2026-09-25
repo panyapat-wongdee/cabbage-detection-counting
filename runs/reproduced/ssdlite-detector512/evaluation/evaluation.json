@@ -1,0 +1,198 @@
+{
+  "detection_backends": [
+    "cabbage_detection.ap_101"
+  ],
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "results_dir": "results/reproduced/ssdlite-detector512",
+  "splits": {
+    "test": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssdlite-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 3419,
+        "count_error": -0.5179877157063468,
+        "f1": 0.6402210380895994,
+        "false_negatives": 1797,
+        "false_positives": 26,
+        "fdr": 0.015776699029126214,
+        "fnr": 0.5255922784439895,
+        "predicted_count": 1648,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 1622
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.7108246894632364,
+        "map50_95": 0.4351594064404525,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 92,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssdlite-detector512/test/records/predictions.json",
+          "sha256": "6e54cad330b6a16cb585dd32277af016f201c975f50049571542ec9f63d3c6f1"
+        },
+        "targets": {
+          "path": "results/reproduced/ssdlite-detector512/test/records/targets.json",
+          "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+        }
+      }
+    },
+    "train": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssdlite-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 12397,
+        "count_error": -0.5399693474227636,
+        "f1": 0.6251933701657458,
+        "false_negatives": 6739,
+        "false_positives": 45,
+        "fdr": 0.007890583903208837,
+        "fnr": 0.5435992578849722,
+        "predicted_count": 5703,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 5658
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.6743615031034941,
+        "map50_95": 0.43070407370920816,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 320,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssdlite-detector512/train/records/predictions.json",
+          "sha256": "3421b01ca70ef6040a7cbfc819c4ef1d65294b07208e6c30fd380bad292062ff"
+        },
+        "targets": {
+          "path": "results/reproduced/ssdlite-detector512/train/records/targets.json",
+          "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+        }
+      }
+    },
+    "val": {
+      "command": [
+        "scripts/evaluate.py",
+        "--run",
+        "runs/reproduced/ssdlite-detector512",
+        "--dataset",
+        "original_dataset",
+        "--split",
+        "all",
+        "--detection-backend",
+        "repository_ap_101",
+        "--ap-confidence",
+        "0.001",
+        "--native-score-threshold",
+        "0.001"
+      ],
+      "counting": {
+        "actual_count": 1805,
+        "count_error": -0.5362880886426593,
+        "f1": 0.627554882664648,
+        "false_negatives": 976,
+        "false_positives": 8,
+        "fdr": 0.009557945041816009,
+        "fnr": 0.5407202216066482,
+        "predicted_count": 837,
+        "settings": {
+          "aggregation": "micro",
+          "confidence_threshold": 0.5,
+          "iou_threshold": 0.5,
+          "macro_aggregation": "mean_over_images",
+          "matching": "one_to_one_greedy_highest_iou"
+        },
+        "true_positives": 829
+      },
+      "detection": {
+        "backend": "cabbage_detection.ap_101",
+        "map50": 0.6710860448721626,
+        "map50_95": 0.4107861259282954,
+        "settings": {
+          "ap_iou_range": "0.50:0.95 step 0.05",
+          "ap_iou_threshold": 0.5,
+          "backend": "cabbage_detection.ap_101",
+          "backend_selection": "repository_ap_101",
+          "configured_backend": "pycocotools_coco_eval",
+          "export_confidence_threshold": 0.001,
+          "max_detections": 100,
+          "native_score_threshold": 0.001
+        }
+      },
+      "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+      "image_count": 46,
+      "records": {
+        "predictions": {
+          "path": "results/reproduced/ssdlite-detector512/val/records/predictions.json",
+          "sha256": "a0dd7da67337b78c4dd52ac317f314105013395197562ce3723645f0bea6f893"
+        },
+        "targets": {
+          "path": "results/reproduced/ssdlite-detector512/val/records/targets.json",
+          "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+        }
+      }
+    }
+  },
+  "summary_sha256": "57f2faf4c68b50c833ed6ab327cd49ae2a3b86abea721693fbf51dd54636134c"
+}

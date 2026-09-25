@@ -4,7 +4,7 @@ title: "Cabbage Detection and Counting"
 type: software
 license: Apache-2.0
 version: 1.0.0
-date-released: 2026-09-24
+date-released: 2026-09-25
 repository-code: "https://github.com/panyapat-wongdee/cabbage-detection-counting"
 authors:
   - family-names: Wongdee

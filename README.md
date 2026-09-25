@@ -3,6 +3,7 @@
 [![CI](https://github.com/panyapat-wongdee/cabbage-detection-counting/actions/workflows/ci.yml/badge.svg)](https://github.com/panyapat-wongdee/cabbage-detection-counting/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Paper DOI](https://img.shields.io/badge/paper-10.1109%2FKST65016.2025.11003298-informational.svg)](https://doi.org/10.1109/KST65016.2025.11003298)
+[![Checkpoints](https://img.shields.io/badge/checkpoints-v1.0.0-success.svg)](https://github.com/panyapat-wongdee/cabbage-detection-counting/releases/tag/reproduced-checkpoints-v1.0.0)
 
 Source code and reproducibility materials for **A Comparative Study of Deep
 Learning Models for Cabbage Detection and Counting in Drone Imagery**
@@ -28,6 +29,23 @@ later decision. Every run's best checkpoint is published as a release asset.
 The repository is a citation-only, author-maintained reimplementation: it does
 not copy the IEEE paper or its reported metric tables. Every number it reports
 is its own measurement.
+
+<p align="center">
+  <img src="docs/figures/counting_example.jpg" width="820"
+       alt="The same drone image of a cabbage field scored by two models side by side. Left, YOLO12m: 45 true positives, 4 false positives, no missed cabbage. Right, FCOS: 44 true positives, 3 false positives, 1 missed cabbage. Every false positive of both models lies on a plant cut by the image border. Blue boxes are correct detections, orange boxes false positives, dashed violet boxes annotated cabbages the model missed.">
+</p>
+
+*One test image scored by the models with (a) the highest mAP@50:95, YOLO12m‡,
+and (b) the highest counting F1, FCOS, exactly as the counting metric matches
+them: each prediction above confidence 0.5 is matched one-to-one to an
+annotated cabbage at IoU ≥ 0.5. The image was chosen as typical for both
+models (per-image F1 0.957 for each, within 0.008 of that model's median over
+the test split). Every false positive of both models lies on a plant cut by
+the image border. A single image illustrates the metric; the table below ranks
+the models. Image from
+Yokoyama, Matsui & Tanaka, [doi:10.17632/5cp2dyjczk.2](https://doi.org/10.17632/5cp2dyjczk.2),
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); boxes, labels and
+legend added by this repository. Regenerate with `scripts/make_figures.py detection`.*
 
 ## Reproducing the study
 
@@ -56,27 +74,164 @@ recovered fold (320 train / 46 validation / 92 test images), so the rows share
 one metric definition. Detection (mAP@50, mAP@50:95) and counting (count
 error, FDR, FNR, F1 at IoU 0.5 and confidence 0.5) are reported separately.
 
-## Results
+## Reproduced results
 
-The results table, figures, and per-run evidence are produced by the command
-above and committed with its output; this commit holds the code, configurations,
-and documentation that produce them. Train and validation splits are reported
-separately from test and never pooled.
+Every model below was trained and scored by this repository with the command
+above; no value is copied from the paper, and no comparison against the
+published tables is published here. All nineteen runs were trained and
+evaluated at code revision `b0ee13d` with a clean working tree, on the
+recovered `splits/fold1_recovered.csv` fold (320 train / 46 validation / 92
+test images), with one AP backend (`cabbage_detection.ap_101`) so the rows
+share one metric definition.
+
+Test split, 92 images, 3,419 annotated cabbages, sorted by mAP@50:95. Bold
+marks the best value in each accuracy column (highest mAP and F1, lowest FDR
+and FNR, count error closest to zero):
+
+| model | framework | detector input | Params (M) | GFLOPs | mAP@50 | mAP@50:95 | count error | FDR | FNR | F1 |
+|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| YOLO12m‡ | ultralytics | 512×512 | 20.11 | 43.0 | 0.9685 | **0.7340** | +0.0591 | 0.0840 | 0.0298 | 0.9423 |
+| YOLO26m‡ | ultralytics | 512×512 | 20.35 | 43.4 | 0.9687 | 0.7289 | **+0.0228** | 0.0649 | 0.0436 | 0.9456 |
+| RT-DETR-L | ultralytics | 512×512 | 31.99 | 67.4 | 0.9721 | 0.7157 | +0.1302 | 0.1333 | **0.0205** | 0.9197 |
+| YOLO11m | ultralytics | 512×512 | 20.03 | 43.3 | 0.9723 | 0.7156 | +0.0538 | 0.0774 | 0.0278 | 0.9467 |
+| FCOS* | torchvision | 800×800 | 32.06 | 251.0 | 0.9732 | 0.7133 | +0.0366 | 0.0607 | 0.0263 | **0.9562** |
+| YOLO12n‡ | ultralytics | 512×512 | 2.56 | 4.0 | 0.9679 | 0.7047 | +0.0366 | 0.0674 | 0.0333 | 0.9493 |
+| YOLO11n | ultralytics | 512×512 | 2.58 | 4.0 | 0.9703 | 0.6956 | +0.0316 | 0.0621 | 0.0325 | 0.9525 |
+| Faster R-CNN* | torchvision | 800×800 | 41.30 | 267.9 | **0.9739** | 0.6811 | +0.0339 | 0.0645 | 0.0328 | 0.9511 |
+| YOLO26n‡ | ultralytics | 512×512 | 2.38 | 3.3 | 0.9586 | 0.6780 | -0.0407 | 0.0613 | 0.0994 | 0.9192 |
+| RetinaNet* | torchvision | 800×800 | 32.17 | 253.9 | 0.9607 | 0.6779 | +0.0825 | 0.1181 | 0.0453 | 0.9169 |
+| YOLOv8m | ultralytics | 512×512 | 25.84 | 50.4 | 0.9700 | 0.6676 | +0.0684 | 0.0903 | 0.0281 | 0.9398 |
+| YOLOv8n | ultralytics | 512×512 | 3.01 | 5.2 | 0.9670 | 0.5999 | +0.0442 | 0.0770 | 0.0363 | 0.9429 |
+| SSD* | torchvision | 300×300 | 23.75 | 60.9 | 0.9497 | 0.5920 | -0.0573 | 0.0422 | 0.0971 | 0.9295 |
+| SSDLite*† | torchvision | 320×320 | 2.21 | 0.8 | 0.8304 | 0.4781 | -0.4466 | **0.0217** | 0.4586 | 0.6970 |
+
+\* the torchvision rows lowered the detector's own score gate so AP covers the
+full score range; that deviation is recorded in each split's `metadata.json`.
+Counting metrics are micro-averaged over the split at IoU 0.5 and confidence
+0.5; `count_error` is signed, so a positive value is an over-count.
+
+*Detector input* is the size the backbone actually received in these runs.
+Every config resizes images to 512×512 first; the torchvision detectors then
+resize again inside their own transform, to torchvision's defaults (800×800
+for Faster R-CNN, RetinaNet and FCOS; 300×300 for SSD; 320×320 for SSDLite).
+This is also how the published study ran: its author confirms that the
+torchvision detectors were used unmodified. See
+[Detector input size](docs/reproduction-protocol.md#detector-input-size).
+
+*Params* and *GFLOPs* describe each model as it was run: parameters of the
+released checkpoint, and FLOPs per image at the detector input it actually
+received (the *detector input* column), so the torchvision rows are counted at
+800×800, 300×300 or 320×320. FLOPs are 2 × multiply-accumulates without
+post-processing (NMS), counted with `torchinfo` for torchvision and
+Ultralytics' own `model_info` for Ultralytics, and cross-checked with
+`torch.utils.flop_counter`
+([`results/reproduced/model_complexity.json`](results/reproduced/model_complexity.json),
+which also holds every model at a common 512×512 input). Both follow the
+frameworks' published conventions, which the counts reproduce: Ultralytics
+models are counted after BatchNorm fusion, as Ultralytics runs them and reports
+them, and the torchvision backbones' frozen BatchNorm holds no parameters.
+Faster R-CNN's count is the upper bound with the full 1,000 RPN proposals;
+real images yield fewer proposals and slightly fewer FLOPs. The Ultralytics
+counter (thop) does not charge the matrix products inside attention, which
+Ultralytics' published figures share: for RT-DETR-L and YOLO12 the
+`torch.utils.flop_counter` cross-check is 2–10% higher (in the JSON).
+
+† SSDLite was not one of the architectures compared in the paper, so its row
+must not be read as a published comparison. It was trained and scored exactly
+like the other nine, and it is the clearest case for reporting counting
+separately: at the shared 0.5 operating point it misses 46% of the cabbages
+(FNR 0.4586) while being the *most* precise model on the ones it does report
+(FDR 0.0217), which a detection-only table would not show.
+
+‡ YOLO12 and YOLO26 were added by this repository after the study and were
+never part of it. Their profiles copy the YOLO11 profile of the same size
+setting for setting. RT-DETR-L and YOLO26 are end-to-end detectors and apply no
+NMS; every other model applies NMS.
+
+The counting columns separate two different failure modes that mAP hides: on
+this split RT-DETR-L finds the most cabbages (lowest FNR, 0.0205) while
+over-counting the most (+13.0%, FDR 0.1333), FCOS gives the best counting
+balance (F1 0.9562) without leading either detection column, and YOLO26m's
+total count is the closest to the truth (+2.3%). YOLO12m has the highest
+mAP@50:95 (0.7340) but not the best counting. The runs are single training runs
+scored on 92 test images, with no repeated seeds, so differences of a few
+thousandths should not be over-read.
+
+![Two scatter plots. (a) mAP@50:95 against GFLOPs at each model's own detector input on a log scale, bubble area proportional to parameters: the medium YOLO models, YOLO12m highest, reach the top mAP at about 43 GFLOPs, while Faster R-CNN, RetinaNet and FCOS spend 250 to 270 GFLOPs for similar or lower accuracy. (b) mAP@50:95 against counting F1: FCOS has the highest F1, and RT-DETR-L, YOLO26n and RetinaNet have the lowest F1 apart from SSDLite.](docs/figures/model_comparison_test.png)
+
+*(a) Detection accuracy against computation, with each model at the GFLOPs of
+its own run as in the table (the torchvision detectors at 800×800, 300×300 or
+320×320), bubble area proportional to parameters; bubbles are translucent where
+the medium YOLO models overlap. (b) Detection accuracy against counting F1.
+SSDLite lies outside both plotted ranges. Circles are torchvision, triangles
+Ultralytics; hollow marks † and tinted marks ‡. Vector version:
+[`model_comparison_test.svg`](docs/figures/model_comparison_test.svg).*
+
+The full per-split tables, per-image rows, plots, and provenance are under
+[`results/reproduced/`](results/reproduced/); train and validation splits are
+reported there separately and are never pooled with test. The comparison table
+is generated rather than typed; `scripts/reproduce_all.py` runs the first two
+steps:
+
+```powershell
+python scripts/compare_models.py --split test
+python scripts/measure_complexity.py --run runs/reproduced/yolo11m   # repeat --run per run
+python scripts/make_figures.py comparison
+python scripts/make_tables.py results                                  # the table above
+```
+
+All fourteen runs, and the five runs of the input-size experiment below, have
+been promoted to `result_status: reproduced_verified` in
+their `runs/reproduced/<run>/metadata.json`, which means each one carries the
+resolved config, launch command, code revision and dirty state, environment,
+dataset DOI/version with annotation and split-manifest digests, base-weight
+identifier/source URL/digest, evaluation settings, deviations, and re-verified
+SHA-256 digests for its checkpoints, predictions, and metrics. That is a
+verified *repository* reproduction: it says the numbers trace to executed runs
+with complete evidence, not that they match the paper's published values, which
+this repository does not restate or compare against.
 
 ## Controlled experiment: detector input size
 
-Every config resizes images to 512×512, but the torchvision detectors then
-resize again inside their own transform, to torchvision's defaults (800×800
-for Faster R-CNN, RetinaNet and FCOS; 300×300 for SSD; 320×320 for SSDLite), as
-the published study also did. The five `configs/torchvision/detector_input_512/`
-profiles repeat those runs with a single change: the detector keeps the
-configured 512×512 input. (SSD at 512 is SSD300 with its 300-pixel anchor steps
-cleared, not the SSD512 architecture.) Every other setting, the split, and the
-scoring are identical, and the comparison is generated with:
+The torchvision rows above use each detector's own internal resize, so the
+table compares architectures at different input sizes. The five
+`configs/torchvision/detector_input_512/` profiles repeat those runs with a
+single change: the detector keeps the configured 512×512 input. (SSD at 512 is
+SSD300 with its 300-pixel anchor steps cleared, not the SSD512 architecture.)
+Every other setting, the split, and the scoring are identical:
+
+| model | detector input | GFLOPs at that input | mAP@50 | mAP@50:95 | count error | FDR | FNR | F1 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| FCOS* | 800×800 (torchvision default) | 251.0 | 0.9732 | 0.7133 | +0.0366 | 0.0607 | 0.0263 | 0.9562 |
+| FCOS* | 512×512 (configured image_size) | 102.7 | 0.9723 | 0.6789 | +0.0322 | 0.0655 | 0.0354 | 0.9493 |
+| Faster R-CNN* | 800×800 (torchvision default) | 267.9 | 0.9739 | 0.6811 | +0.0339 | 0.0645 | 0.0328 | 0.9511 |
+| Faster R-CNN* | 512×512 (configured image_size) | 126.2 | 0.9712 | 0.6495 | +0.0067 | 0.0526 | 0.0462 | 0.9506 |
+| RetinaNet* | 800×800 (torchvision default) | 253.9 | 0.9607 | 0.6779 | +0.0825 | 0.1181 | 0.0453 | 0.9169 |
+| RetinaNet* | 512×512 (configured image_size) | 103.9 | 0.9547 | 0.6378 | +0.0927 | 0.1298 | 0.0491 | 0.9087 |
+| SSD* | 300×300 (torchvision default) | 60.9 | 0.9497 | 0.5920 | -0.0573 | 0.0422 | 0.0971 | 0.9295 |
+| SSD* | 512×512 (configured image_size) | 175.3 | 0.8954 | 0.6131 | -0.0980 | 0.0302 | 0.1252 | 0.9199 |
+| SSDLite*† | 320×320 (torchvision default) | 0.8 | 0.8304 | 0.4781 | -0.4466 | 0.0217 | 0.4586 | 0.6970 |
+| SSDLite*† | 512×512 (configured image_size) | 2.1 | 0.7108 | 0.4352 | -0.5180 | 0.0158 | 0.5256 | 0.6402 |
+
+- **Faster R-CNN, RetinaNet, FCOS (800 → 512):** mAP@50:95 falls by 0.032–0.040
+  at 41–47% of the compute, while counting F1 moves by at most 0.008.
+- **SSD (300 → 512):** mAP@50:95 rises by 0.021 but mAP@50 falls by 0.054 and
+  FNR rises from 0.097 to 0.125, at 2.9× the compute.
+- **SSDLite (320 → 512):** worse on every metric except FDR, which falls from
+  0.022 to 0.016 as the model reports even fewer cabbages; FNR rises from 0.46
+  to 0.53. Its low recall is therefore not explained by the smaller input.
+
+With all fourteen models at a common 512×512 input, the medium YOLO models lead
+mAP@50:95 (YOLO12m 0.7340, YOLO26m 0.7289); the best torchvision model, FCOS,
+ranks seventh at 0.6789, behind RT-DETR-L and the small YOLO11n and YOLO12n as
+well. Its counting lead does not survive the smaller input either: at 512×512
+YOLO11n has the highest counting F1 (0.9525), ahead of Faster R-CNN (0.9506)
+and FCOS (0.9493). That table is generated as
+[`results/reproduced/model_comparison_test_detector512.md`](results/reproduced/model_comparison_test_detector512.md):
 
 ```powershell
 python scripts/compare_models.py --split test --variant detector512
-python scripts/make_tables.py input-size
+python scripts/make_tables.py input-size                               # the table above
 ```
 
 These runs are a repository experiment, not a reproduction of the paper. Their
@@ -87,16 +242,16 @@ and must be used with their `detector_input_512` configs.
 
 The repository tracks the evidence; the weights are release assets.
 
-| artifact | location |
-|---|---|
-| evaluation metrics, per-image rows, plots, per-split provenance | Git, under [`results/reproduced/`](results/reproduced/) |
-| run metadata, config, training logs, curves, promotion evidence | Git, under `runs/reproduced/<run>/` |
-| best checkpoints of every run | `reproduced-checkpoints-v1.0.0` release assets |
-| `checkpoints/last.pt`, Ultralytics `framework/`, prediction record dumps | not published; regenerable from a checkpoint |
+| artifact | size | location |
+|---|---|---|
+| evaluation metrics, per-image rows, plots, per-split provenance | 5.9 MB | Git, under [`results/reproduced/`](results/reproduced/) |
+| run metadata, config, training logs, curves, promotion evidence | 6.1 MB | Git, under `runs/reproduced/<run>/` |
+| best checkpoints of all nineteen runs | 2.4 GB | `reproduced-checkpoints-v1.0.0` release assets |
+| `checkpoints/last.pt`, Ultralytics `framework/`, prediction record dumps | — | not published; regenerable from a checkpoint |
 
 Evidence stays in Git because a release asset can be replaced while Git history
 cannot, and a `reproduced_verified` claim has to be checkable after the fact.
-The checkpoints are too large for Git (several exceed GitHub's 100 MB per-file
+The checkpoints are too large for Git (eight exceed GitHub's 100 MB per-file
 limit) and are identified by the SHA-256 digests the tracked metadata records,
 so a download can be verified against them.
 
@@ -120,7 +275,9 @@ python scripts/predict.py `
 The output is one JSON record per image with a box, score, and class for every
 detection above the config's confidence threshold (0.5). Ultralytics boxes are
 in original image pixels; torchvision boxes (`configs/torchvision/*.yaml`) are
-in the resized `training.image_size` space.
+in the resized `training.image_size` space. Choose a model from the table
+above: FCOS and YOLO11n give the best counting balance, and YOLO26n is the
+smallest download (5.4 MB).
 
 How the archives are built from the verified runs and uploaded is the
 maintainer procedure in [`docs/releases/publishing.md`](docs/releases/publishing.md).
@@ -402,8 +559,13 @@ reproduces the narrow export detection for detection. It was verified on both
 frameworks over the test split (92/92 images identical), and counting metrics
 are unchanged to every digit.
 
-The effect on AP can be large, especially for a model with a long low-score
-tail, so the two numbers must not be mixed in one table.
+The measured effect on AP is large, so the two numbers must not be mixed in one
+table:
+
+| run | mAP@50 at conf > 0.5 | mAP@50 full range |
+|---|---|---|
+| yolov8n | 0.9524 | 0.9670 |
+| ssdlite | 0.5418 | 0.8304 |
 
 torchvision detectors additionally apply their own score gate before the
 repository sees an output (FCOS at 0.2, Faster R-CNN and RetinaNet at 0.05, SSD
@@ -597,7 +759,8 @@ described in [`SECURITY.md`](SECURITY.md).
 
 ## Limitations
 
-- The external dataset is not bundled and must be obtained separately.
+- The external dataset is not bundled and must be obtained separately; the one
+  example image in `docs/figures/` is an attributed CC BY 4.0 adaptation.
 - Reproduction requires framework versions, model weights, and compute not needed by the lightweight tests.
 - Historical experiment files are private provenance inputs and are not part of the public tree.
 - Paper content remains external; the reproduced numbers come from executed repository runs
@@ -609,7 +772,7 @@ described in [`SECURITY.md`](SECURITY.md).
   model.
 - The torchvision detectors resize internally to 800×800, 300×300 or 320×320
   after the configured 512×512 resize, as the published study also did; the
-  results table therefore compares models at different input sizes. The
+  main table therefore compares models at different input sizes. The
   controlled 512×512 experiment isolates that effect for the five models it
   covers.
 - GFLOPs follow each framework's published counting convention; the

@@ -1,0 +1,9 @@
+{
+  "annotation_sha256": "f5bbb6bdffc198f782288b0320aa30d1b179384a7e6176bfdf7c8ca1a780e295",
+  "doi": "10.17632/5cp2dyjczk.2",
+  "license": "CC BY 4.0",
+  "redistributed": false,
+  "split_manifest": "splits/fold1_recovered.csv",
+  "split_manifest_sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+  "version": "2"
+}

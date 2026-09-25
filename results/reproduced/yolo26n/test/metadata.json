@@ -1,0 +1,174 @@
+{
+  "command": [
+    "scripts/evaluate.py",
+    "--run",
+    "runs/reproduced/yolo26n",
+    "--dataset",
+    "original_dataset",
+    "--split",
+    "all",
+    "--detection-backend",
+    "repository_ap_101",
+    "--ap-confidence",
+    "0.001"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/yolo26n",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": false,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": null,
+      "mode": null,
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "yolo",
+      "labels_dirname": null,
+      "root": "prepared/fold1_yolo",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": "prepared/fold1_yolo/data.yaml"
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "repository_ap_101",
+      "confidence_owner": "ultralytics",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "none"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": false,
+      "nms_owner": "none"
+    },
+    "initialization": {
+      "num_classes": 1,
+      "weights": "yolo26n.pt"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "ultralytics",
+      "name": "yolo26n"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": false
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "repository_protocol",
+      "evaluation": "repository_protocol",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "repository_protocol",
+      "native_training": "repository_protocol",
+      "scheduler": "repository_protocol",
+      "training.checkpoint_selection": "framework_default",
+      "training.epochs": "repository_protocol",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": 1.0,
+      "gamma": null,
+      "name": "constant",
+      "step_size": null
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "ultralytics",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": false,
+      "nms_owner": "none"
+    }
+  },
+  "created_at_utc": "2026-09-25T04:02:18.209873+00:00",
+  "deviations": [],
+  "evaluation": {
+    "counting": {
+      "aggregation": "micro",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "matching": "one_to_one_greedy_highest_iou"
+    },
+    "detection": {
+      "ap_iou_range": "0.50:0.95 step 0.05",
+      "ap_iou_threshold": 0.5,
+      "backend": "cabbage_detection.ap_101",
+      "backend_selection": "repository_ap_101",
+      "configured_backend": "repository_ap_101",
+      "export_confidence_threshold": 0.001,
+      "max_detections": 100,
+      "native_score_threshold": null
+    },
+    "tasks": [
+      "detection",
+      "counting"
+    ]
+  },
+  "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+  "input_schema": "canonical",
+  "inputs": {
+    "predictions": {
+      "path": "results/reproduced/yolo26n/test/records/predictions.json",
+      "sha256": "e75e5b6a597ccc7dce4c4f4b5d60e161e05edae0e5b4905f62ccf25492683f76"
+    },
+    "targets": {
+      "path": "results/reproduced/yolo26n/test/records/targets.json",
+      "sha256": "4895be6df09851a4124689e40818b9971c7d57424d7193ea06fd70363fcdcf43"
+    }
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+}

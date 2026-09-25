@@ -1,0 +1,12 @@
+{
+  "expected_filename": "retinanet_resnet50_fpn_coco-eeacb38b.pth",
+  "framework": "torchvision",
+  "framework_version": "0.20.1",
+  "identifier": "RetinaNet_ResNet50_FPN_Weights.COCO_V1",
+  "redistributed": false,
+  "sha256": "eeacb38b7cec8cf93c57867e05eaab621047f19b0d2ec5accaa405f690da15b7",
+  "size_bytes": 136595076,
+  "software_license": "BSD-3-Clause",
+  "source_url": "https://download.pytorch.org/models/retinanet_resnet50_fpn_coco-eeacb38b.pth",
+  "training_dataset": "MS COCO"
+}

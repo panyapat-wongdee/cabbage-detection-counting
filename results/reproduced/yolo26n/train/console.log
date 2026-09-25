@@ -1,0 +1,6 @@
+record generation started: split=train images=320 framework=ultralytics export_confidence=0.001
+record generation complete: predictions=320 targets=320
+detection evaluation complete: backend=cabbage_detection.ap_101 map50=0.973438 map50_95=0.716309
+counting evaluation started: images=320
+counting evaluation complete: images=320 report=counting.json
+evaluation complete: tasks=detection,counting

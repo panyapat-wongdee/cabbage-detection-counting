@@ -1,0 +1,2558 @@
+torchvision training started: model=retinanet device=cuda:0 epochs=500
+epoch 1/500 training
+epoch 1/500 validation
+epoch 1/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 1 metric=0.000000
+epoch=1 train_loss=1.688038 lr=0.001 selection=val_map_50_95:0.000000 best=true images=320/320 skipped=0 elapsed=21.18s val_loss=1.609958 val_map50=0.000000 val_map50_95=0.000000
+epoch 2/500 training
+epoch 2/500 validation
+epoch 2/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=2 train_loss=1.567281 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=31.71s val_loss=1.507201 val_map50=0.000000 val_map50_95=0.000000
+epoch 3/500 training
+epoch 3/500 validation
+epoch 3/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=3 train_loss=1.516127 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=40.99s val_loss=1.478309 val_map50=0.000000 val_map50_95=0.000000
+epoch 4/500 training
+epoch 4/500 validation
+epoch 4/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=4 train_loss=1.482029 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=49.62s val_loss=1.449651 val_map50=0.000000 val_map50_95=0.000000
+epoch 5/500 training
+epoch 5/500 validation
+epoch 5/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=5 train_loss=1.458242 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=57.71s val_loss=1.437185 val_map50=0.000000 val_map50_95=0.000000
+epoch 6/500 training
+epoch 6/500 validation
+epoch 6/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=6 train_loss=1.446721 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=66.24s val_loss=1.416162 val_map50=0.000000 val_map50_95=0.000000
+epoch 7/500 training
+epoch 7/500 validation
+epoch 7/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=7 train_loss=1.426508 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=73.85s val_loss=1.398861 val_map50=0.000000 val_map50_95=0.000000
+epoch 8/500 training
+epoch 8/500 validation
+epoch 8/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=8 train_loss=1.402830 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=81.67s val_loss=1.367066 val_map50=0.000000 val_map50_95=0.000000
+epoch 9/500 training
+epoch 9/500 validation
+epoch 9/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=9 train_loss=1.344191 lr=0.001 selection=val_map_50_95:0.000000 best=false images=320/320 skipped=0 elapsed=89.80s val_loss=1.150934 val_map50=0.000000 val_map50_95=0.000000
+epoch 10/500 training
+epoch 10/500 validation
+epoch 10/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 10 metric=0.008101
+epoch=10 train_loss=0.900232 lr=0.001 selection=val_map_50_95:0.008101 best=true images=320/320 skipped=0 elapsed=99.32s val_loss=0.720417 val_map50=0.016502 val_map50_95=0.008101
+epoch 11/500 training
+epoch 11/500 validation
+epoch 11/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 11 metric=0.050440
+epoch=11 train_loss=0.699781 lr=0.001 selection=val_map_50_95:0.050440 best=true images=320/320 skipped=0 elapsed=108.63s val_loss=0.625728 val_map50=0.112487 val_map50_95=0.050440
+epoch 12/500 training
+epoch 12/500 validation
+epoch 12/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=12 train_loss=0.648474 lr=0.001 selection=val_map_50_95:0.007597 best=false images=320/320 skipped=0 elapsed=116.52s val_loss=0.632264 val_map50=0.009901 val_map50_95=0.007597
+epoch 13/500 training
+epoch 13/500 validation
+epoch 13/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 13 metric=0.054087
+epoch=13 train_loss=0.637170 lr=0.001 selection=val_map_50_95:0.054087 best=true images=320/320 skipped=0 elapsed=125.91s val_loss=0.599099 val_map50=0.106819 val_map50_95=0.054087
+epoch 14/500 training
+epoch 14/500 validation
+epoch 14/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 14 metric=0.077964
+epoch=14 train_loss=0.613695 lr=0.001 selection=val_map_50_95:0.077964 best=true images=320/320 skipped=0 elapsed=134.96s val_loss=0.569646 val_map50=0.152847 val_map50_95=0.077964
+epoch 15/500 training
+epoch 15/500 validation
+epoch 15/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 15 metric=0.177116
+epoch=15 train_loss=0.582546 lr=0.001 selection=val_map_50_95:0.177116 best=true images=320/320 skipped=0 elapsed=145.13s val_loss=0.558579 val_map50=0.396276 val_map50_95=0.177116
+epoch 16/500 training
+epoch 16/500 validation
+epoch 16/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 16 metric=0.196283
+epoch=16 train_loss=0.565530 lr=0.001 selection=val_map_50_95:0.196283 best=true images=320/320 skipped=0 elapsed=154.92s val_loss=0.532770 val_map50=0.411823 val_map50_95=0.196283
+epoch 17/500 training
+epoch 17/500 validation
+epoch 17/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=17 train_loss=0.563723 lr=0.001 selection=val_map_50_95:0.091801 best=false images=320/320 skipped=0 elapsed=163.30s val_loss=0.546378 val_map50=0.184038 val_map50_95=0.091801
+epoch 18/500 training
+epoch 18/500 validation
+epoch 18/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 18 metric=0.199619
+epoch=18 train_loss=0.560904 lr=0.001 selection=val_map_50_95:0.199619 best=true images=320/320 skipped=0 elapsed=173.90s val_loss=0.539806 val_map50=0.454434 val_map50_95=0.199619
+epoch 19/500 training
+epoch 19/500 validation
+epoch 19/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 19 metric=0.235346
+epoch=19 train_loss=0.537945 lr=0.001 selection=val_map_50_95:0.235346 best=true images=320/320 skipped=0 elapsed=183.90s val_loss=0.524321 val_map50=0.508672 val_map50_95=0.235346
+epoch 20/500 training
+epoch 20/500 validation
+epoch 20/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 20 metric=0.254748
+epoch=20 train_loss=0.548844 lr=0.001 selection=val_map_50_95:0.254748 best=true images=320/320 skipped=0 elapsed=193.77s val_loss=0.506572 val_map50=0.532719 val_map50_95=0.254748
+epoch 21/500 training
+epoch 21/500 validation
+epoch 21/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=21 train_loss=0.528963 lr=0.001 selection=val_map_50_95:0.222501 best=false images=320/320 skipped=0 elapsed=202.77s val_loss=0.513547 val_map50=0.498012 val_map50_95=0.222501
+epoch 22/500 training
+epoch 22/500 validation
+epoch 22/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=22 train_loss=0.520014 lr=0.001 selection=val_map_50_95:0.206542 best=false images=320/320 skipped=0 elapsed=211.32s val_loss=0.503728 val_map50=0.454783 val_map50_95=0.206542
+epoch 23/500 training
+epoch 23/500 validation
+epoch 23/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 23 metric=0.265302
+epoch=23 train_loss=0.526692 lr=0.001 selection=val_map_50_95:0.265302 best=true images=320/320 skipped=0 elapsed=220.97s val_loss=0.494061 val_map50=0.553704 val_map50_95=0.265302
+epoch 24/500 training
+epoch 24/500 validation
+epoch 24/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 24 metric=0.274983
+epoch=24 train_loss=0.510550 lr=0.001 selection=val_map_50_95:0.274983 best=true images=320/320 skipped=0 elapsed=230.84s val_loss=0.485922 val_map50=0.571557 val_map50_95=0.274983
+epoch 25/500 training
+epoch 25/500 validation
+epoch 25/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 25 metric=0.275354
+epoch=25 train_loss=0.515654 lr=0.001 selection=val_map_50_95:0.275354 best=true images=320/320 skipped=0 elapsed=240.38s val_loss=0.486209 val_map50=0.550121 val_map50_95=0.275354
+epoch 26/500 training
+epoch 26/500 validation
+epoch 26/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 26 metric=0.300047
+epoch=26 train_loss=0.507696 lr=0.001 selection=val_map_50_95:0.300047 best=true images=320/320 skipped=0 elapsed=250.48s val_loss=0.487226 val_map50=0.620968 val_map50_95=0.300047
+epoch 27/500 training
+epoch 27/500 validation
+epoch 27/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=27 train_loss=0.495856 lr=0.001 selection=val_map_50_95:0.280952 best=false images=320/320 skipped=0 elapsed=259.44s val_loss=0.469578 val_map50=0.539229 val_map50_95=0.280952
+epoch 28/500 training
+epoch 28/500 validation
+epoch 28/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=28 train_loss=0.499971 lr=0.001 selection=val_map_50_95:0.285002 best=false images=320/320 skipped=0 elapsed=268.45s val_loss=0.471549 val_map50=0.580140 val_map50_95=0.285002
+epoch 29/500 training
+epoch 29/500 validation
+epoch 29/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=29 train_loss=0.489718 lr=0.001 selection=val_map_50_95:0.284231 best=false images=320/320 skipped=0 elapsed=277.61s val_loss=0.464114 val_map50=0.546718 val_map50_95=0.284231
+epoch 30/500 training
+epoch 30/500 validation
+epoch 30/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 30 metric=0.322337
+epoch=30 train_loss=0.480209 lr=0.001 selection=val_map_50_95:0.322337 best=true images=320/320 skipped=0 elapsed=287.63s val_loss=0.464987 val_map50=0.648764 val_map50_95=0.322337
+epoch 31/500 training
+epoch 31/500 validation
+epoch 31/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 31 metric=0.349557
+epoch=31 train_loss=0.479484 lr=0.001 selection=val_map_50_95:0.349557 best=true images=320/320 skipped=0 elapsed=297.68s val_loss=0.443970 val_map50=0.651624 val_map50_95=0.349557
+epoch 32/500 training
+epoch 32/500 validation
+epoch 32/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=32 train_loss=0.468450 lr=0.001 selection=val_map_50_95:0.347916 best=false images=320/320 skipped=0 elapsed=308.26s val_loss=0.449358 val_map50=0.681344 val_map50_95=0.347916
+epoch 33/500 training
+epoch 33/500 validation
+epoch 33/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 33 metric=0.378429
+epoch=33 train_loss=0.455945 lr=0.001 selection=val_map_50_95:0.378429 best=true images=320/320 skipped=0 elapsed=318.12s val_loss=0.434919 val_map50=0.692332 val_map50_95=0.378429
+epoch 34/500 training
+epoch 34/500 validation
+epoch 34/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=34 train_loss=0.458445 lr=0.001 selection=val_map_50_95:0.348739 best=false images=320/320 skipped=0 elapsed=327.67s val_loss=0.449851 val_map50=0.684539 val_map50_95=0.348739
+epoch 35/500 training
+epoch 35/500 validation
+epoch 35/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 35 metric=0.404650
+epoch=35 train_loss=0.450418 lr=0.001 selection=val_map_50_95:0.404650 best=true images=320/320 skipped=0 elapsed=340.89s val_loss=0.428903 val_map50=0.745735 val_map50_95=0.404650
+epoch 36/500 training
+epoch 36/500 validation
+epoch 36/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=36 train_loss=0.450126 lr=0.001 selection=val_map_50_95:0.400147 best=false images=320/320 skipped=0 elapsed=350.25s val_loss=0.423615 val_map50=0.710302 val_map50_95=0.400147
+epoch 37/500 training
+epoch 37/500 validation
+epoch 37/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 37 metric=0.426078
+epoch=37 train_loss=0.445716 lr=0.001 selection=val_map_50_95:0.426078 best=true images=320/320 skipped=0 elapsed=360.36s val_loss=0.421550 val_map50=0.759565 val_map50_95=0.426078
+epoch 38/500 training
+epoch 38/500 validation
+epoch 38/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=38 train_loss=0.448021 lr=0.001 selection=val_map_50_95:0.422280 best=false images=320/320 skipped=0 elapsed=369.75s val_loss=0.420007 val_map50=0.757512 val_map50_95=0.422280
+epoch 39/500 training
+epoch 39/500 validation
+epoch 39/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 39 metric=0.432219
+epoch=39 train_loss=0.446304 lr=0.001 selection=val_map_50_95:0.432219 best=true images=320/320 skipped=0 elapsed=379.90s val_loss=0.420787 val_map50=0.781552 val_map50_95=0.432219
+epoch 40/500 training
+epoch 40/500 validation
+epoch 40/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=40 train_loss=0.440475 lr=0.001 selection=val_map_50_95:0.406125 best=false images=320/320 skipped=0 elapsed=389.07s val_loss=0.423442 val_map50=0.703045 val_map50_95=0.406125
+epoch 41/500 training
+epoch 41/500 validation
+epoch 41/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 41 metric=0.443201
+epoch=41 train_loss=0.434182 lr=0.001 selection=val_map_50_95:0.443201 best=true images=320/320 skipped=0 elapsed=399.18s val_loss=0.415603 val_map50=0.776711 val_map50_95=0.443201
+epoch 42/500 training
+epoch 42/500 validation
+epoch 42/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=42 train_loss=0.432144 lr=0.001 selection=val_map_50_95:0.431597 best=false images=320/320 skipped=0 elapsed=408.35s val_loss=0.408800 val_map50=0.750342 val_map50_95=0.431597
+epoch 43/500 training
+epoch 43/500 validation
+epoch 43/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=43 train_loss=0.427807 lr=0.001 selection=val_map_50_95:0.438151 best=false images=320/320 skipped=0 elapsed=417.70s val_loss=0.421153 val_map50=0.789130 val_map50_95=0.438151
+epoch 44/500 training
+epoch 44/500 validation
+epoch 44/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=44 train_loss=0.433828 lr=0.001 selection=val_map_50_95:0.413341 best=false images=320/320 skipped=0 elapsed=427.03s val_loss=0.419322 val_map50=0.766189 val_map50_95=0.413341
+epoch 45/500 training
+epoch 45/500 validation
+epoch 45/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=45 train_loss=0.421512 lr=0.001 selection=val_map_50_95:0.439750 best=false images=320/320 skipped=0 elapsed=436.40s val_loss=0.405910 val_map50=0.769054 val_map50_95=0.439750
+epoch 46/500 training
+epoch 46/500 validation
+epoch 46/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 46 metric=0.450568
+epoch=46 train_loss=0.425401 lr=0.001 selection=val_map_50_95:0.450568 best=true images=320/320 skipped=0 elapsed=446.55s val_loss=0.401709 val_map50=0.759056 val_map50_95=0.450568
+epoch 47/500 training
+epoch 47/500 validation
+epoch 47/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 47 metric=0.460142
+epoch=47 train_loss=0.433075 lr=0.001 selection=val_map_50_95:0.460142 best=true images=320/320 skipped=0 elapsed=456.67s val_loss=0.396955 val_map50=0.791917 val_map50_95=0.460142
+epoch 48/500 training
+epoch 48/500 validation
+epoch 48/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 48 metric=0.468626
+epoch=48 train_loss=0.422455 lr=0.001 selection=val_map_50_95:0.468626 best=true images=320/320 skipped=0 elapsed=467.95s val_loss=0.405505 val_map50=0.811198 val_map50_95=0.468626
+epoch 49/500 training
+epoch 49/500 validation
+epoch 49/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 49 metric=0.477422
+epoch=49 train_loss=0.413439 lr=0.001 selection=val_map_50_95:0.477422 best=true images=320/320 skipped=0 elapsed=478.06s val_loss=0.393138 val_map50=0.803790 val_map50_95=0.477422
+epoch 50/500 training
+epoch 50/500 validation
+epoch 50/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=50 train_loss=0.414756 lr=0.001 selection=val_map_50_95:0.464344 best=false images=320/320 skipped=0 elapsed=487.40s val_loss=0.396267 val_map50=0.800042 val_map50_95=0.464344
+epoch 51/500 training
+epoch 51/500 validation
+epoch 51/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=51 train_loss=0.411748 lr=0.001 selection=val_map_50_95:0.471421 best=false images=320/320 skipped=0 elapsed=496.78s val_loss=0.397841 val_map50=0.799151 val_map50_95=0.471421
+epoch 52/500 training
+epoch 52/500 validation
+epoch 52/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=52 train_loss=0.407218 lr=0.001 selection=val_map_50_95:0.468149 best=false images=320/320 skipped=0 elapsed=506.14s val_loss=0.394491 val_map50=0.792107 val_map50_95=0.468149
+epoch 53/500 training
+epoch 53/500 validation
+epoch 53/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 53 metric=0.483593
+epoch=53 train_loss=0.407218 lr=0.001 selection=val_map_50_95:0.483593 best=true images=320/320 skipped=0 elapsed=517.76s val_loss=0.381785 val_map50=0.803958 val_map50_95=0.483593
+epoch 54/500 training
+epoch 54/500 validation
+epoch 54/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 54 metric=0.484208
+epoch=54 train_loss=0.405344 lr=0.001 selection=val_map_50_95:0.484208 best=true images=320/320 skipped=0 elapsed=527.92s val_loss=0.382776 val_map50=0.812745 val_map50_95=0.484208
+epoch 55/500 training
+epoch 55/500 validation
+epoch 55/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=55 train_loss=0.401177 lr=0.001 selection=val_map_50_95:0.465526 best=false images=320/320 skipped=0 elapsed=537.23s val_loss=0.390611 val_map50=0.787282 val_map50_95=0.465526
+epoch 56/500 training
+epoch 56/500 validation
+epoch 56/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=56 train_loss=0.410800 lr=0.001 selection=val_map_50_95:0.470290 best=false images=320/320 skipped=0 elapsed=546.68s val_loss=0.402139 val_map50=0.819995 val_map50_95=0.470290
+epoch 57/500 training
+epoch 57/500 validation
+epoch 57/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=57 train_loss=0.398332 lr=0.001 selection=val_map_50_95:0.481398 best=false images=320/320 skipped=0 elapsed=556.01s val_loss=0.387296 val_map50=0.815176 val_map50_95=0.481398
+epoch 58/500 training
+epoch 58/500 validation
+epoch 58/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=58 train_loss=0.401753 lr=0.001 selection=val_map_50_95:0.477039 best=false images=320/320 skipped=0 elapsed=565.24s val_loss=0.383972 val_map50=0.796199 val_map50_95=0.477039
+epoch 59/500 training
+epoch 59/500 validation
+epoch 59/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=59 train_loss=0.402045 lr=0.001 selection=val_map_50_95:0.469771 best=false images=320/320 skipped=0 elapsed=574.50s val_loss=0.386341 val_map50=0.805641 val_map50_95=0.469771
+epoch 60/500 training
+epoch 60/500 validation
+epoch 60/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=60 train_loss=0.397297 lr=0.001 selection=val_map_50_95:0.472542 best=false images=320/320 skipped=0 elapsed=583.78s val_loss=0.385888 val_map50=0.815390 val_map50_95=0.472542
+epoch 61/500 training
+epoch 61/500 validation
+epoch 61/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 61 metric=0.493266
+epoch=61 train_loss=0.397530 lr=0.001 selection=val_map_50_95:0.493266 best=true images=320/320 skipped=0 elapsed=594.20s val_loss=0.378754 val_map50=0.833085 val_map50_95=0.493266
+epoch 62/500 training
+epoch 62/500 validation
+epoch 62/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 62 metric=0.493786
+epoch=62 train_loss=0.394456 lr=0.001 selection=val_map_50_95:0.493786 best=true images=320/320 skipped=0 elapsed=604.28s val_loss=0.373267 val_map50=0.824889 val_map50_95=0.493786
+epoch 63/500 training
+epoch 63/500 validation
+epoch 63/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 63 metric=0.502571
+epoch=63 train_loss=0.398977 lr=0.001 selection=val_map_50_95:0.502571 best=true images=320/320 skipped=0 elapsed=614.37s val_loss=0.375245 val_map50=0.837611 val_map50_95=0.502571
+epoch 64/500 training
+epoch 64/500 validation
+epoch 64/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=64 train_loss=0.396741 lr=0.001 selection=val_map_50_95:0.500722 best=false images=320/320 skipped=0 elapsed=623.70s val_loss=0.369142 val_map50=0.818203 val_map50_95=0.500722
+epoch 65/500 training
+epoch 65/500 validation
+epoch 65/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 65 metric=0.515810
+epoch=65 train_loss=0.396500 lr=0.001 selection=val_map_50_95:0.515810 best=true images=320/320 skipped=0 elapsed=634.19s val_loss=0.369405 val_map50=0.852251 val_map50_95=0.515810
+epoch 66/500 training
+epoch 66/500 validation
+epoch 66/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=66 train_loss=0.388537 lr=0.001 selection=val_map_50_95:0.490943 best=false images=320/320 skipped=0 elapsed=644.41s val_loss=0.370708 val_map50=0.817342 val_map50_95=0.490943
+epoch 67/500 training
+epoch 67/500 validation
+epoch 67/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=67 train_loss=0.393941 lr=0.001 selection=val_map_50_95:0.494665 best=false images=320/320 skipped=0 elapsed=653.77s val_loss=0.371082 val_map50=0.819982 val_map50_95=0.494665
+epoch 68/500 training
+epoch 68/500 validation
+epoch 68/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=68 train_loss=0.389536 lr=0.001 selection=val_map_50_95:0.490389 best=false images=320/320 skipped=0 elapsed=667.58s val_loss=0.365297 val_map50=0.808721 val_map50_95=0.490389
+epoch 69/500 training
+epoch 69/500 validation
+epoch 69/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=69 train_loss=0.383256 lr=0.001 selection=val_map_50_95:0.500220 best=false images=320/320 skipped=0 elapsed=676.87s val_loss=0.364202 val_map50=0.820075 val_map50_95=0.500220
+epoch 70/500 training
+epoch 70/500 validation
+epoch 70/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=70 train_loss=0.379115 lr=0.001 selection=val_map_50_95:0.509254 best=false images=320/320 skipped=0 elapsed=686.17s val_loss=0.363011 val_map50=0.831803 val_map50_95=0.509254
+epoch 71/500 training
+epoch 71/500 validation
+epoch 71/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=71 train_loss=0.387541 lr=0.001 selection=val_map_50_95:0.490654 best=false images=320/320 skipped=0 elapsed=695.51s val_loss=0.367068 val_map50=0.819220 val_map50_95=0.490654
+epoch 72/500 training
+epoch 72/500 validation
+epoch 72/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=72 train_loss=0.381162 lr=0.001 selection=val_map_50_95:0.501698 best=false images=320/320 skipped=0 elapsed=704.96s val_loss=0.364803 val_map50=0.828275 val_map50_95=0.501698
+epoch 73/500 training
+epoch 73/500 validation
+epoch 73/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=73 train_loss=0.381547 lr=0.001 selection=val_map_50_95:0.509799 best=false images=320/320 skipped=0 elapsed=714.31s val_loss=0.361182 val_map50=0.837725 val_map50_95=0.509799
+epoch 74/500 training
+epoch 74/500 validation
+epoch 74/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=74 train_loss=0.387468 lr=0.001 selection=val_map_50_95:0.503744 best=false images=320/320 skipped=0 elapsed=723.68s val_loss=0.366795 val_map50=0.833403 val_map50_95=0.503744
+epoch 75/500 training
+epoch 75/500 validation
+epoch 75/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=75 train_loss=0.388882 lr=0.001 selection=val_map_50_95:0.514075 best=false images=320/320 skipped=0 elapsed=733.05s val_loss=0.365324 val_map50=0.863701 val_map50_95=0.514075
+epoch 76/500 training
+epoch 76/500 validation
+epoch 76/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=76 train_loss=0.386442 lr=0.001 selection=val_map_50_95:0.499222 best=false images=320/320 skipped=0 elapsed=742.38s val_loss=0.363483 val_map50=0.823404 val_map50_95=0.499222
+epoch 77/500 training
+epoch 77/500 validation
+epoch 77/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=77 train_loss=0.384262 lr=0.001 selection=val_map_50_95:0.504928 best=false images=320/320 skipped=0 elapsed=751.62s val_loss=0.362730 val_map50=0.830226 val_map50_95=0.504928
+epoch 78/500 training
+epoch 78/500 validation
+epoch 78/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=78 train_loss=0.374015 lr=0.001 selection=val_map_50_95:0.511953 best=false images=320/320 skipped=0 elapsed=761.04s val_loss=0.355704 val_map50=0.838335 val_map50_95=0.511953
+epoch 79/500 training
+epoch 79/500 validation
+epoch 79/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 79 metric=0.516620
+epoch=79 train_loss=0.370093 lr=0.001 selection=val_map_50_95:0.516620 best=true images=320/320 skipped=0 elapsed=771.29s val_loss=0.352895 val_map50=0.838645 val_map50_95=0.516620
+epoch 80/500 training
+epoch 80/500 validation
+epoch 80/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 80 metric=0.523333
+epoch=80 train_loss=0.368922 lr=0.001 selection=val_map_50_95:0.523333 best=true images=320/320 skipped=0 elapsed=781.48s val_loss=0.352015 val_map50=0.855728 val_map50_95=0.523333
+epoch 81/500 training
+epoch 81/500 validation
+epoch 81/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=81 train_loss=0.370408 lr=0.001 selection=val_map_50_95:0.512514 best=false images=320/320 skipped=0 elapsed=790.94s val_loss=0.359766 val_map50=0.845791 val_map50_95=0.512514
+epoch 82/500 training
+epoch 82/500 validation
+epoch 82/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=82 train_loss=0.372178 lr=0.001 selection=val_map_50_95:0.510247 best=false images=320/320 skipped=0 elapsed=800.28s val_loss=0.353812 val_map50=0.836888 val_map50_95=0.510247
+epoch 83/500 training
+epoch 83/500 validation
+epoch 83/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 83 metric=0.539697
+epoch=83 train_loss=0.368292 lr=0.001 selection=val_map_50_95:0.539697 best=true images=320/320 skipped=0 elapsed=810.64s val_loss=0.348997 val_map50=0.876709 val_map50_95=0.539697
+epoch 84/500 training
+epoch 84/500 validation
+epoch 84/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=84 train_loss=0.373888 lr=0.001 selection=val_map_50_95:0.520320 best=false images=320/320 skipped=0 elapsed=819.91s val_loss=0.356351 val_map50=0.849609 val_map50_95=0.520320
+epoch 85/500 training
+epoch 85/500 validation
+epoch 85/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=85 train_loss=0.374997 lr=0.001 selection=val_map_50_95:0.509159 best=false images=320/320 skipped=0 elapsed=829.36s val_loss=0.363616 val_map50=0.857885 val_map50_95=0.509159
+epoch 86/500 training
+epoch 86/500 validation
+epoch 86/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=86 train_loss=0.372606 lr=0.001 selection=val_map_50_95:0.516715 best=false images=320/320 skipped=0 elapsed=838.77s val_loss=0.354048 val_map50=0.856496 val_map50_95=0.516715
+epoch 87/500 training
+epoch 87/500 validation
+epoch 87/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=87 train_loss=0.368259 lr=0.001 selection=val_map_50_95:0.528820 best=false images=320/320 skipped=0 elapsed=848.18s val_loss=0.350354 val_map50=0.865572 val_map50_95=0.528820
+epoch 88/500 training
+epoch 88/500 validation
+epoch 88/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=88 train_loss=0.363659 lr=0.001 selection=val_map_50_95:0.494369 best=false images=320/320 skipped=0 elapsed=857.70s val_loss=0.381690 val_map50=0.862539 val_map50_95=0.494369
+epoch 89/500 training
+epoch 89/500 validation
+epoch 89/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=89 train_loss=0.370678 lr=0.001 selection=val_map_50_95:0.500914 best=false images=320/320 skipped=0 elapsed=866.95s val_loss=0.364404 val_map50=0.839254 val_map50_95=0.500914
+epoch 90/500 training
+epoch 90/500 validation
+epoch 90/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=90 train_loss=0.361964 lr=0.001 selection=val_map_50_95:0.517523 best=false images=320/320 skipped=0 elapsed=876.19s val_loss=0.353285 val_map50=0.841687 val_map50_95=0.517523
+epoch 91/500 training
+epoch 91/500 validation
+epoch 91/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=91 train_loss=0.366571 lr=0.001 selection=val_map_50_95:0.536877 best=false images=320/320 skipped=0 elapsed=885.58s val_loss=0.347880 val_map50=0.869246 val_map50_95=0.536877
+epoch 92/500 training
+epoch 92/500 validation
+epoch 92/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=92 train_loss=0.364906 lr=0.001 selection=val_map_50_95:0.530329 best=false images=320/320 skipped=0 elapsed=894.98s val_loss=0.344482 val_map50=0.861114 val_map50_95=0.530329
+epoch 93/500 training
+epoch 93/500 validation
+epoch 93/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=93 train_loss=0.360750 lr=0.001 selection=val_map_50_95:0.539436 best=false images=320/320 skipped=0 elapsed=904.29s val_loss=0.342556 val_map50=0.869533 val_map50_95=0.539436
+epoch 94/500 training
+epoch 94/500 validation
+epoch 94/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=94 train_loss=0.366494 lr=0.001 selection=val_map_50_95:0.505102 best=false images=320/320 skipped=0 elapsed=913.67s val_loss=0.354745 val_map50=0.833112 val_map50_95=0.505102
+epoch 95/500 training
+epoch 95/500 validation
+epoch 95/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=95 train_loss=0.362388 lr=0.001 selection=val_map_50_95:0.536438 best=false images=320/320 skipped=0 elapsed=922.94s val_loss=0.345906 val_map50=0.868422 val_map50_95=0.536438
+epoch 96/500 training
+epoch 96/500 validation
+epoch 96/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=96 train_loss=0.362894 lr=0.001 selection=val_map_50_95:0.505258 best=false images=320/320 skipped=0 elapsed=932.29s val_loss=0.357219 val_map50=0.838447 val_map50_95=0.505258
+epoch 97/500 training
+epoch 97/500 validation
+epoch 97/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 97 metric=0.542317
+epoch=97 train_loss=0.360134 lr=0.001 selection=val_map_50_95:0.542317 best=true images=320/320 skipped=0 elapsed=942.40s val_loss=0.339723 val_map50=0.878458 val_map50_95=0.542317
+epoch 98/500 training
+epoch 98/500 validation
+epoch 98/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=98 train_loss=0.362141 lr=0.001 selection=val_map_50_95:0.528885 best=false images=320/320 skipped=0 elapsed=951.82s val_loss=0.339051 val_map50=0.851191 val_map50_95=0.528885
+epoch 99/500 training
+epoch 99/500 validation
+epoch 99/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 99 metric=0.545881
+epoch=99 train_loss=0.355270 lr=0.001 selection=val_map_50_95:0.545881 best=true images=320/320 skipped=0 elapsed=961.89s val_loss=0.346535 val_map50=0.884209 val_map50_95=0.545881
+epoch 100/500 training
+epoch 100/500 validation
+epoch 100/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=100 train_loss=0.355634 lr=0.001 selection=val_map_50_95:0.532734 best=false images=320/320 skipped=0 elapsed=971.13s val_loss=0.339691 val_map50=0.851276 val_map50_95=0.532734
+epoch 101/500 training
+epoch 101/500 validation
+epoch 101/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=101 train_loss=0.358593 lr=0.001 selection=val_map_50_95:0.545561 best=false images=320/320 skipped=0 elapsed=980.66s val_loss=0.344204 val_map50=0.885275 val_map50_95=0.545561
+epoch 102/500 training
+epoch 102/500 validation
+epoch 102/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=102 train_loss=0.357098 lr=0.001 selection=val_map_50_95:0.540860 best=false images=320/320 skipped=0 elapsed=990.01s val_loss=0.340871 val_map50=0.868684 val_map50_95=0.540860
+epoch 103/500 training
+epoch 103/500 validation
+epoch 103/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=103 train_loss=0.359248 lr=0.001 selection=val_map_50_95:0.526203 best=false images=320/320 skipped=0 elapsed=999.39s val_loss=0.340563 val_map50=0.850677 val_map50_95=0.526203
+epoch 104/500 training
+epoch 104/500 validation
+epoch 104/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=104 train_loss=0.347553 lr=0.001 selection=val_map_50_95:0.533740 best=false images=320/320 skipped=0 elapsed=1011.88s val_loss=0.340415 val_map50=0.865454 val_map50_95=0.533740
+epoch 105/500 training
+epoch 105/500 validation
+epoch 105/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 105 metric=0.556999
+epoch=105 train_loss=0.356099 lr=0.001 selection=val_map_50_95:0.556999 best=true images=320/320 skipped=0 elapsed=1022.25s val_loss=0.343719 val_map50=0.904801 val_map50_95=0.556999
+epoch 106/500 training
+epoch 106/500 validation
+epoch 106/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=106 train_loss=0.355681 lr=0.001 selection=val_map_50_95:0.526393 best=false images=320/320 skipped=0 elapsed=1031.56s val_loss=0.340002 val_map50=0.851647 val_map50_95=0.526393
+epoch 107/500 training
+epoch 107/500 validation
+epoch 107/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=107 train_loss=0.354816 lr=0.001 selection=val_map_50_95:0.531382 best=false images=320/320 skipped=0 elapsed=1041.05s val_loss=0.353675 val_map50=0.885201 val_map50_95=0.531382
+epoch 108/500 training
+epoch 108/500 validation
+epoch 108/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=108 train_loss=0.351868 lr=0.001 selection=val_map_50_95:0.527111 best=false images=320/320 skipped=0 elapsed=1050.28s val_loss=0.337820 val_map50=0.851303 val_map50_95=0.527111
+epoch 109/500 training
+epoch 109/500 validation
+epoch 109/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=109 train_loss=0.349425 lr=0.001 selection=val_map_50_95:0.543657 best=false images=320/320 skipped=0 elapsed=1059.65s val_loss=0.337058 val_map50=0.879534 val_map50_95=0.543657
+epoch 110/500 training
+epoch 110/500 validation
+epoch 110/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=110 train_loss=0.351026 lr=0.001 selection=val_map_50_95:0.545279 best=false images=320/320 skipped=0 elapsed=1068.94s val_loss=0.338597 val_map50=0.880049 val_map50_95=0.545279
+epoch 111/500 training
+epoch 111/500 validation
+epoch 111/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=111 train_loss=0.349336 lr=0.001 selection=val_map_50_95:0.532720 best=false images=320/320 skipped=0 elapsed=1078.32s val_loss=0.340688 val_map50=0.867818 val_map50_95=0.532720
+epoch 112/500 training
+epoch 112/500 validation
+epoch 112/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=112 train_loss=0.354586 lr=0.001 selection=val_map_50_95:0.529880 best=false images=320/320 skipped=0 elapsed=1087.71s val_loss=0.334761 val_map50=0.850812 val_map50_95=0.529880
+epoch 113/500 training
+epoch 113/500 validation
+epoch 113/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 113 metric=0.567152
+epoch=113 train_loss=0.353867 lr=0.001 selection=val_map_50_95:0.567152 best=true images=320/320 skipped=0 elapsed=1097.82s val_loss=0.337419 val_map50=0.916497 val_map50_95=0.567152
+epoch 114/500 training
+epoch 114/500 validation
+epoch 114/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=114 train_loss=0.352777 lr=0.001 selection=val_map_50_95:0.535187 best=false images=320/320 skipped=0 elapsed=1107.21s val_loss=0.335560 val_map50=0.851143 val_map50_95=0.535187
+epoch 115/500 training
+epoch 115/500 validation
+epoch 115/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=115 train_loss=0.353038 lr=0.001 selection=val_map_50_95:0.557985 best=false images=320/320 skipped=0 elapsed=1116.40s val_loss=0.339714 val_map50=0.914187 val_map50_95=0.557985
+epoch 116/500 training
+epoch 116/500 validation
+epoch 116/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=116 train_loss=0.352036 lr=0.001 selection=val_map_50_95:0.536255 best=false images=320/320 skipped=0 elapsed=1125.76s val_loss=0.336524 val_map50=0.859933 val_map50_95=0.536255
+epoch 117/500 training
+epoch 117/500 validation
+epoch 117/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=117 train_loss=0.358145 lr=0.001 selection=val_map_50_95:0.543264 best=false images=320/320 skipped=0 elapsed=1135.06s val_loss=0.333253 val_map50=0.862356 val_map50_95=0.543264
+epoch 118/500 training
+epoch 118/500 validation
+epoch 118/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=118 train_loss=0.351148 lr=0.001 selection=val_map_50_95:0.549614 best=false images=320/320 skipped=0 elapsed=1144.45s val_loss=0.337319 val_map50=0.893964 val_map50_95=0.549614
+epoch 119/500 training
+epoch 119/500 validation
+epoch 119/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=119 train_loss=0.351879 lr=0.001 selection=val_map_50_95:0.519874 best=false images=320/320 skipped=0 elapsed=1153.68s val_loss=0.342513 val_map50=0.852154 val_map50_95=0.519874
+epoch 120/500 training
+epoch 120/500 validation
+epoch 120/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=120 train_loss=0.354573 lr=0.001 selection=val_map_50_95:0.548476 best=false images=320/320 skipped=0 elapsed=1163.22s val_loss=0.335465 val_map50=0.888882 val_map50_95=0.548476
+epoch 121/500 training
+epoch 121/500 validation
+epoch 121/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=121 train_loss=0.344749 lr=0.001 selection=val_map_50_95:0.539327 best=false images=320/320 skipped=0 elapsed=1172.68s val_loss=0.331974 val_map50=0.860882 val_map50_95=0.539327
+epoch 122/500 training
+epoch 122/500 validation
+epoch 122/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=122 train_loss=0.352049 lr=0.001 selection=val_map_50_95:0.554556 best=false images=320/320 skipped=0 elapsed=1181.99s val_loss=0.332783 val_map50=0.889512 val_map50_95=0.554556
+epoch 123/500 training
+epoch 123/500 validation
+epoch 123/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=123 train_loss=0.340180 lr=0.001 selection=val_map_50_95:0.544093 best=false images=320/320 skipped=0 elapsed=1191.34s val_loss=0.329644 val_map50=0.876948 val_map50_95=0.544093
+epoch 124/500 training
+epoch 124/500 validation
+epoch 124/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=124 train_loss=0.345998 lr=0.001 selection=val_map_50_95:0.532734 best=false images=320/320 skipped=0 elapsed=1200.62s val_loss=0.339417 val_map50=0.867221 val_map50_95=0.532734
+epoch 125/500 training
+epoch 125/500 validation
+epoch 125/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=125 train_loss=0.353498 lr=0.001 selection=val_map_50_95:0.549250 best=false images=320/320 skipped=0 elapsed=1209.78s val_loss=0.330107 val_map50=0.871462 val_map50_95=0.549250
+epoch 126/500 training
+epoch 126/500 validation
+epoch 126/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=126 train_loss=0.350718 lr=0.001 selection=val_map_50_95:0.551625 best=false images=320/320 skipped=0 elapsed=1218.92s val_loss=0.330495 val_map50=0.886256 val_map50_95=0.551625
+epoch 127/500 training
+epoch 127/500 validation
+epoch 127/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=127 train_loss=0.337136 lr=0.001 selection=val_map_50_95:0.531332 best=false images=320/320 skipped=0 elapsed=1228.12s val_loss=0.335050 val_map50=0.859780 val_map50_95=0.531332
+epoch 128/500 training
+epoch 128/500 validation
+epoch 128/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=128 train_loss=0.336400 lr=0.001 selection=val_map_50_95:0.544592 best=false images=320/320 skipped=0 elapsed=1237.39s val_loss=0.327459 val_map50=0.860152 val_map50_95=0.544592
+epoch 129/500 training
+epoch 129/500 validation
+epoch 129/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=129 train_loss=0.338082 lr=0.001 selection=val_map_50_95:0.551317 best=false images=320/320 skipped=0 elapsed=1246.78s val_loss=0.327115 val_map50=0.877818 val_map50_95=0.551317
+epoch 130/500 training
+epoch 130/500 validation
+epoch 130/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=130 train_loss=0.341281 lr=0.001 selection=val_map_50_95:0.562728 best=false images=320/320 skipped=0 elapsed=1256.11s val_loss=0.325062 val_map50=0.888658 val_map50_95=0.562728
+epoch 131/500 training
+epoch 131/500 validation
+epoch 131/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=131 train_loss=0.345198 lr=0.001 selection=val_map_50_95:0.528804 best=false images=320/320 skipped=0 elapsed=1265.33s val_loss=0.329551 val_map50=0.840818 val_map50_95=0.528804
+epoch 132/500 training
+epoch 132/500 validation
+epoch 132/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 132 metric=0.573768
+epoch=132 train_loss=0.345175 lr=0.001 selection=val_map_50_95:0.573768 best=true images=320/320 skipped=0 elapsed=1275.49s val_loss=0.324999 val_map50=0.914052 val_map50_95=0.573768
+epoch 133/500 training
+epoch 133/500 validation
+epoch 133/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=133 train_loss=0.335912 lr=0.001 selection=val_map_50_95:0.549215 best=false images=320/320 skipped=0 elapsed=1284.81s val_loss=0.333172 val_map50=0.879874 val_map50_95=0.549215
+epoch 134/500 training
+epoch 134/500 validation
+epoch 134/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=134 train_loss=0.334080 lr=0.001 selection=val_map_50_95:0.543592 best=false images=320/320 skipped=0 elapsed=1293.99s val_loss=0.328071 val_map50=0.866847 val_map50_95=0.543592
+epoch 135/500 training
+epoch 135/500 validation
+epoch 135/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=135 train_loss=0.349561 lr=0.001 selection=val_map_50_95:0.544101 best=false images=320/320 skipped=0 elapsed=1303.27s val_loss=0.331220 val_map50=0.877790 val_map50_95=0.544101
+epoch 136/500 training
+epoch 136/500 validation
+epoch 136/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=136 train_loss=0.332200 lr=0.001 selection=val_map_50_95:0.557854 best=false images=320/320 skipped=0 elapsed=1318.91s val_loss=0.323309 val_map50=0.879482 val_map50_95=0.557854
+epoch 137/500 training
+epoch 137/500 validation
+epoch 137/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=137 train_loss=0.336740 lr=0.001 selection=val_map_50_95:0.510155 best=false images=320/320 skipped=0 elapsed=1328.24s val_loss=0.360918 val_map50=0.873729 val_map50_95=0.510155
+epoch 138/500 training
+epoch 138/500 validation
+epoch 138/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=138 train_loss=0.343038 lr=0.001 selection=val_map_50_95:0.553533 best=false images=320/320 skipped=0 elapsed=1337.55s val_loss=0.329090 val_map50=0.889784 val_map50_95=0.553533
+epoch 139/500 training
+epoch 139/500 validation
+epoch 139/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=139 train_loss=0.339807 lr=0.001 selection=val_map_50_95:0.549177 best=false images=320/320 skipped=0 elapsed=1346.74s val_loss=0.326723 val_map50=0.862575 val_map50_95=0.549177
+epoch 140/500 training
+epoch 140/500 validation
+epoch 140/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=140 train_loss=0.334853 lr=0.001 selection=val_map_50_95:0.555958 best=false images=320/320 skipped=0 elapsed=1356.13s val_loss=0.336149 val_map50=0.902722 val_map50_95=0.555958
+epoch 141/500 training
+epoch 141/500 validation
+epoch 141/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=141 train_loss=0.335858 lr=0.001 selection=val_map_50_95:0.560032 best=false images=320/320 skipped=0 elapsed=1365.31s val_loss=0.319894 val_map50=0.888180 val_map50_95=0.560032
+epoch 142/500 training
+epoch 142/500 validation
+epoch 142/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=142 train_loss=0.336180 lr=0.001 selection=val_map_50_95:0.567998 best=false images=320/320 skipped=0 elapsed=1374.75s val_loss=0.325177 val_map50=0.908191 val_map50_95=0.567998
+epoch 143/500 training
+epoch 143/500 validation
+epoch 143/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=143 train_loss=0.348041 lr=0.001 selection=val_map_50_95:0.516257 best=false images=320/320 skipped=0 elapsed=1383.94s val_loss=0.346277 val_map50=0.843973 val_map50_95=0.516257
+epoch 144/500 training
+epoch 144/500 validation
+epoch 144/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=144 train_loss=0.349178 lr=0.001 selection=val_map_50_95:0.545169 best=false images=320/320 skipped=0 elapsed=1393.23s val_loss=0.328905 val_map50=0.868615 val_map50_95=0.545169
+epoch 145/500 training
+epoch 145/500 validation
+epoch 145/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=145 train_loss=0.340703 lr=0.001 selection=val_map_50_95:0.552091 best=false images=320/320 skipped=0 elapsed=1402.54s val_loss=0.325734 val_map50=0.862336 val_map50_95=0.552091
+epoch 146/500 training
+epoch 146/500 validation
+epoch 146/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=146 train_loss=0.338688 lr=0.001 selection=val_map_50_95:0.530695 best=false images=320/320 skipped=0 elapsed=1412.13s val_loss=0.338537 val_map50=0.868997 val_map50_95=0.530695
+epoch 147/500 training
+epoch 147/500 validation
+epoch 147/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=147 train_loss=0.335484 lr=0.001 selection=val_map_50_95:0.556874 best=false images=320/320 skipped=0 elapsed=1421.41s val_loss=0.318688 val_map50=0.871348 val_map50_95=0.556874
+epoch 148/500 training
+epoch 148/500 validation
+epoch 148/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=148 train_loss=0.332809 lr=0.001 selection=val_map_50_95:0.564546 best=false images=320/320 skipped=0 elapsed=1430.71s val_loss=0.321729 val_map50=0.888854 val_map50_95=0.564546
+epoch 149/500 training
+epoch 149/500 validation
+epoch 149/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=149 train_loss=0.328692 lr=0.001 selection=val_map_50_95:0.551056 best=false images=320/320 skipped=0 elapsed=1439.97s val_loss=0.321514 val_map50=0.854910 val_map50_95=0.551056
+epoch 150/500 training
+epoch 150/500 validation
+epoch 150/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=150 train_loss=0.330356 lr=0.001 selection=val_map_50_95:0.548598 best=false images=320/320 skipped=0 elapsed=1449.29s val_loss=0.329153 val_map50=0.877905 val_map50_95=0.548598
+epoch 151/500 training
+epoch 151/500 validation
+epoch 151/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=151 train_loss=0.332083 lr=0.001 selection=val_map_50_95:0.567576 best=false images=320/320 skipped=0 elapsed=1458.64s val_loss=0.322192 val_map50=0.908272 val_map50_95=0.567576
+epoch 152/500 training
+epoch 152/500 validation
+epoch 152/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=152 train_loss=0.339664 lr=0.001 selection=val_map_50_95:0.554982 best=false images=320/320 skipped=0 elapsed=1468.15s val_loss=0.325259 val_map50=0.871658 val_map50_95=0.554982
+epoch 153/500 training
+epoch 153/500 validation
+epoch 153/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=153 train_loss=0.331166 lr=0.001 selection=val_map_50_95:0.563732 best=false images=320/320 skipped=0 elapsed=1477.27s val_loss=0.322327 val_map50=0.897205 val_map50_95=0.563732
+epoch 154/500 training
+epoch 154/500 validation
+epoch 154/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=154 train_loss=0.336229 lr=0.001 selection=val_map_50_95:0.540781 best=false images=320/320 skipped=0 elapsed=1486.73s val_loss=0.331864 val_map50=0.876456 val_map50_95=0.540781
+epoch 155/500 training
+epoch 155/500 validation
+epoch 155/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=155 train_loss=0.327898 lr=0.001 selection=val_map_50_95:0.551965 best=false images=320/320 skipped=0 elapsed=1496.08s val_loss=0.320265 val_map50=0.870268 val_map50_95=0.551965
+epoch 156/500 training
+epoch 156/500 validation
+epoch 156/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=156 train_loss=0.333794 lr=0.001 selection=val_map_50_95:0.552288 best=false images=320/320 skipped=0 elapsed=1505.18s val_loss=0.320641 val_map50=0.862794 val_map50_95=0.552288
+epoch 157/500 training
+epoch 157/500 validation
+epoch 157/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 157 metric=0.580585
+epoch=157 train_loss=0.330008 lr=0.001 selection=val_map_50_95:0.580585 best=true images=320/320 skipped=0 elapsed=1515.41s val_loss=0.321195 val_map50=0.914867 val_map50_95=0.580585
+epoch 158/500 training
+epoch 158/500 validation
+epoch 158/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=158 train_loss=0.325838 lr=0.001 selection=val_map_50_95:0.549053 best=false images=320/320 skipped=0 elapsed=1524.66s val_loss=0.324504 val_map50=0.871679 val_map50_95=0.549053
+epoch 159/500 training
+epoch 159/500 validation
+epoch 159/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=159 train_loss=0.336752 lr=0.001 selection=val_map_50_95:0.573808 best=false images=320/320 skipped=0 elapsed=1534.05s val_loss=0.317123 val_map50=0.906479 val_map50_95=0.573808
+epoch 160/500 training
+epoch 160/500 validation
+epoch 160/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=160 train_loss=0.337868 lr=0.001 selection=val_map_50_95:0.550868 best=false images=320/320 skipped=0 elapsed=1543.42s val_loss=0.323494 val_map50=0.881224 val_map50_95=0.550868
+epoch 161/500 training
+epoch 161/500 validation
+epoch 161/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=161 train_loss=0.328899 lr=0.001 selection=val_map_50_95:0.558954 best=false images=320/320 skipped=0 elapsed=1552.78s val_loss=0.323861 val_map50=0.889034 val_map50_95=0.558954
+epoch 162/500 training
+epoch 162/500 validation
+epoch 162/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=162 train_loss=0.326455 lr=0.001 selection=val_map_50_95:0.540222 best=false images=320/320 skipped=0 elapsed=1562.14s val_loss=0.328459 val_map50=0.869291 val_map50_95=0.540222
+epoch 163/500 training
+epoch 163/500 validation
+epoch 163/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=163 train_loss=0.332718 lr=0.001 selection=val_map_50_95:0.544617 best=false images=320/320 skipped=0 elapsed=1571.51s val_loss=0.332285 val_map50=0.879431 val_map50_95=0.544617
+epoch 164/500 training
+epoch 164/500 validation
+epoch 164/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=164 train_loss=0.334800 lr=0.001 selection=val_map_50_95:0.560961 best=false images=320/320 skipped=0 elapsed=1580.85s val_loss=0.325587 val_map50=0.898252 val_map50_95=0.560961
+epoch 165/500 training
+epoch 165/500 validation
+epoch 165/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=165 train_loss=0.336574 lr=0.001 selection=val_map_50_95:0.555514 best=false images=320/320 skipped=0 elapsed=1590.10s val_loss=0.317442 val_map50=0.871882 val_map50_95=0.555514
+epoch 166/500 training
+epoch 166/500 validation
+epoch 166/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=166 train_loss=0.337119 lr=0.001 selection=val_map_50_95:0.557571 best=false images=320/320 skipped=0 elapsed=1599.59s val_loss=0.325926 val_map50=0.898448 val_map50_95=0.557571
+epoch 167/500 training
+epoch 167/500 validation
+epoch 167/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=167 train_loss=0.320348 lr=0.001 selection=val_map_50_95:0.565633 best=false images=320/320 skipped=0 elapsed=1608.97s val_loss=0.321006 val_map50=0.891479 val_map50_95=0.565633
+epoch 168/500 training
+epoch 168/500 validation
+epoch 168/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=168 train_loss=0.328498 lr=0.001 selection=val_map_50_95:0.564515 best=false images=320/320 skipped=0 elapsed=1618.48s val_loss=0.316345 val_map50=0.879102 val_map50_95=0.564515
+epoch 169/500 training
+epoch 169/500 validation
+epoch 169/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=169 train_loss=0.317698 lr=0.001 selection=val_map_50_95:0.568499 best=false images=320/320 skipped=0 elapsed=1627.77s val_loss=0.313701 val_map50=0.889441 val_map50_95=0.568499
+epoch 170/500 training
+epoch 170/500 validation
+epoch 170/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 170 metric=0.588271
+epoch=170 train_loss=0.333292 lr=0.001 selection=val_map_50_95:0.588271 best=true images=320/320 skipped=0 elapsed=1637.98s val_loss=0.316229 val_map50=0.925548 val_map50_95=0.588271
+epoch 171/500 training
+epoch 171/500 validation
+epoch 171/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=171 train_loss=0.327630 lr=0.001 selection=val_map_50_95:0.575600 best=false images=320/320 skipped=0 elapsed=1647.33s val_loss=0.313300 val_map50=0.891438 val_map50_95=0.575600
+epoch 172/500 training
+epoch 172/500 validation
+epoch 172/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=172 train_loss=0.324959 lr=0.001 selection=val_map_50_95:0.566894 best=false images=320/320 skipped=0 elapsed=1656.79s val_loss=0.321721 val_map50=0.895402 val_map50_95=0.566894
+epoch 173/500 training
+epoch 173/500 validation
+epoch 173/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=173 train_loss=0.325149 lr=0.001 selection=val_map_50_95:0.573856 best=false images=320/320 skipped=0 elapsed=1666.25s val_loss=0.311104 val_map50=0.889762 val_map50_95=0.573856
+epoch 174/500 training
+epoch 174/500 validation
+epoch 174/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=174 train_loss=0.324929 lr=0.001 selection=val_map_50_95:0.564732 best=false images=320/320 skipped=0 elapsed=1675.73s val_loss=0.314789 val_map50=0.872515 val_map50_95=0.564732
+epoch 175/500 training
+epoch 175/500 validation
+epoch 175/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=175 train_loss=0.328317 lr=0.001 selection=val_map_50_95:0.570742 best=false images=320/320 skipped=0 elapsed=1685.09s val_loss=0.316398 val_map50=0.888745 val_map50_95=0.570742
+epoch 176/500 training
+epoch 176/500 validation
+epoch 176/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=176 train_loss=0.322917 lr=0.001 selection=val_map_50_95:0.573164 best=false images=320/320 skipped=0 elapsed=1694.47s val_loss=0.312285 val_map50=0.897309 val_map50_95=0.573164
+epoch 177/500 training
+epoch 177/500 validation
+epoch 177/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=177 train_loss=0.325364 lr=0.001 selection=val_map_50_95:0.571061 best=false images=320/320 skipped=0 elapsed=1703.96s val_loss=0.317260 val_map50=0.906327 val_map50_95=0.571061
+epoch 178/500 training
+epoch 178/500 validation
+epoch 178/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=178 train_loss=0.325581 lr=0.001 selection=val_map_50_95:0.585470 best=false images=320/320 skipped=0 elapsed=1713.55s val_loss=0.316119 val_map50=0.915858 val_map50_95=0.585470
+epoch 179/500 training
+epoch 179/500 validation
+epoch 179/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=179 train_loss=0.326959 lr=0.001 selection=val_map_50_95:0.552388 best=false images=320/320 skipped=0 elapsed=1723.00s val_loss=0.321180 val_map50=0.879300 val_map50_95=0.552388
+epoch 180/500 training
+epoch 180/500 validation
+epoch 180/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=180 train_loss=0.326972 lr=0.001 selection=val_map_50_95:0.567979 best=false images=320/320 skipped=0 elapsed=1732.32s val_loss=0.317249 val_map50=0.897796 val_map50_95=0.567979
+epoch 181/500 training
+epoch 181/500 validation
+epoch 181/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=181 train_loss=0.321161 lr=0.001 selection=val_map_50_95:0.574503 best=false images=320/320 skipped=0 elapsed=1741.61s val_loss=0.311599 val_map50=0.890086 val_map50_95=0.574503
+epoch 182/500 training
+epoch 182/500 validation
+epoch 182/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=182 train_loss=0.322757 lr=0.001 selection=val_map_50_95:0.564265 best=false images=320/320 skipped=0 elapsed=1750.93s val_loss=0.320227 val_map50=0.898133 val_map50_95=0.564265
+epoch 183/500 training
+epoch 183/500 validation
+epoch 183/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=183 train_loss=0.322556 lr=0.001 selection=val_map_50_95:0.577051 best=false images=320/320 skipped=0 elapsed=1760.33s val_loss=0.309132 val_map50=0.898339 val_map50_95=0.577051
+epoch 184/500 training
+epoch 184/500 validation
+epoch 184/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=184 train_loss=0.325267 lr=0.001 selection=val_map_50_95:0.574122 best=false images=320/320 skipped=0 elapsed=1769.63s val_loss=0.314495 val_map50=0.905991 val_map50_95=0.574122
+epoch 185/500 training
+epoch 185/500 validation
+epoch 185/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=185 train_loss=0.320584 lr=0.001 selection=val_map_50_95:0.585613 best=false images=320/320 skipped=0 elapsed=1778.88s val_loss=0.310006 val_map50=0.907963 val_map50_95=0.585613
+epoch 186/500 training
+epoch 186/500 validation
+epoch 186/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=186 train_loss=0.332212 lr=0.001 selection=val_map_50_95:0.573387 best=false images=320/320 skipped=0 elapsed=1788.05s val_loss=0.309871 val_map50=0.890557 val_map50_95=0.573387
+epoch 187/500 training
+epoch 187/500 validation
+epoch 187/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=187 train_loss=0.325612 lr=0.001 selection=val_map_50_95:0.571446 best=false images=320/320 skipped=0 elapsed=1797.25s val_loss=0.314465 val_map50=0.889106 val_map50_95=0.571446
+epoch 188/500 training
+epoch 188/500 validation
+epoch 188/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=188 train_loss=0.321071 lr=0.001 selection=val_map_50_95:0.577415 best=false images=320/320 skipped=0 elapsed=1806.54s val_loss=0.310044 val_map50=0.899791 val_map50_95=0.577415
+epoch 189/500 training
+epoch 189/500 validation
+epoch 189/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=189 train_loss=0.324189 lr=0.001 selection=val_map_50_95:0.578912 best=false images=320/320 skipped=0 elapsed=1816.04s val_loss=0.309320 val_map50=0.898843 val_map50_95=0.578912
+epoch 190/500 training
+epoch 190/500 validation
+epoch 190/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=190 train_loss=0.328056 lr=0.001 selection=val_map_50_95:0.556570 best=false images=320/320 skipped=0 elapsed=1825.28s val_loss=0.316583 val_map50=0.879472 val_map50_95=0.556570
+epoch 191/500 training
+epoch 191/500 validation
+epoch 191/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=191 train_loss=0.324349 lr=0.001 selection=val_map_50_95:0.568104 best=false images=320/320 skipped=0 elapsed=1834.77s val_loss=0.319189 val_map50=0.908147 val_map50_95=0.568104
+epoch 192/500 training
+epoch 192/500 validation
+epoch 192/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=192 train_loss=0.322781 lr=0.001 selection=val_map_50_95:0.566568 best=false images=320/320 skipped=0 elapsed=1844.00s val_loss=0.313424 val_map50=0.890607 val_map50_95=0.566568
+epoch 193/500 training
+epoch 193/500 validation
+epoch 193/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=193 train_loss=0.315535 lr=0.001 selection=val_map_50_95:0.584125 best=false images=320/320 skipped=0 elapsed=1853.51s val_loss=0.317616 val_map50=0.925299 val_map50_95=0.584125
+epoch 194/500 training
+epoch 194/500 validation
+epoch 194/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=194 train_loss=0.326827 lr=0.001 selection=val_map_50_95:0.585222 best=false images=320/320 skipped=0 elapsed=1863.58s val_loss=0.313825 val_map50=0.917719 val_map50_95=0.585222
+epoch 195/500 training
+epoch 195/500 validation
+epoch 195/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 195 metric=0.592926
+epoch=195 train_loss=0.329482 lr=0.001 selection=val_map_50_95:0.592926 best=true images=320/320 skipped=0 elapsed=1874.14s val_loss=0.310856 val_map50=0.917268 val_map50_95=0.592926
+epoch 196/500 training
+epoch 196/500 validation
+epoch 196/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=196 train_loss=0.326148 lr=0.001 selection=val_map_50_95:0.567171 best=false images=320/320 skipped=0 elapsed=1883.25s val_loss=0.309647 val_map50=0.872303 val_map50_95=0.567171
+epoch 197/500 training
+epoch 197/500 validation
+epoch 197/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=197 train_loss=0.315240 lr=0.001 selection=val_map_50_95:0.578786 best=false images=320/320 skipped=0 elapsed=1892.48s val_loss=0.308010 val_map50=0.898909 val_map50_95=0.578786
+epoch 198/500 training
+epoch 198/500 validation
+epoch 198/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=198 train_loss=0.320887 lr=0.001 selection=val_map_50_95:0.568129 best=false images=320/320 skipped=0 elapsed=1901.81s val_loss=0.311344 val_map50=0.889624 val_map50_95=0.568129
+epoch 199/500 training
+epoch 199/500 validation
+epoch 199/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=199 train_loss=0.316174 lr=0.001 selection=val_map_50_95:0.568897 best=false images=320/320 skipped=0 elapsed=1911.29s val_loss=0.311785 val_map50=0.890303 val_map50_95=0.568897
+epoch 200/500 training
+epoch 200/500 validation
+epoch 200/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=200 train_loss=0.314786 lr=0.001 selection=val_map_50_95:0.568237 best=false images=320/320 skipped=0 elapsed=1920.51s val_loss=0.310727 val_map50=0.889867 val_map50_95=0.568237
+epoch 201/500 training
+epoch 201/500 validation
+epoch 201/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=201 train_loss=0.317432 lr=0.001 selection=val_map_50_95:0.578844 best=false images=320/320 skipped=0 elapsed=1929.83s val_loss=0.313155 val_map50=0.916835 val_map50_95=0.578844
+epoch 202/500 training
+epoch 202/500 validation
+epoch 202/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=202 train_loss=0.318817 lr=0.001 selection=val_map_50_95:0.563578 best=false images=320/320 skipped=0 elapsed=1939.01s val_loss=0.310267 val_map50=0.881561 val_map50_95=0.563578
+epoch 203/500 training
+epoch 203/500 validation
+epoch 203/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=203 train_loss=0.313750 lr=0.001 selection=val_map_50_95:0.583010 best=false images=320/320 skipped=0 elapsed=1948.29s val_loss=0.307561 val_map50=0.906512 val_map50_95=0.583010
+epoch 204/500 training
+epoch 204/500 validation
+epoch 204/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=204 train_loss=0.318811 lr=0.001 selection=val_map_50_95:0.551324 best=false images=320/320 skipped=0 elapsed=1957.61s val_loss=0.321776 val_map50=0.880516 val_map50_95=0.551324
+epoch 205/500 training
+epoch 205/500 validation
+epoch 205/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=205 train_loss=0.325062 lr=0.001 selection=val_map_50_95:0.583445 best=false images=320/320 skipped=0 elapsed=1966.89s val_loss=0.306906 val_map50=0.900803 val_map50_95=0.583445
+epoch 206/500 training
+epoch 206/500 validation
+epoch 206/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=206 train_loss=0.316040 lr=0.001 selection=val_map_50_95:0.591892 best=false images=320/320 skipped=0 elapsed=1976.26s val_loss=0.305882 val_map50=0.918718 val_map50_95=0.591892
+epoch 207/500 training
+epoch 207/500 validation
+epoch 207/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 207 metric=0.599134
+epoch=207 train_loss=0.320752 lr=0.001 selection=val_map_50_95:0.599134 best=true images=320/320 skipped=0 elapsed=1986.52s val_loss=0.312304 val_map50=0.936722 val_map50_95=0.599134
+epoch 208/500 training
+epoch 208/500 validation
+epoch 208/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=208 train_loss=0.318043 lr=0.001 selection=val_map_50_95:0.564463 best=false images=320/320 skipped=0 elapsed=1995.92s val_loss=0.309476 val_map50=0.889902 val_map50_95=0.564463
+epoch 209/500 training
+epoch 209/500 validation
+epoch 209/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=209 train_loss=0.319552 lr=0.001 selection=val_map_50_95:0.581874 best=false images=320/320 skipped=0 elapsed=2005.25s val_loss=0.305844 val_map50=0.899429 val_map50_95=0.581874
+epoch 210/500 training
+epoch 210/500 validation
+epoch 210/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=210 train_loss=0.324173 lr=0.001 selection=val_map_50_95:0.575262 best=false images=320/320 skipped=0 elapsed=2014.51s val_loss=0.305738 val_map50=0.880951 val_map50_95=0.575262
+epoch 211/500 training
+epoch 211/500 validation
+epoch 211/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=211 train_loss=0.318271 lr=0.001 selection=val_map_50_95:0.575607 best=false images=320/320 skipped=0 elapsed=2023.69s val_loss=0.308160 val_map50=0.882881 val_map50_95=0.575607
+epoch 212/500 training
+epoch 212/500 validation
+epoch 212/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=212 train_loss=0.320144 lr=0.001 selection=val_map_50_95:0.585150 best=false images=320/320 skipped=0 elapsed=2032.97s val_loss=0.313177 val_map50=0.924516 val_map50_95=0.585150
+epoch 213/500 training
+epoch 213/500 validation
+epoch 213/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=213 train_loss=0.311401 lr=0.001 selection=val_map_50_95:0.582935 best=false images=320/320 skipped=0 elapsed=2042.31s val_loss=0.305884 val_map50=0.906622 val_map50_95=0.582935
+epoch 214/500 training
+epoch 214/500 validation
+epoch 214/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=214 train_loss=0.316039 lr=0.001 selection=val_map_50_95:0.560982 best=false images=320/320 skipped=0 elapsed=2051.74s val_loss=0.317144 val_map50=0.888943 val_map50_95=0.560982
+epoch 215/500 training
+epoch 215/500 validation
+epoch 215/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 215 metric=0.600887
+epoch=215 train_loss=0.306795 lr=0.001 selection=val_map_50_95:0.600887 best=true images=320/320 skipped=0 elapsed=2061.82s val_loss=0.303344 val_map50=0.927003 val_map50_95=0.600887
+epoch 216/500 training
+epoch 216/500 validation
+epoch 216/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=216 train_loss=0.316408 lr=0.001 selection=val_map_50_95:0.579725 best=false images=320/320 skipped=0 elapsed=2070.97s val_loss=0.310507 val_map50=0.901473 val_map50_95=0.579725
+epoch 217/500 training
+epoch 217/500 validation
+epoch 217/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=217 train_loss=0.317300 lr=0.001 selection=val_map_50_95:0.530857 best=false images=320/320 skipped=0 elapsed=2080.25s val_loss=0.336901 val_map50=0.888664 val_map50_95=0.530857
+epoch 218/500 training
+epoch 218/500 validation
+epoch 218/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=218 train_loss=0.313902 lr=0.001 selection=val_map_50_95:0.593286 best=false images=320/320 skipped=0 elapsed=2089.57s val_loss=0.306046 val_map50=0.918369 val_map50_95=0.593286
+epoch 219/500 training
+epoch 219/500 validation
+epoch 219/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=219 train_loss=0.309211 lr=0.001 selection=val_map_50_95:0.569401 best=false images=320/320 skipped=0 elapsed=2098.98s val_loss=0.308867 val_map50=0.882750 val_map50_95=0.569401
+epoch 220/500 training
+epoch 220/500 validation
+epoch 220/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=220 train_loss=0.318962 lr=0.001 selection=val_map_50_95:0.582408 best=false images=320/320 skipped=0 elapsed=2108.23s val_loss=0.314879 val_map50=0.915777 val_map50_95=0.582408
+epoch 221/500 training
+epoch 221/500 validation
+epoch 221/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=221 train_loss=0.314885 lr=0.001 selection=val_map_50_95:0.558349 best=false images=320/320 skipped=0 elapsed=2117.25s val_loss=0.308942 val_map50=0.864018 val_map50_95=0.558349
+epoch 222/500 training
+epoch 222/500 validation
+epoch 222/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=222 train_loss=0.320809 lr=0.001 selection=val_map_50_95:0.564472 best=false images=320/320 skipped=0 elapsed=2126.53s val_loss=0.317031 val_map50=0.888711 val_map50_95=0.564472
+epoch 223/500 training
+epoch 223/500 validation
+epoch 223/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=223 train_loss=0.309942 lr=0.001 selection=val_map_50_95:0.586822 best=false images=320/320 skipped=0 elapsed=2135.86s val_loss=0.305221 val_map50=0.907726 val_map50_95=0.586822
+epoch 224/500 training
+epoch 224/500 validation
+epoch 224/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=224 train_loss=0.306168 lr=0.001 selection=val_map_50_95:0.551605 best=false images=320/320 skipped=0 elapsed=2145.08s val_loss=0.319912 val_map50=0.879817 val_map50_95=0.551605
+epoch 225/500 training
+epoch 225/500 validation
+epoch 225/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=225 train_loss=0.307329 lr=0.001 selection=val_map_50_95:0.579413 best=false images=320/320 skipped=0 elapsed=2154.28s val_loss=0.308827 val_map50=0.908398 val_map50_95=0.579413
+epoch 226/500 training
+epoch 226/500 validation
+epoch 226/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 226 metric=0.601644
+epoch=226 train_loss=0.314046 lr=0.001 selection=val_map_50_95:0.601644 best=true images=320/320 skipped=0 elapsed=2164.62s val_loss=0.307624 val_map50=0.936014 val_map50_95=0.601644
+epoch 227/500 training
+epoch 227/500 validation
+epoch 227/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=227 train_loss=0.315876 lr=0.001 selection=val_map_50_95:0.556943 best=false images=320/320 skipped=0 elapsed=2173.66s val_loss=0.313036 val_map50=0.855705 val_map50_95=0.556943
+epoch 228/500 training
+epoch 228/500 validation
+epoch 228/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=228 train_loss=0.314346 lr=0.001 selection=val_map_50_95:0.564358 best=false images=320/320 skipped=0 elapsed=2183.02s val_loss=0.302348 val_map50=0.863212 val_map50_95=0.564358
+epoch 229/500 training
+epoch 229/500 validation
+epoch 229/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 229 metric=0.608665
+epoch=229 train_loss=0.317775 lr=0.001 selection=val_map_50_95:0.608665 best=true images=320/320 skipped=0 elapsed=2193.37s val_loss=0.306270 val_map50=0.937865 val_map50_95=0.608665
+epoch 230/500 training
+epoch 230/500 validation
+epoch 230/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=230 train_loss=0.312161 lr=0.001 selection=val_map_50_95:0.591056 best=false images=320/320 skipped=0 elapsed=2202.78s val_loss=0.302588 val_map50=0.908614 val_map50_95=0.591056
+epoch 231/500 training
+epoch 231/500 validation
+epoch 231/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=231 train_loss=0.316554 lr=0.001 selection=val_map_50_95:0.566038 best=false images=320/320 skipped=0 elapsed=2212.20s val_loss=0.314305 val_map50=0.897626 val_map50_95=0.566038
+epoch 232/500 training
+epoch 232/500 validation
+epoch 232/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=232 train_loss=0.309558 lr=0.001 selection=val_map_50_95:0.579971 best=false images=320/320 skipped=0 elapsed=2221.56s val_loss=0.303209 val_map50=0.899716 val_map50_95=0.579971
+epoch 233/500 training
+epoch 233/500 validation
+epoch 233/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=233 train_loss=0.310237 lr=0.001 selection=val_map_50_95:0.577599 best=false images=320/320 skipped=0 elapsed=2230.71s val_loss=0.299377 val_map50=0.881373 val_map50_95=0.577599
+epoch 234/500 training
+epoch 234/500 validation
+epoch 234/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=234 train_loss=0.309777 lr=0.001 selection=val_map_50_95:0.593699 best=false images=320/320 skipped=0 elapsed=2245.99s val_loss=0.302298 val_map50=0.917066 val_map50_95=0.593699
+epoch 235/500 training
+epoch 235/500 validation
+epoch 235/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=235 train_loss=0.307703 lr=0.001 selection=val_map_50_95:0.585563 best=false images=320/320 skipped=0 elapsed=2255.41s val_loss=0.298105 val_map50=0.889211 val_map50_95=0.585563
+epoch 236/500 training
+epoch 236/500 validation
+epoch 236/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=236 train_loss=0.309471 lr=0.001 selection=val_map_50_95:0.598806 best=false images=320/320 skipped=0 elapsed=2271.90s val_loss=0.303580 val_map50=0.919974 val_map50_95=0.598806
+epoch 237/500 training
+epoch 237/500 validation
+epoch 237/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=237 train_loss=0.311364 lr=0.001 selection=val_map_50_95:0.582455 best=false images=320/320 skipped=0 elapsed=2281.31s val_loss=0.304751 val_map50=0.906082 val_map50_95=0.582455
+epoch 238/500 training
+epoch 238/500 validation
+epoch 238/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=238 train_loss=0.317974 lr=0.001 selection=val_map_50_95:0.603330 best=false images=320/320 skipped=0 elapsed=2290.54s val_loss=0.308768 val_map50=0.926741 val_map50_95=0.603330
+epoch 239/500 training
+epoch 239/500 validation
+epoch 239/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=239 train_loss=0.318359 lr=0.001 selection=val_map_50_95:0.601390 best=false images=320/320 skipped=0 elapsed=2300.00s val_loss=0.300824 val_map50=0.927070 val_map50_95=0.601390
+epoch 240/500 training
+epoch 240/500 validation
+epoch 240/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=240 train_loss=0.306748 lr=0.001 selection=val_map_50_95:0.601648 best=false images=320/320 skipped=0 elapsed=2309.44s val_loss=0.305241 val_map50=0.936635 val_map50_95=0.601648
+epoch 241/500 training
+epoch 241/500 validation
+epoch 241/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=241 train_loss=0.303512 lr=0.001 selection=val_map_50_95:0.587181 best=false images=320/320 skipped=0 elapsed=2318.60s val_loss=0.298095 val_map50=0.891131 val_map50_95=0.587181
+epoch 242/500 training
+epoch 242/500 validation
+epoch 242/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=242 train_loss=0.310781 lr=0.001 selection=val_map_50_95:0.592219 best=false images=320/320 skipped=0 elapsed=2328.00s val_loss=0.305955 val_map50=0.917770 val_map50_95=0.592219
+epoch 243/500 training
+epoch 243/500 validation
+epoch 243/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=243 train_loss=0.316301 lr=0.001 selection=val_map_50_95:0.556195 best=false images=320/320 skipped=0 elapsed=2337.15s val_loss=0.317323 val_map50=0.872196 val_map50_95=0.556195
+epoch 244/500 training
+epoch 244/500 validation
+epoch 244/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=244 train_loss=0.301927 lr=0.001 selection=val_map_50_95:0.581171 best=false images=320/320 skipped=0 elapsed=2346.41s val_loss=0.297821 val_map50=0.883009 val_map50_95=0.581171
+epoch 245/500 training
+epoch 245/500 validation
+epoch 245/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 245 metric=0.608712
+epoch=245 train_loss=0.309109 lr=0.001 selection=val_map_50_95:0.608712 best=true images=320/320 skipped=0 elapsed=2356.51s val_loss=0.302660 val_map50=0.937230 val_map50_95=0.608712
+epoch 246/500 training
+epoch 246/500 validation
+epoch 246/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=246 train_loss=0.311044 lr=0.001 selection=val_map_50_95:0.578512 best=false images=320/320 skipped=0 elapsed=2365.86s val_loss=0.309046 val_map50=0.909062 val_map50_95=0.578512
+epoch 247/500 training
+epoch 247/500 validation
+epoch 247/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=247 train_loss=0.315258 lr=0.001 selection=val_map_50_95:0.572139 best=false images=320/320 skipped=0 elapsed=2375.17s val_loss=0.302854 val_map50=0.872942 val_map50_95=0.572139
+epoch 248/500 training
+epoch 248/500 validation
+epoch 248/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=248 train_loss=0.311221 lr=0.001 selection=val_map_50_95:0.581621 best=false images=320/320 skipped=0 elapsed=2384.38s val_loss=0.309382 val_map50=0.916401 val_map50_95=0.581621
+epoch 249/500 training
+epoch 249/500 validation
+epoch 249/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=249 train_loss=0.303312 lr=0.001 selection=val_map_50_95:0.580516 best=false images=320/320 skipped=0 elapsed=2393.69s val_loss=0.296108 val_map50=0.882347 val_map50_95=0.580516
+epoch 250/500 training
+epoch 250/500 validation
+epoch 250/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=250 train_loss=0.311568 lr=0.001 selection=val_map_50_95:0.583001 best=false images=320/320 skipped=0 elapsed=2403.01s val_loss=0.297495 val_map50=0.881951 val_map50_95=0.583001
+epoch 251/500 training
+epoch 251/500 validation
+epoch 251/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=251 train_loss=0.305237 lr=0.001 selection=val_map_50_95:0.608115 best=false images=320/320 skipped=0 elapsed=2412.53s val_loss=0.297753 val_map50=0.929427 val_map50_95=0.608115
+epoch 252/500 training
+epoch 252/500 validation
+epoch 252/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=252 train_loss=0.313679 lr=0.001 selection=val_map_50_95:0.590419 best=false images=320/320 skipped=0 elapsed=2421.66s val_loss=0.304012 val_map50=0.909092 val_map50_95=0.590419
+epoch 253/500 training
+epoch 253/500 validation
+epoch 253/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=253 train_loss=0.304111 lr=0.001 selection=val_map_50_95:0.592548 best=false images=320/320 skipped=0 elapsed=2431.05s val_loss=0.299745 val_map50=0.908810 val_map50_95=0.592548
+epoch 254/500 training
+epoch 254/500 validation
+epoch 254/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=254 train_loss=0.306735 lr=0.001 selection=val_map_50_95:0.577000 best=false images=320/320 skipped=0 elapsed=2440.17s val_loss=0.302035 val_map50=0.882156 val_map50_95=0.577000
+epoch 255/500 training
+epoch 255/500 validation
+epoch 255/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=255 train_loss=0.308966 lr=0.001 selection=val_map_50_95:0.569026 best=false images=320/320 skipped=0 elapsed=2449.31s val_loss=0.301379 val_map50=0.872346 val_map50_95=0.569026
+epoch 256/500 training
+epoch 256/500 validation
+epoch 256/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=256 train_loss=0.305357 lr=0.001 selection=val_map_50_95:0.605554 best=false images=320/320 skipped=0 elapsed=2458.95s val_loss=0.304372 val_map50=0.927625 val_map50_95=0.605554
+epoch 257/500 training
+epoch 257/500 validation
+epoch 257/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=257 train_loss=0.317169 lr=0.001 selection=val_map_50_95:0.601374 best=false images=320/320 skipped=0 elapsed=2468.46s val_loss=0.301493 val_map50=0.926329 val_map50_95=0.601374
+epoch 258/500 training
+epoch 258/500 validation
+epoch 258/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=258 train_loss=0.310052 lr=0.001 selection=val_map_50_95:0.577653 best=false images=320/320 skipped=0 elapsed=2477.97s val_loss=0.303145 val_map50=0.882141 val_map50_95=0.577653
+epoch 259/500 training
+epoch 259/500 validation
+epoch 259/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=259 train_loss=0.307417 lr=0.001 selection=val_map_50_95:0.587213 best=false images=320/320 skipped=0 elapsed=2487.42s val_loss=0.298476 val_map50=0.900820 val_map50_95=0.587213
+epoch 260/500 training
+epoch 260/500 validation
+epoch 260/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=260 train_loss=0.311356 lr=0.001 selection=val_map_50_95:0.602313 best=false images=320/320 skipped=0 elapsed=2496.99s val_loss=0.299318 val_map50=0.927303 val_map50_95=0.602313
+epoch 261/500 training
+epoch 261/500 validation
+epoch 261/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=261 train_loss=0.301713 lr=0.001 selection=val_map_50_95:0.594783 best=false images=320/320 skipped=0 elapsed=2506.68s val_loss=0.295182 val_map50=0.908585 val_map50_95=0.594783
+epoch 262/500 training
+epoch 262/500 validation
+epoch 262/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=262 train_loss=0.303404 lr=0.001 selection=val_map_50_95:0.601004 best=false images=320/320 skipped=0 elapsed=2516.25s val_loss=0.296876 val_map50=0.918136 val_map50_95=0.601004
+epoch 263/500 training
+epoch 263/500 validation
+epoch 263/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=263 train_loss=0.300254 lr=0.001 selection=val_map_50_95:0.572137 best=false images=320/320 skipped=0 elapsed=2525.55s val_loss=0.312670 val_map50=0.915627 val_map50_95=0.572137
+epoch 264/500 training
+epoch 264/500 validation
+epoch 264/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=264 train_loss=0.302898 lr=0.001 selection=val_map_50_95:0.590636 best=false images=320/320 skipped=0 elapsed=2534.66s val_loss=0.298784 val_map50=0.900643 val_map50_95=0.590636
+epoch 265/500 training
+epoch 265/500 validation
+epoch 265/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=265 train_loss=0.311671 lr=0.001 selection=val_map_50_95:0.605541 best=false images=320/320 skipped=0 elapsed=2543.92s val_loss=0.299165 val_map50=0.929394 val_map50_95=0.605541
+epoch 266/500 training
+epoch 266/500 validation
+epoch 266/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=266 train_loss=0.302953 lr=0.001 selection=val_map_50_95:0.582411 best=false images=320/320 skipped=0 elapsed=2553.51s val_loss=0.307173 val_map50=0.918397 val_map50_95=0.582411
+epoch 267/500 training
+epoch 267/500 validation
+epoch 267/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=267 train_loss=0.301962 lr=0.001 selection=val_map_50_95:0.607803 best=false images=320/320 skipped=0 elapsed=2562.71s val_loss=0.301103 val_map50=0.935815 val_map50_95=0.607803
+epoch 268/500 training
+epoch 268/500 validation
+epoch 268/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=268 train_loss=0.305746 lr=0.001 selection=val_map_50_95:0.576422 best=false images=320/320 skipped=0 elapsed=2572.27s val_loss=0.311506 val_map50=0.908104 val_map50_95=0.576422
+epoch 269/500 training
+epoch 269/500 validation
+epoch 269/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=269 train_loss=0.308224 lr=0.001 selection=val_map_50_95:0.573742 best=false images=320/320 skipped=0 elapsed=2581.61s val_loss=0.304077 val_map50=0.873884 val_map50_95=0.573742
+epoch 270/500 training
+epoch 270/500 validation
+epoch 270/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=270 train_loss=0.308352 lr=0.001 selection=val_map_50_95:0.586778 best=false images=320/320 skipped=0 elapsed=2591.21s val_loss=0.299255 val_map50=0.900225 val_map50_95=0.586778
+epoch 271/500 training
+epoch 271/500 validation
+epoch 271/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=271 train_loss=0.296991 lr=0.001 selection=val_map_50_95:0.574126 best=false images=320/320 skipped=0 elapsed=2600.56s val_loss=0.312274 val_map50=0.907872 val_map50_95=0.574126
+epoch 272/500 training
+epoch 272/500 validation
+epoch 272/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=272 train_loss=0.300520 lr=0.001 selection=val_map_50_95:0.599165 best=false images=320/320 skipped=0 elapsed=2609.98s val_loss=0.302076 val_map50=0.927211 val_map50_95=0.599165
+epoch 273/500 training
+epoch 273/500 validation
+epoch 273/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=273 train_loss=0.300435 lr=0.001 selection=val_map_50_95:0.584657 best=false images=320/320 skipped=0 elapsed=2619.10s val_loss=0.294868 val_map50=0.890950 val_map50_95=0.584657
+epoch 274/500 training
+epoch 274/500 validation
+epoch 274/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=274 train_loss=0.299171 lr=0.001 selection=val_map_50_95:0.584570 best=false images=320/320 skipped=0 elapsed=2628.10s val_loss=0.299936 val_map50=0.892937 val_map50_95=0.584570
+epoch 275/500 training
+epoch 275/500 validation
+epoch 275/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=275 train_loss=0.298064 lr=0.001 selection=val_map_50_95:0.570766 best=false images=320/320 skipped=0 elapsed=2637.16s val_loss=0.301096 val_map50=0.856154 val_map50_95=0.570766
+epoch 276/500 training
+epoch 276/500 validation
+epoch 276/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=276 train_loss=0.303061 lr=0.001 selection=val_map_50_95:0.570213 best=false images=320/320 skipped=0 elapsed=2646.47s val_loss=0.308463 val_map50=0.897568 val_map50_95=0.570213
+epoch 277/500 training
+epoch 277/500 validation
+epoch 277/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=277 train_loss=0.301644 lr=0.001 selection=val_map_50_95:0.597730 best=false images=320/320 skipped=0 elapsed=2655.63s val_loss=0.297137 val_map50=0.919757 val_map50_95=0.597730
+epoch 278/500 training
+epoch 278/500 validation
+epoch 278/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=278 train_loss=0.302887 lr=0.001 selection=val_map_50_95:0.599884 best=false images=320/320 skipped=0 elapsed=2665.01s val_loss=0.292488 val_map50=0.910093 val_map50_95=0.599884
+epoch 279/500 training
+epoch 279/500 validation
+epoch 279/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=279 train_loss=0.298965 lr=0.001 selection=val_map_50_95:0.601737 best=false images=320/320 skipped=0 elapsed=2674.53s val_loss=0.296818 val_map50=0.916671 val_map50_95=0.601737
+epoch 280/500 training
+epoch 280/500 validation
+epoch 280/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=280 train_loss=0.298249 lr=0.001 selection=val_map_50_95:0.578830 best=false images=320/320 skipped=0 elapsed=2683.87s val_loss=0.312169 val_map50=0.916132 val_map50_95=0.578830
+epoch 281/500 training
+epoch 281/500 validation
+epoch 281/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=281 train_loss=0.300722 lr=0.001 selection=val_map_50_95:0.577996 best=false images=320/320 skipped=0 elapsed=2693.06s val_loss=0.298744 val_map50=0.892412 val_map50_95=0.577996
+epoch 282/500 training
+epoch 282/500 validation
+epoch 282/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=282 train_loss=0.296445 lr=0.001 selection=val_map_50_95:0.588333 best=false images=320/320 skipped=0 elapsed=2702.51s val_loss=0.296867 val_map50=0.910138 val_map50_95=0.588333
+epoch 283/500 training
+epoch 283/500 validation
+epoch 283/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=283 train_loss=0.304060 lr=0.001 selection=val_map_50_95:0.561054 best=false images=320/320 skipped=0 elapsed=2711.96s val_loss=0.316805 val_map50=0.891443 val_map50_95=0.561054
+epoch 284/500 training
+epoch 284/500 validation
+epoch 284/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=284 train_loss=0.301034 lr=0.001 selection=val_map_50_95:0.602239 best=false images=320/320 skipped=0 elapsed=2721.02s val_loss=0.294627 val_map50=0.919707 val_map50_95=0.602239
+epoch 285/500 training
+epoch 285/500 validation
+epoch 285/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=285 train_loss=0.303428 lr=0.001 selection=val_map_50_95:0.590479 best=false images=320/320 skipped=0 elapsed=2730.27s val_loss=0.297373 val_map50=0.909671 val_map50_95=0.590479
+epoch 286/500 training
+epoch 286/500 validation
+epoch 286/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=286 train_loss=0.296310 lr=0.001 selection=val_map_50_95:0.596041 best=false images=320/320 skipped=0 elapsed=2739.70s val_loss=0.295142 val_map50=0.910081 val_map50_95=0.596041
+epoch 287/500 training
+epoch 287/500 validation
+epoch 287/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=287 train_loss=0.290085 lr=0.001 selection=val_map_50_95:0.582932 best=false images=320/320 skipped=0 elapsed=2749.07s val_loss=0.293379 val_map50=0.891027 val_map50_95=0.582932
+epoch 288/500 training
+epoch 288/500 validation
+epoch 288/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=288 train_loss=0.289089 lr=0.001 selection=val_map_50_95:0.586250 best=false images=320/320 skipped=0 elapsed=2758.33s val_loss=0.303346 val_map50=0.917862 val_map50_95=0.586250
+epoch 289/500 training
+epoch 289/500 validation
+epoch 289/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=289 train_loss=0.299231 lr=0.001 selection=val_map_50_95:0.593059 best=false images=320/320 skipped=0 elapsed=2767.79s val_loss=0.303217 val_map50=0.929081 val_map50_95=0.593059
+epoch 290/500 training
+epoch 290/500 validation
+epoch 290/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=290 train_loss=0.303850 lr=0.001 selection=val_map_50_95:0.602300 best=false images=320/320 skipped=0 elapsed=2777.20s val_loss=0.301937 val_map50=0.937931 val_map50_95=0.602300
+epoch 291/500 training
+epoch 291/500 validation
+epoch 291/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=291 train_loss=0.304166 lr=0.001 selection=val_map_50_95:0.582146 best=false images=320/320 skipped=0 elapsed=2786.48s val_loss=0.296184 val_map50=0.892416 val_map50_95=0.582146
+epoch 292/500 training
+epoch 292/500 validation
+epoch 292/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 292 metric=0.613777
+epoch=292 train_loss=0.302728 lr=0.001 selection=val_map_50_95:0.613777 best=true images=320/320 skipped=0 elapsed=2796.69s val_loss=0.294123 val_map50=0.939382 val_map50_95=0.613777
+epoch 293/500 training
+epoch 293/500 validation
+epoch 293/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=293 train_loss=0.301190 lr=0.001 selection=val_map_50_95:0.597209 best=false images=320/320 skipped=0 elapsed=2806.28s val_loss=0.300610 val_map50=0.928092 val_map50_95=0.597209
+epoch 294/500 training
+epoch 294/500 validation
+epoch 294/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=294 train_loss=0.302814 lr=0.001 selection=val_map_50_95:0.572607 best=false images=320/320 skipped=0 elapsed=2815.71s val_loss=0.299937 val_map50=0.880364 val_map50_95=0.572607
+epoch 295/500 training
+epoch 295/500 validation
+epoch 295/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=295 train_loss=0.302048 lr=0.001 selection=val_map_50_95:0.603510 best=false images=320/320 skipped=0 elapsed=2825.08s val_loss=0.293504 val_map50=0.919190 val_map50_95=0.603510
+epoch 296/500 training
+epoch 296/500 validation
+epoch 296/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=296 train_loss=0.303426 lr=0.001 selection=val_map_50_95:0.580649 best=false images=320/320 skipped=0 elapsed=2834.46s val_loss=0.297638 val_map50=0.891765 val_map50_95=0.580649
+epoch 297/500 training
+epoch 297/500 validation
+epoch 297/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=297 train_loss=0.296216 lr=0.001 selection=val_map_50_95:0.596509 best=false images=320/320 skipped=0 elapsed=2843.59s val_loss=0.293020 val_map50=0.910526 val_map50_95=0.596509
+epoch 298/500 training
+epoch 298/500 validation
+epoch 298/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=298 train_loss=0.295215 lr=0.001 selection=val_map_50_95:0.594421 best=false images=320/320 skipped=0 elapsed=2852.72s val_loss=0.294698 val_map50=0.901039 val_map50_95=0.594421
+epoch 299/500 training
+epoch 299/500 validation
+epoch 299/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=299 train_loss=0.297876 lr=0.001 selection=val_map_50_95:0.594634 best=false images=320/320 skipped=0 elapsed=2862.16s val_loss=0.301155 val_map50=0.911520 val_map50_95=0.594634
+epoch 300/500 training
+epoch 300/500 validation
+epoch 300/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=300 train_loss=0.299425 lr=0.001 selection=val_map_50_95:0.581383 best=false images=320/320 skipped=0 elapsed=2871.84s val_loss=0.298020 val_map50=0.882427 val_map50_95=0.581383
+epoch 301/500 training
+epoch 301/500 validation
+epoch 301/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=301 train_loss=0.301899 lr=0.001 selection=val_map_50_95:0.589864 best=false images=320/320 skipped=0 elapsed=2881.25s val_loss=0.298951 val_map50=0.909787 val_map50_95=0.589864
+epoch 302/500 training
+epoch 302/500 validation
+epoch 302/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=302 train_loss=0.287457 lr=0.001 selection=val_map_50_95:0.586937 best=false images=320/320 skipped=0 elapsed=2890.38s val_loss=0.297476 val_map50=0.899652 val_map50_95=0.586937
+epoch 303/500 training
+epoch 303/500 validation
+epoch 303/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=303 train_loss=0.298946 lr=0.001 selection=val_map_50_95:0.581096 best=false images=320/320 skipped=0 elapsed=2899.60s val_loss=0.303367 val_map50=0.908963 val_map50_95=0.581096
+epoch 304/500 training
+epoch 304/500 validation
+epoch 304/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=304 train_loss=0.295604 lr=0.001 selection=val_map_50_95:0.592147 best=false images=320/320 skipped=0 elapsed=2909.05s val_loss=0.290625 val_map50=0.900784 val_map50_95=0.592147
+epoch 305/500 training
+epoch 305/500 validation
+epoch 305/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=305 train_loss=0.294789 lr=0.001 selection=val_map_50_95:0.608602 best=false images=320/320 skipped=0 elapsed=2918.69s val_loss=0.290360 val_map50=0.928906 val_map50_95=0.608602
+epoch 306/500 training
+epoch 306/500 validation
+epoch 306/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=306 train_loss=0.290836 lr=0.001 selection=val_map_50_95:0.595962 best=false images=320/320 skipped=0 elapsed=2928.20s val_loss=0.306899 val_map50=0.936720 val_map50_95=0.595962
+epoch 307/500 training
+epoch 307/500 validation
+epoch 307/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=307 train_loss=0.306929 lr=0.001 selection=val_map_50_95:0.562653 best=false images=320/320 skipped=0 elapsed=2937.79s val_loss=0.327993 val_map50=0.915433 val_map50_95=0.562653
+epoch 308/500 training
+epoch 308/500 validation
+epoch 308/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=308 train_loss=0.300921 lr=0.001 selection=val_map_50_95:0.600280 best=false images=320/320 skipped=0 elapsed=2946.94s val_loss=0.301184 val_map50=0.926971 val_map50_95=0.600280
+epoch 309/500 training
+epoch 309/500 validation
+epoch 309/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=309 train_loss=0.302710 lr=0.001 selection=val_map_50_95:0.598935 best=false images=320/320 skipped=0 elapsed=2956.59s val_loss=0.292071 val_map50=0.910439 val_map50_95=0.598935
+epoch 310/500 training
+epoch 310/500 validation
+epoch 310/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=310 train_loss=0.294366 lr=0.001 selection=val_map_50_95:0.596539 best=false images=320/320 skipped=0 elapsed=2965.79s val_loss=0.291439 val_map50=0.901283 val_map50_95=0.596539
+epoch 311/500 training
+epoch 311/500 validation
+epoch 311/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=311 train_loss=0.292493 lr=0.001 selection=val_map_50_95:0.576221 best=false images=320/320 skipped=0 elapsed=2975.03s val_loss=0.299336 val_map50=0.874216 val_map50_95=0.576221
+epoch 312/500 training
+epoch 312/500 validation
+epoch 312/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=312 train_loss=0.291101 lr=0.001 selection=val_map_50_95:0.603419 best=false images=320/320 skipped=0 elapsed=2984.35s val_loss=0.291362 val_map50=0.912025 val_map50_95=0.603419
+epoch 313/500 training
+epoch 313/500 validation
+epoch 313/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=313 train_loss=0.287647 lr=0.001 selection=val_map_50_95:0.590672 best=false images=320/320 skipped=0 elapsed=2993.51s val_loss=0.291664 val_map50=0.883264 val_map50_95=0.590672
+epoch 314/500 training
+epoch 314/500 validation
+epoch 314/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=314 train_loss=0.292848 lr=0.001 selection=val_map_50_95:0.594169 best=false images=320/320 skipped=0 elapsed=3003.08s val_loss=0.298406 val_map50=0.909893 val_map50_95=0.594169
+epoch 315/500 training
+epoch 315/500 validation
+epoch 315/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=315 train_loss=0.289828 lr=0.001 selection=val_map_50_95:0.605398 best=false images=320/320 skipped=0 elapsed=3012.60s val_loss=0.290792 val_map50=0.921078 val_map50_95=0.605398
+epoch 316/500 training
+epoch 316/500 validation
+epoch 316/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=316 train_loss=0.294985 lr=0.001 selection=val_map_50_95:0.584846 best=false images=320/320 skipped=0 elapsed=3022.25s val_loss=0.304739 val_map50=0.907822 val_map50_95=0.584846
+epoch 317/500 training
+epoch 317/500 validation
+epoch 317/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=317 train_loss=0.296554 lr=0.001 selection=val_map_50_95:0.598146 best=false images=320/320 skipped=0 elapsed=3031.50s val_loss=0.297499 val_map50=0.917078 val_map50_95=0.598146
+epoch 318/500 training
+epoch 318/500 validation
+epoch 318/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=318 train_loss=0.285682 lr=0.001 selection=val_map_50_95:0.605660 best=false images=320/320 skipped=0 elapsed=3040.83s val_loss=0.292367 val_map50=0.910963 val_map50_95=0.605660
+epoch 319/500 training
+epoch 319/500 validation
+epoch 319/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=319 train_loss=0.297015 lr=0.001 selection=val_map_50_95:0.611545 best=false images=320/320 skipped=0 elapsed=3050.35s val_loss=0.294988 val_map50=0.937572 val_map50_95=0.611545
+epoch 320/500 training
+epoch 320/500 validation
+epoch 320/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=320 train_loss=0.286712 lr=0.001 selection=val_map_50_95:0.609587 best=false images=320/320 skipped=0 elapsed=3059.64s val_loss=0.302540 val_map50=0.935212 val_map50_95=0.609587
+epoch 321/500 training
+epoch 321/500 validation
+epoch 321/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=321 train_loss=0.291664 lr=0.001 selection=val_map_50_95:0.598731 best=false images=320/320 skipped=0 elapsed=3069.16s val_loss=0.290148 val_map50=0.909397 val_map50_95=0.598731
+epoch 322/500 training
+epoch 322/500 validation
+epoch 322/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=322 train_loss=0.293036 lr=0.001 selection=val_map_50_95:0.609747 best=false images=320/320 skipped=0 elapsed=3078.37s val_loss=0.291331 val_map50=0.930574 val_map50_95=0.609747
+epoch 323/500 training
+epoch 323/500 validation
+epoch 323/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=323 train_loss=0.296354 lr=0.001 selection=val_map_50_95:0.596189 best=false images=320/320 skipped=0 elapsed=3088.11s val_loss=0.295070 val_map50=0.918326 val_map50_95=0.596189
+epoch 324/500 training
+epoch 324/500 validation
+epoch 324/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=324 train_loss=0.296720 lr=0.001 selection=val_map_50_95:0.601226 best=false images=320/320 skipped=0 elapsed=3097.55s val_loss=0.293141 val_map50=0.920444 val_map50_95=0.601226
+epoch 325/500 training
+epoch 325/500 validation
+epoch 325/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=325 train_loss=0.291658 lr=0.001 selection=val_map_50_95:0.598594 best=false images=320/320 skipped=0 elapsed=3106.92s val_loss=0.289927 val_map50=0.910265 val_map50_95=0.598594
+epoch 326/500 training
+epoch 326/500 validation
+epoch 326/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 326 metric=0.616747
+epoch=326 train_loss=0.299114 lr=0.001 selection=val_map_50_95:0.616747 best=true images=320/320 skipped=0 elapsed=3121.65s val_loss=0.292356 val_map50=0.937517 val_map50_95=0.616747
+epoch 327/500 training
+epoch 327/500 validation
+epoch 327/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=327 train_loss=0.293513 lr=0.001 selection=val_map_50_95:0.600904 best=false images=320/320 skipped=0 elapsed=3131.20s val_loss=0.301736 val_map50=0.935894 val_map50_95=0.600904
+epoch 328/500 training
+epoch 328/500 validation
+epoch 328/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=328 train_loss=0.295382 lr=0.001 selection=val_map_50_95:0.575385 best=false images=320/320 skipped=0 elapsed=3140.61s val_loss=0.302632 val_map50=0.909084 val_map50_95=0.575385
+epoch 329/500 training
+epoch 329/500 validation
+epoch 329/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=329 train_loss=0.293443 lr=0.001 selection=val_map_50_95:0.580279 best=false images=320/320 skipped=0 elapsed=3149.78s val_loss=0.301627 val_map50=0.898503 val_map50_95=0.580279
+epoch 330/500 training
+epoch 330/500 validation
+epoch 330/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=330 train_loss=0.292994 lr=0.001 selection=val_map_50_95:0.598032 best=false images=320/320 skipped=0 elapsed=3159.22s val_loss=0.293427 val_map50=0.918379 val_map50_95=0.598032
+epoch 331/500 training
+epoch 331/500 validation
+epoch 331/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=331 train_loss=0.296953 lr=0.001 selection=val_map_50_95:0.601946 best=false images=320/320 skipped=0 elapsed=3168.70s val_loss=0.295131 val_map50=0.928609 val_map50_95=0.601946
+epoch 332/500 training
+epoch 332/500 validation
+epoch 332/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=332 train_loss=0.292479 lr=0.001 selection=val_map_50_95:0.612784 best=false images=320/320 skipped=0 elapsed=3178.17s val_loss=0.292772 val_map50=0.928825 val_map50_95=0.612784
+epoch 333/500 training
+epoch 333/500 validation
+epoch 333/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=333 train_loss=0.290470 lr=0.001 selection=val_map_50_95:0.594397 best=false images=320/320 skipped=0 elapsed=3187.41s val_loss=0.293172 val_map50=0.909209 val_map50_95=0.594397
+epoch 334/500 training
+epoch 334/500 validation
+epoch 334/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=334 train_loss=0.295376 lr=0.001 selection=val_map_50_95:0.595150 best=false images=320/320 skipped=0 elapsed=3196.61s val_loss=0.298924 val_map50=0.912813 val_map50_95=0.595150
+epoch 335/500 training
+epoch 335/500 validation
+epoch 335/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=335 train_loss=0.291895 lr=0.001 selection=val_map_50_95:0.577470 best=false images=320/320 skipped=0 elapsed=3205.78s val_loss=0.298495 val_map50=0.873561 val_map50_95=0.577470
+epoch 336/500 training
+epoch 336/500 validation
+epoch 336/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=336 train_loss=0.297559 lr=0.001 selection=val_map_50_95:0.554248 best=false images=320/320 skipped=0 elapsed=3215.06s val_loss=0.312706 val_map50=0.880578 val_map50_95=0.554248
+epoch 337/500 training
+epoch 337/500 validation
+epoch 337/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=337 train_loss=0.292216 lr=0.001 selection=val_map_50_95:0.608029 best=false images=320/320 skipped=0 elapsed=3224.55s val_loss=0.292915 val_map50=0.921438 val_map50_95=0.608029
+epoch 338/500 training
+epoch 338/500 validation
+epoch 338/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=338 train_loss=0.290218 lr=0.001 selection=val_map_50_95:0.605043 best=false images=320/320 skipped=0 elapsed=3233.71s val_loss=0.285819 val_map50=0.902432 val_map50_95=0.605043
+epoch 339/500 training
+epoch 339/500 validation
+epoch 339/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=339 train_loss=0.286330 lr=0.001 selection=val_map_50_95:0.607831 best=false images=320/320 skipped=0 elapsed=3242.88s val_loss=0.290949 val_map50=0.920339 val_map50_95=0.607831
+epoch 340/500 training
+epoch 340/500 validation
+epoch 340/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 340 metric=0.619668
+epoch=340 train_loss=0.285512 lr=0.001 selection=val_map_50_95:0.619668 best=true images=320/320 skipped=0 elapsed=3253.10s val_loss=0.289414 val_map50=0.938020 val_map50_95=0.619668
+epoch 341/500 training
+epoch 341/500 validation
+epoch 341/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=341 train_loss=0.287676 lr=0.001 selection=val_map_50_95:0.612671 best=false images=320/320 skipped=0 elapsed=3262.46s val_loss=0.288900 val_map50=0.928433 val_map50_95=0.612671
+epoch 342/500 training
+epoch 342/500 validation
+epoch 342/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=342 train_loss=0.293697 lr=0.001 selection=val_map_50_95:0.612310 best=false images=320/320 skipped=0 elapsed=3272.14s val_loss=0.292186 val_map50=0.926805 val_map50_95=0.612310
+epoch 343/500 training
+epoch 343/500 validation
+epoch 343/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=343 train_loss=0.283797 lr=0.001 selection=val_map_50_95:0.601801 best=false images=320/320 skipped=0 elapsed=3281.54s val_loss=0.288450 val_map50=0.910846 val_map50_95=0.601801
+epoch 344/500 training
+epoch 344/500 validation
+epoch 344/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=344 train_loss=0.293459 lr=0.001 selection=val_map_50_95:0.604403 best=false images=320/320 skipped=0 elapsed=3290.88s val_loss=0.287315 val_map50=0.910951 val_map50_95=0.604403
+epoch 345/500 training
+epoch 345/500 validation
+epoch 345/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=345 train_loss=0.286929 lr=0.001 selection=val_map_50_95:0.602542 best=false images=320/320 skipped=0 elapsed=3300.49s val_loss=0.296507 val_map50=0.927490 val_map50_95=0.602542
+epoch 346/500 training
+epoch 346/500 validation
+epoch 346/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=346 train_loss=0.286810 lr=0.001 selection=val_map_50_95:0.612853 best=false images=320/320 skipped=0 elapsed=3310.00s val_loss=0.291920 val_map50=0.929499 val_map50_95=0.612853
+epoch 347/500 training
+epoch 347/500 validation
+epoch 347/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=347 train_loss=0.289017 lr=0.001 selection=val_map_50_95:0.569074 best=false images=320/320 skipped=0 elapsed=3319.44s val_loss=0.310482 val_map50=0.907488 val_map50_95=0.569074
+epoch 348/500 training
+epoch 348/500 validation
+epoch 348/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=348 train_loss=0.291404 lr=0.001 selection=val_map_50_95:0.605522 best=false images=320/320 skipped=0 elapsed=3328.75s val_loss=0.286803 val_map50=0.902199 val_map50_95=0.605522
+epoch 349/500 training
+epoch 349/500 validation
+epoch 349/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=349 train_loss=0.290718 lr=0.001 selection=val_map_50_95:0.604810 best=false images=320/320 skipped=0 elapsed=3338.34s val_loss=0.287549 val_map50=0.913067 val_map50_95=0.604810
+epoch 350/500 training
+epoch 350/500 validation
+epoch 350/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=350 train_loss=0.289388 lr=0.001 selection=val_map_50_95:0.604782 best=false images=320/320 skipped=0 elapsed=3347.96s val_loss=0.292430 val_map50=0.918523 val_map50_95=0.604782
+epoch 351/500 training
+epoch 351/500 validation
+epoch 351/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=351 train_loss=0.285181 lr=0.001 selection=val_map_50_95:0.602940 best=false images=320/320 skipped=0 elapsed=3357.43s val_loss=0.287389 val_map50=0.911475 val_map50_95=0.602940
+epoch 352/500 training
+epoch 352/500 validation
+epoch 352/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=352 train_loss=0.287161 lr=0.001 selection=val_map_50_95:0.595296 best=false images=320/320 skipped=0 elapsed=3366.82s val_loss=0.291053 val_map50=0.900850 val_map50_95=0.595296
+epoch 353/500 training
+epoch 353/500 validation
+epoch 353/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=353 train_loss=0.289718 lr=0.001 selection=val_map_50_95:0.590037 best=false images=320/320 skipped=0 elapsed=3376.35s val_loss=0.305924 val_map50=0.927782 val_map50_95=0.590037
+epoch 354/500 training
+epoch 354/500 validation
+epoch 354/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=354 train_loss=0.290431 lr=0.001 selection=val_map_50_95:0.586457 best=false images=320/320 skipped=0 elapsed=3385.89s val_loss=0.301080 val_map50=0.908687 val_map50_95=0.586457
+epoch 355/500 training
+epoch 355/500 validation
+epoch 355/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=355 train_loss=0.289432 lr=0.001 selection=val_map_50_95:0.594023 best=false images=320/320 skipped=0 elapsed=3395.41s val_loss=0.295318 val_map50=0.901071 val_map50_95=0.594023
+epoch 356/500 training
+epoch 356/500 validation
+epoch 356/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=356 train_loss=0.291142 lr=0.001 selection=val_map_50_95:0.612322 best=false images=320/320 skipped=0 elapsed=3404.86s val_loss=0.286502 val_map50=0.920589 val_map50_95=0.612322
+epoch 357/500 training
+epoch 357/500 validation
+epoch 357/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=357 train_loss=0.285503 lr=0.001 selection=val_map_50_95:0.592375 best=false images=320/320 skipped=0 elapsed=3414.91s val_loss=0.290509 val_map50=0.900012 val_map50_95=0.592375
+epoch 358/500 training
+epoch 358/500 validation
+epoch 358/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=358 train_loss=0.282231 lr=0.001 selection=val_map_50_95:0.593668 best=false images=320/320 skipped=0 elapsed=3424.54s val_loss=0.289961 val_map50=0.882299 val_map50_95=0.593668
+epoch 359/500 training
+epoch 359/500 validation
+epoch 359/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=359 train_loss=0.281710 lr=0.001 selection=val_map_50_95:0.606168 best=false images=320/320 skipped=0 elapsed=3433.87s val_loss=0.285946 val_map50=0.912514 val_map50_95=0.606168
+epoch 360/500 training
+epoch 360/500 validation
+epoch 360/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=360 train_loss=0.278851 lr=0.001 selection=val_map_50_95:0.608968 best=false images=320/320 skipped=0 elapsed=3448.37s val_loss=0.289526 val_map50=0.927856 val_map50_95=0.608968
+epoch 361/500 training
+epoch 361/500 validation
+epoch 361/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=361 train_loss=0.292027 lr=0.001 selection=val_map_50_95:0.569871 best=false images=320/320 skipped=0 elapsed=3457.84s val_loss=0.307605 val_map50=0.899097 val_map50_95=0.569871
+epoch 362/500 training
+epoch 362/500 validation
+epoch 362/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=362 train_loss=0.294258 lr=0.001 selection=val_map_50_95:0.602393 best=false images=320/320 skipped=0 elapsed=3467.34s val_loss=0.286005 val_map50=0.900993 val_map50_95=0.602393
+epoch 363/500 training
+epoch 363/500 validation
+epoch 363/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 363 metric=0.624906
+epoch=363 train_loss=0.295731 lr=0.001 selection=val_map_50_95:0.624906 best=true images=320/320 skipped=0 elapsed=3477.70s val_loss=0.292461 val_map50=0.948895 val_map50_95=0.624906
+epoch 364/500 training
+epoch 364/500 validation
+epoch 364/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=364 train_loss=0.290708 lr=0.001 selection=val_map_50_95:0.608459 best=false images=320/320 skipped=0 elapsed=3487.16s val_loss=0.292917 val_map50=0.920087 val_map50_95=0.608459
+epoch 365/500 training
+epoch 365/500 validation
+epoch 365/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=365 train_loss=0.286649 lr=0.001 selection=val_map_50_95:0.599398 best=false images=320/320 skipped=0 elapsed=3496.64s val_loss=0.292978 val_map50=0.910246 val_map50_95=0.599398
+epoch 366/500 training
+epoch 366/500 validation
+epoch 366/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=366 train_loss=0.283793 lr=0.001 selection=val_map_50_95:0.602646 best=false images=320/320 skipped=0 elapsed=3506.02s val_loss=0.287870 val_map50=0.902182 val_map50_95=0.602646
+epoch 367/500 training
+epoch 367/500 validation
+epoch 367/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=367 train_loss=0.287644 lr=0.001 selection=val_map_50_95:0.597529 best=false images=320/320 skipped=0 elapsed=3515.44s val_loss=0.285735 val_map50=0.891710 val_map50_95=0.597529
+epoch 368/500 training
+epoch 368/500 validation
+epoch 368/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=368 train_loss=0.287396 lr=0.001 selection=val_map_50_95:0.611549 best=false images=320/320 skipped=0 elapsed=3524.66s val_loss=0.287428 val_map50=0.921825 val_map50_95=0.611549
+epoch 369/500 training
+epoch 369/500 validation
+epoch 369/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=369 train_loss=0.285037 lr=0.001 selection=val_map_50_95:0.584113 best=false images=320/320 skipped=0 elapsed=3534.21s val_loss=0.299573 val_map50=0.908107 val_map50_95=0.584113
+epoch 370/500 training
+epoch 370/500 validation
+epoch 370/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=370 train_loss=0.285156 lr=0.001 selection=val_map_50_95:0.601380 best=false images=320/320 skipped=0 elapsed=3543.44s val_loss=0.291007 val_map50=0.901515 val_map50_95=0.601380
+epoch 371/500 training
+epoch 371/500 validation
+epoch 371/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=371 train_loss=0.288040 lr=0.001 selection=val_map_50_95:0.599612 best=false images=320/320 skipped=0 elapsed=3552.89s val_loss=0.295427 val_map50=0.912192 val_map50_95=0.599612
+epoch 372/500 training
+epoch 372/500 validation
+epoch 372/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=372 train_loss=0.287497 lr=0.001 selection=val_map_50_95:0.614905 best=false images=320/320 skipped=0 elapsed=3562.22s val_loss=0.286261 val_map50=0.922420 val_map50_95=0.614905
+epoch 373/500 training
+epoch 373/500 validation
+epoch 373/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=373 train_loss=0.285723 lr=0.001 selection=val_map_50_95:0.569442 best=false images=320/320 skipped=0 elapsed=3571.75s val_loss=0.315962 val_map50=0.907148 val_map50_95=0.569442
+epoch 374/500 training
+epoch 374/500 validation
+epoch 374/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=374 train_loss=0.292321 lr=0.001 selection=val_map_50_95:0.606108 best=false images=320/320 skipped=0 elapsed=3581.19s val_loss=0.293957 val_map50=0.927595 val_map50_95=0.606108
+epoch 375/500 training
+epoch 375/500 validation
+epoch 375/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=375 train_loss=0.276783 lr=0.001 selection=val_map_50_95:0.608871 best=false images=320/320 skipped=0 elapsed=3590.77s val_loss=0.285514 val_map50=0.912141 val_map50_95=0.608871
+epoch 376/500 training
+epoch 376/500 validation
+epoch 376/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=376 train_loss=0.281407 lr=0.001 selection=val_map_50_95:0.590383 best=false images=320/320 skipped=0 elapsed=3600.12s val_loss=0.291612 val_map50=0.892418 val_map50_95=0.590383
+epoch 377/500 training
+epoch 377/500 validation
+epoch 377/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=377 train_loss=0.281228 lr=0.001 selection=val_map_50_95:0.606129 best=false images=320/320 skipped=0 elapsed=3609.55s val_loss=0.287628 val_map50=0.920782 val_map50_95=0.606129
+epoch 378/500 training
+epoch 378/500 validation
+epoch 378/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=378 train_loss=0.286109 lr=0.001 selection=val_map_50_95:0.605159 best=false images=320/320 skipped=0 elapsed=3618.93s val_loss=0.291710 val_map50=0.928490 val_map50_95=0.605159
+epoch 379/500 training
+epoch 379/500 validation
+epoch 379/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=379 train_loss=0.281659 lr=0.001 selection=val_map_50_95:0.591874 best=false images=320/320 skipped=0 elapsed=3628.40s val_loss=0.292763 val_map50=0.901968 val_map50_95=0.591874
+epoch 380/500 training
+epoch 380/500 validation
+epoch 380/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=380 train_loss=0.290099 lr=0.001 selection=val_map_50_95:0.606007 best=false images=320/320 skipped=0 elapsed=3637.88s val_loss=0.283948 val_map50=0.903137 val_map50_95=0.606007
+epoch 381/500 training
+epoch 381/500 validation
+epoch 381/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=381 train_loss=0.288318 lr=0.001 selection=val_map_50_95:0.606616 best=false images=320/320 skipped=0 elapsed=3647.31s val_loss=0.286165 val_map50=0.904471 val_map50_95=0.606616
+epoch 382/500 training
+epoch 382/500 validation
+epoch 382/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=382 train_loss=0.285872 lr=0.001 selection=val_map_50_95:0.622591 best=false images=320/320 skipped=0 elapsed=3656.76s val_loss=0.283696 val_map50=0.930204 val_map50_95=0.622591
+epoch 383/500 training
+epoch 383/500 validation
+epoch 383/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=383 train_loss=0.289084 lr=0.001 selection=val_map_50_95:0.614194 best=false images=320/320 skipped=0 elapsed=3666.16s val_loss=0.290685 val_map50=0.928753 val_map50_95=0.614194
+epoch 384/500 training
+epoch 384/500 validation
+epoch 384/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=384 train_loss=0.275378 lr=0.001 selection=val_map_50_95:0.613096 best=false images=320/320 skipped=0 elapsed=3675.94s val_loss=0.290995 val_map50=0.936793 val_map50_95=0.613096
+epoch 385/500 training
+epoch 385/500 validation
+epoch 385/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=385 train_loss=0.286593 lr=0.001 selection=val_map_50_95:0.612482 best=false images=320/320 skipped=0 elapsed=3685.49s val_loss=0.286123 val_map50=0.920585 val_map50_95=0.612482
+epoch 386/500 training
+epoch 386/500 validation
+epoch 386/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=386 train_loss=0.288056 lr=0.001 selection=val_map_50_95:0.606286 best=false images=320/320 skipped=0 elapsed=3694.86s val_loss=0.286565 val_map50=0.912000 val_map50_95=0.606286
+epoch 387/500 training
+epoch 387/500 validation
+epoch 387/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=387 train_loss=0.292205 lr=0.001 selection=val_map_50_95:0.589788 best=false images=320/320 skipped=0 elapsed=3704.35s val_loss=0.293250 val_map50=0.892049 val_map50_95=0.589788
+epoch 388/500 training
+epoch 388/500 validation
+epoch 388/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=388 train_loss=0.284393 lr=0.001 selection=val_map_50_95:0.611640 best=false images=320/320 skipped=0 elapsed=3713.86s val_loss=0.288648 val_map50=0.929159 val_map50_95=0.611640
+epoch 389/500 training
+epoch 389/500 validation
+epoch 389/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=389 train_loss=0.281688 lr=0.001 selection=val_map_50_95:0.617045 best=false images=320/320 skipped=0 elapsed=3723.42s val_loss=0.286876 val_map50=0.938628 val_map50_95=0.617045
+epoch 390/500 training
+epoch 390/500 validation
+epoch 390/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=390 train_loss=0.281133 lr=0.001 selection=val_map_50_95:0.603130 best=false images=320/320 skipped=0 elapsed=3733.02s val_loss=0.288454 val_map50=0.911122 val_map50_95=0.603130
+epoch 391/500 training
+epoch 391/500 validation
+epoch 391/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=391 train_loss=0.285070 lr=0.001 selection=val_map_50_95:0.603757 best=false images=320/320 skipped=0 elapsed=3742.31s val_loss=0.297359 val_map50=0.929130 val_map50_95=0.603757
+epoch 392/500 training
+epoch 392/500 validation
+epoch 392/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=392 train_loss=0.288105 lr=0.001 selection=val_map_50_95:0.608413 best=false images=320/320 skipped=0 elapsed=3751.76s val_loss=0.296811 val_map50=0.926070 val_map50_95=0.608413
+epoch 393/500 training
+epoch 393/500 validation
+epoch 393/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=393 train_loss=0.294550 lr=0.001 selection=val_map_50_95:0.596121 best=false images=320/320 skipped=0 elapsed=3761.35s val_loss=0.322053 val_map50=0.943885 val_map50_95=0.596121
+epoch 394/500 training
+epoch 394/500 validation
+epoch 394/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=394 train_loss=0.286292 lr=0.001 selection=val_map_50_95:0.623944 best=false images=320/320 skipped=0 elapsed=3775.67s val_loss=0.288812 val_map50=0.939092 val_map50_95=0.623944
+epoch 395/500 training
+epoch 395/500 validation
+epoch 395/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=395 train_loss=0.294688 lr=0.001 selection=val_map_50_95:0.614600 best=false images=320/320 skipped=0 elapsed=3785.22s val_loss=0.283488 val_map50=0.921215 val_map50_95=0.614600
+epoch 396/500 training
+epoch 396/500 validation
+epoch 396/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=396 train_loss=0.290831 lr=0.001 selection=val_map_50_95:0.609449 best=false images=320/320 skipped=0 elapsed=3794.61s val_loss=0.283484 val_map50=0.912167 val_map50_95=0.609449
+epoch 397/500 training
+epoch 397/500 validation
+epoch 397/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=397 train_loss=0.292432 lr=0.001 selection=val_map_50_95:0.608824 best=false images=320/320 skipped=0 elapsed=3803.74s val_loss=0.288214 val_map50=0.912603 val_map50_95=0.608824
+epoch 398/500 training
+epoch 398/500 validation
+epoch 398/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=398 train_loss=0.284053 lr=0.001 selection=val_map_50_95:0.609130 best=false images=320/320 skipped=0 elapsed=3813.18s val_loss=0.288348 val_map50=0.918989 val_map50_95=0.609130
+epoch 399/500 training
+epoch 399/500 validation
+epoch 399/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=399 train_loss=0.283484 lr=0.001 selection=val_map_50_95:0.611162 best=false images=320/320 skipped=0 elapsed=3822.55s val_loss=0.299854 val_map50=0.935768 val_map50_95=0.611162
+epoch 400/500 training
+epoch 400/500 validation
+epoch 400/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 400 metric=0.628323
+epoch=400 train_loss=0.286314 lr=0.001 selection=val_map_50_95:0.628323 best=true images=320/320 skipped=0 elapsed=3832.39s val_loss=0.284318 val_map50=0.940232 val_map50_95=0.628323
+epoch 401/500 training
+epoch 401/500 validation
+epoch 401/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=401 train_loss=0.281616 lr=0.001 selection=val_map_50_95:0.613685 best=false images=320/320 skipped=0 elapsed=3841.44s val_loss=0.283822 val_map50=0.919930 val_map50_95=0.613685
+epoch 402/500 training
+epoch 402/500 validation
+epoch 402/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=402 train_loss=0.282878 lr=0.001 selection=val_map_50_95:0.617274 best=false images=320/320 skipped=0 elapsed=3850.68s val_loss=0.283862 val_map50=0.928721 val_map50_95=0.617274
+epoch 403/500 training
+epoch 403/500 validation
+epoch 403/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=403 train_loss=0.283864 lr=0.001 selection=val_map_50_95:0.607552 best=false images=320/320 skipped=0 elapsed=3860.21s val_loss=0.292454 val_map50=0.928545 val_map50_95=0.607552
+epoch 404/500 training
+epoch 404/500 validation
+epoch 404/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=404 train_loss=0.279439 lr=0.001 selection=val_map_50_95:0.622502 best=false images=320/320 skipped=0 elapsed=3869.57s val_loss=0.286134 val_map50=0.931787 val_map50_95=0.622502
+epoch 405/500 training
+epoch 405/500 validation
+epoch 405/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=405 train_loss=0.291212 lr=0.001 selection=val_map_50_95:0.571985 best=false images=320/320 skipped=0 elapsed=3878.93s val_loss=0.307310 val_map50=0.900146 val_map50_95=0.571985
+epoch 406/500 training
+epoch 406/500 validation
+epoch 406/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=406 train_loss=0.283621 lr=0.001 selection=val_map_50_95:0.625414 best=false images=320/320 skipped=0 elapsed=3888.31s val_loss=0.289033 val_map50=0.939252 val_map50_95=0.625414
+epoch 407/500 training
+epoch 407/500 validation
+epoch 407/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=407 train_loss=0.284853 lr=0.001 selection=val_map_50_95:0.612492 best=false images=320/320 skipped=0 elapsed=3897.67s val_loss=0.287926 val_map50=0.928725 val_map50_95=0.612492
+epoch 408/500 training
+epoch 408/500 validation
+epoch 408/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=408 train_loss=0.286431 lr=0.001 selection=val_map_50_95:0.623392 best=false images=320/320 skipped=0 elapsed=3906.96s val_loss=0.282725 val_map50=0.930745 val_map50_95=0.623392
+epoch 409/500 training
+epoch 409/500 validation
+epoch 409/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=409 train_loss=0.281345 lr=0.001 selection=val_map_50_95:0.597643 best=false images=320/320 skipped=0 elapsed=3916.34s val_loss=0.290069 val_map50=0.892225 val_map50_95=0.597643
+epoch 410/500 training
+epoch 410/500 validation
+epoch 410/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=410 train_loss=0.282436 lr=0.001 selection=val_map_50_95:0.614662 best=false images=320/320 skipped=0 elapsed=3925.75s val_loss=0.283327 val_map50=0.919316 val_map50_95=0.614662
+epoch 411/500 training
+epoch 411/500 validation
+epoch 411/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=411 train_loss=0.282533 lr=0.001 selection=val_map_50_95:0.620037 best=false images=320/320 skipped=0 elapsed=3934.97s val_loss=0.282617 val_map50=0.929112 val_map50_95=0.620037
+epoch 412/500 training
+epoch 412/500 validation
+epoch 412/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=412 train_loss=0.288439 lr=0.001 selection=val_map_50_95:0.602838 best=false images=320/320 skipped=0 elapsed=3944.88s val_loss=0.296061 val_map50=0.928102 val_map50_95=0.602838
+epoch 413/500 training
+epoch 413/500 validation
+epoch 413/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=413 train_loss=0.285335 lr=0.001 selection=val_map_50_95:0.604326 best=false images=320/320 skipped=0 elapsed=3954.62s val_loss=0.301678 val_map50=0.936368 val_map50_95=0.604326
+epoch 414/500 training
+epoch 414/500 validation
+epoch 414/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=414 train_loss=0.287876 lr=0.001 selection=val_map_50_95:0.613765 best=false images=320/320 skipped=0 elapsed=3963.83s val_loss=0.298349 val_map50=0.946211 val_map50_95=0.613765
+epoch 415/500 training
+epoch 415/500 validation
+epoch 415/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=415 train_loss=0.283367 lr=0.001 selection=val_map_50_95:0.623884 best=false images=320/320 skipped=0 elapsed=3973.10s val_loss=0.284314 val_map50=0.938092 val_map50_95=0.623884
+epoch 416/500 training
+epoch 416/500 validation
+epoch 416/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=416 train_loss=0.278119 lr=0.001 selection=val_map_50_95:0.615530 best=false images=320/320 skipped=0 elapsed=3982.40s val_loss=0.280376 val_map50=0.920676 val_map50_95=0.615530
+epoch 417/500 training
+epoch 417/500 validation
+epoch 417/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=417 train_loss=0.279756 lr=0.001 selection=val_map_50_95:0.592850 best=false images=320/320 skipped=0 elapsed=3991.60s val_loss=0.294444 val_map50=0.891966 val_map50_95=0.592850
+epoch 418/500 training
+epoch 418/500 validation
+epoch 418/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=418 train_loss=0.277772 lr=0.001 selection=val_map_50_95:0.613699 best=false images=320/320 skipped=0 elapsed=4000.74s val_loss=0.284592 val_map50=0.920899 val_map50_95=0.613699
+epoch 419/500 training
+epoch 419/500 validation
+epoch 419/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=419 train_loss=0.278943 lr=0.001 selection=val_map_50_95:0.588996 best=false images=320/320 skipped=0 elapsed=4010.08s val_loss=0.303193 val_map50=0.927453 val_map50_95=0.588996
+epoch 420/500 training
+epoch 420/500 validation
+epoch 420/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=420 train_loss=0.279130 lr=0.001 selection=val_map_50_95:0.612115 best=false images=320/320 skipped=0 elapsed=4019.22s val_loss=0.280762 val_map50=0.911163 val_map50_95=0.612115
+epoch 421/500 training
+epoch 421/500 validation
+epoch 421/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=421 train_loss=0.282100 lr=0.001 selection=val_map_50_95:0.618017 best=false images=320/320 skipped=0 elapsed=4028.55s val_loss=0.283996 val_map50=0.929259 val_map50_95=0.618017
+epoch 422/500 training
+epoch 422/500 validation
+epoch 422/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=422 train_loss=0.277212 lr=0.001 selection=val_map_50_95:0.612029 best=false images=320/320 skipped=0 elapsed=4037.92s val_loss=0.294494 val_map50=0.936065 val_map50_95=0.612029
+epoch 423/500 training
+epoch 423/500 validation
+epoch 423/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=423 train_loss=0.284163 lr=0.001 selection=val_map_50_95:0.606087 best=false images=320/320 skipped=0 elapsed=4047.42s val_loss=0.291881 val_map50=0.918463 val_map50_95=0.606087
+epoch 424/500 training
+epoch 424/500 validation
+epoch 424/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=424 train_loss=0.279851 lr=0.001 selection=val_map_50_95:0.619903 best=false images=320/320 skipped=0 elapsed=4056.63s val_loss=0.284936 val_map50=0.922161 val_map50_95=0.619903
+epoch 425/500 training
+epoch 425/500 validation
+epoch 425/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=425 train_loss=0.276226 lr=0.001 selection=val_map_50_95:0.605705 best=false images=320/320 skipped=0 elapsed=4065.93s val_loss=0.283379 val_map50=0.902039 val_map50_95=0.605705
+epoch 426/500 training
+epoch 426/500 validation
+epoch 426/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=426 train_loss=0.273963 lr=0.001 selection=val_map_50_95:0.613973 best=false images=320/320 skipped=0 elapsed=4082.65s val_loss=0.280197 val_map50=0.911120 val_map50_95=0.613973
+epoch 427/500 training
+epoch 427/500 validation
+epoch 427/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=427 train_loss=0.282252 lr=0.001 selection=val_map_50_95:0.610206 best=false images=320/320 skipped=0 elapsed=4092.18s val_loss=0.290728 val_map50=0.938189 val_map50_95=0.610206
+epoch 428/500 training
+epoch 428/500 validation
+epoch 428/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=428 train_loss=0.273321 lr=0.001 selection=val_map_50_95:0.623274 best=false images=320/320 skipped=0 elapsed=4107.34s val_loss=0.286716 val_map50=0.939154 val_map50_95=0.623274
+epoch 429/500 training
+epoch 429/500 validation
+epoch 429/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=429 train_loss=0.283028 lr=0.001 selection=val_map_50_95:0.605429 best=false images=320/320 skipped=0 elapsed=4116.51s val_loss=0.286898 val_map50=0.910868 val_map50_95=0.605429
+epoch 430/500 training
+epoch 430/500 validation
+epoch 430/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=430 train_loss=0.279866 lr=0.001 selection=val_map_50_95:0.619272 best=false images=320/320 skipped=0 elapsed=4125.65s val_loss=0.284370 val_map50=0.930343 val_map50_95=0.619272
+epoch 431/500 training
+epoch 431/500 validation
+epoch 431/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=431 train_loss=0.275242 lr=0.001 selection=val_map_50_95:0.616068 best=false images=320/320 skipped=0 elapsed=4135.00s val_loss=0.289988 val_map50=0.938462 val_map50_95=0.616068
+epoch 432/500 training
+epoch 432/500 validation
+epoch 432/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=432 train_loss=0.272995 lr=0.001 selection=val_map_50_95:0.603439 best=false images=320/320 skipped=0 elapsed=4146.20s val_loss=0.289508 val_map50=0.919430 val_map50_95=0.603439
+epoch 433/500 training
+epoch 433/500 validation
+epoch 433/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=433 train_loss=0.279365 lr=0.001 selection=val_map_50_95:0.599493 best=false images=320/320 skipped=0 elapsed=4155.67s val_loss=0.294766 val_map50=0.927667 val_map50_95=0.599493
+epoch 434/500 training
+epoch 434/500 validation
+epoch 434/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=434 train_loss=0.276940 lr=0.001 selection=val_map_50_95:0.622713 best=false images=320/320 skipped=0 elapsed=4165.18s val_loss=0.282823 val_map50=0.928951 val_map50_95=0.622713
+epoch 435/500 training
+epoch 435/500 validation
+epoch 435/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=435 train_loss=0.277145 lr=0.001 selection=val_map_50_95:0.616147 best=false images=320/320 skipped=0 elapsed=4174.41s val_loss=0.281562 val_map50=0.920204 val_map50_95=0.616147
+epoch 436/500 training
+epoch 436/500 validation
+epoch 436/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=436 train_loss=0.282020 lr=0.001 selection=val_map_50_95:0.598551 best=false images=320/320 skipped=0 elapsed=4183.54s val_loss=0.293170 val_map50=0.919300 val_map50_95=0.598551
+epoch 437/500 training
+epoch 437/500 validation
+epoch 437/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=437 train_loss=0.276795 lr=0.001 selection=val_map_50_95:0.592204 best=false images=320/320 skipped=0 elapsed=4192.73s val_loss=0.291291 val_map50=0.900585 val_map50_95=0.592204
+epoch 438/500 training
+epoch 438/500 validation
+epoch 438/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=438 train_loss=0.273649 lr=0.001 selection=val_map_50_95:0.616093 best=false images=320/320 skipped=0 elapsed=4201.90s val_loss=0.283301 val_map50=0.921145 val_map50_95=0.616093
+epoch 439/500 training
+epoch 439/500 validation
+epoch 439/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=439 train_loss=0.275794 lr=0.001 selection=val_map_50_95:0.603680 best=false images=320/320 skipped=0 elapsed=4211.27s val_loss=0.291203 val_map50=0.926694 val_map50_95=0.603680
+epoch 440/500 training
+epoch 440/500 validation
+epoch 440/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 440 metric=0.631129
+epoch=440 train_loss=0.270391 lr=0.001 selection=val_map_50_95:0.631129 best=true images=320/320 skipped=0 elapsed=4221.39s val_loss=0.282590 val_map50=0.940512 val_map50_95=0.631129
+epoch 441/500 training
+epoch 441/500 validation
+epoch 441/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=441 train_loss=0.279735 lr=0.001 selection=val_map_50_95:0.619596 best=false images=320/320 skipped=0 elapsed=4230.70s val_loss=0.281386 val_map50=0.929989 val_map50_95=0.619596
+epoch 442/500 training
+epoch 442/500 validation
+epoch 442/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=442 train_loss=0.279867 lr=0.001 selection=val_map_50_95:0.615713 best=false images=320/320 skipped=0 elapsed=4239.89s val_loss=0.282403 val_map50=0.919627 val_map50_95=0.615713
+epoch 443/500 training
+epoch 443/500 validation
+epoch 443/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=443 train_loss=0.280789 lr=0.001 selection=val_map_50_95:0.624007 best=false images=320/320 skipped=0 elapsed=4249.87s val_loss=0.281186 val_map50=0.931412 val_map50_95=0.624007
+epoch 444/500 training
+epoch 444/500 validation
+epoch 444/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=444 train_loss=0.274169 lr=0.001 selection=val_map_50_95:0.610403 best=false images=320/320 skipped=0 elapsed=4259.46s val_loss=0.289585 val_map50=0.917968 val_map50_95=0.610403
+epoch 445/500 training
+epoch 445/500 validation
+epoch 445/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=445 train_loss=0.274452 lr=0.001 selection=val_map_50_95:0.626679 best=false images=320/320 skipped=0 elapsed=4268.88s val_loss=0.284393 val_map50=0.939549 val_map50_95=0.626679
+epoch 446/500 training
+epoch 446/500 validation
+epoch 446/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=446 train_loss=0.278535 lr=0.001 selection=val_map_50_95:0.619760 best=false images=320/320 skipped=0 elapsed=4278.33s val_loss=0.281178 val_map50=0.921068 val_map50_95=0.619760
+epoch 447/500 training
+epoch 447/500 validation
+epoch 447/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=447 train_loss=0.269627 lr=0.001 selection=val_map_50_95:0.616161 best=false images=320/320 skipped=0 elapsed=4287.73s val_loss=0.283381 val_map50=0.920961 val_map50_95=0.616161
+epoch 448/500 training
+epoch 448/500 validation
+epoch 448/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=448 train_loss=0.271333 lr=0.001 selection=val_map_50_95:0.599561 best=false images=320/320 skipped=0 elapsed=4297.26s val_loss=0.291044 val_map50=0.911817 val_map50_95=0.599561
+epoch 449/500 training
+epoch 449/500 validation
+epoch 449/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=449 train_loss=0.280166 lr=0.001 selection=val_map_50_95:0.619001 best=false images=320/320 skipped=0 elapsed=4306.49s val_loss=0.279835 val_map50=0.913042 val_map50_95=0.619001
+epoch 450/500 training
+epoch 450/500 validation
+epoch 450/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=450 train_loss=0.276154 lr=0.001 selection=val_map_50_95:0.616399 best=false images=320/320 skipped=0 elapsed=4315.87s val_loss=0.284033 val_map50=0.920756 val_map50_95=0.616399
+epoch 451/500 training
+epoch 451/500 validation
+epoch 451/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=451 train_loss=0.276548 lr=0.001 selection=val_map_50_95:0.593778 best=false images=320/320 skipped=0 elapsed=4325.35s val_loss=0.303531 val_map50=0.927523 val_map50_95=0.593778
+epoch 452/500 training
+epoch 452/500 validation
+epoch 452/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=452 train_loss=0.274851 lr=0.001 selection=val_map_50_95:0.622822 best=false images=320/320 skipped=0 elapsed=4334.53s val_loss=0.284104 val_map50=0.939702 val_map50_95=0.622822
+epoch 453/500 training
+epoch 453/500 validation
+epoch 453/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=453 train_loss=0.274582 lr=0.001 selection=val_map_50_95:0.610599 best=false images=320/320 skipped=0 elapsed=4343.89s val_loss=0.286905 val_map50=0.920181 val_map50_95=0.610599
+epoch 454/500 training
+epoch 454/500 validation
+epoch 454/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=454 train_loss=0.277007 lr=0.001 selection=val_map_50_95:0.607683 best=false images=320/320 skipped=0 elapsed=4356.74s val_loss=0.289349 val_map50=0.921169 val_map50_95=0.607683
+epoch 455/500 training
+epoch 455/500 validation
+epoch 455/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=455 train_loss=0.272980 lr=0.001 selection=val_map_50_95:0.596256 best=false images=320/320 skipped=0 elapsed=4366.86s val_loss=0.284484 val_map50=0.884538 val_map50_95=0.596256
+epoch 456/500 training
+epoch 456/500 validation
+epoch 456/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=456 train_loss=0.279897 lr=0.001 selection=val_map_50_95:0.612636 best=false images=320/320 skipped=0 elapsed=4376.30s val_loss=0.287691 val_map50=0.921735 val_map50_95=0.612636
+epoch 457/500 training
+epoch 457/500 validation
+epoch 457/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=457 train_loss=0.272389 lr=0.001 selection=val_map_50_95:0.630825 best=false images=320/320 skipped=0 elapsed=4385.61s val_loss=0.283467 val_map50=0.939929 val_map50_95=0.630825
+epoch 458/500 training
+epoch 458/500 validation
+epoch 458/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=458 train_loss=0.280272 lr=0.001 selection=val_map_50_95:0.618369 best=false images=320/320 skipped=0 elapsed=4395.02s val_loss=0.281669 val_map50=0.920823 val_map50_95=0.618369
+epoch 459/500 training
+epoch 459/500 validation
+epoch 459/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=459 train_loss=0.272814 lr=0.001 selection=val_map_50_95:0.614437 best=false images=320/320 skipped=0 elapsed=4404.28s val_loss=0.282678 val_map50=0.910420 val_map50_95=0.614437
+epoch 460/500 training
+epoch 460/500 validation
+epoch 460/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=460 train_loss=0.273493 lr=0.001 selection=val_map_50_95:0.620463 best=false images=320/320 skipped=0 elapsed=4413.55s val_loss=0.279705 val_map50=0.929863 val_map50_95=0.620463
+epoch 461/500 training
+epoch 461/500 validation
+epoch 461/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=461 train_loss=0.277414 lr=0.001 selection=val_map_50_95:0.598646 best=false images=320/320 skipped=0 elapsed=4422.91s val_loss=0.298719 val_map50=0.927894 val_map50_95=0.598646
+epoch 462/500 training
+epoch 462/500 validation
+epoch 462/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=462 train_loss=0.275471 lr=0.001 selection=val_map_50_95:0.615867 best=false images=320/320 skipped=0 elapsed=4432.25s val_loss=0.281131 val_map50=0.921656 val_map50_95=0.615867
+epoch 463/500 training
+epoch 463/500 validation
+epoch 463/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=463 train_loss=0.277940 lr=0.001 selection=val_map_50_95:0.616505 best=false images=320/320 skipped=0 elapsed=4441.49s val_loss=0.279818 val_map50=0.913211 val_map50_95=0.616505
+epoch 464/500 training
+epoch 464/500 validation
+epoch 464/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=464 train_loss=0.274341 lr=0.001 selection=val_map_50_95:0.623940 best=false images=320/320 skipped=0 elapsed=4450.97s val_loss=0.282050 val_map50=0.930867 val_map50_95=0.623940
+epoch 465/500 training
+epoch 465/500 validation
+epoch 465/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=465 train_loss=0.273731 lr=0.001 selection=val_map_50_95:0.621394 best=false images=320/320 skipped=0 elapsed=4460.21s val_loss=0.286663 val_map50=0.938034 val_map50_95=0.621394
+epoch 466/500 training
+epoch 466/500 validation
+epoch 466/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=466 train_loss=0.268948 lr=0.001 selection=val_map_50_95:0.626725 best=false images=320/320 skipped=0 elapsed=4469.57s val_loss=0.285639 val_map50=0.938213 val_map50_95=0.626725
+epoch 467/500 training
+epoch 467/500 validation
+epoch 467/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=467 train_loss=0.276719 lr=0.001 selection=val_map_50_95:0.616714 best=false images=320/320 skipped=0 elapsed=4479.03s val_loss=0.285561 val_map50=0.929040 val_map50_95=0.616714
+epoch 468/500 training
+epoch 468/500 validation
+epoch 468/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=468 train_loss=0.275118 lr=0.001 selection=val_map_50_95:0.607806 best=false images=320/320 skipped=0 elapsed=4488.54s val_loss=0.288353 val_map50=0.919534 val_map50_95=0.607806
+epoch 469/500 training
+epoch 469/500 validation
+epoch 469/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=469 train_loss=0.271483 lr=0.001 selection=val_map_50_95:0.614188 best=false images=320/320 skipped=0 elapsed=4497.74s val_loss=0.287344 val_map50=0.930434 val_map50_95=0.614188
+epoch 470/500 training
+epoch 470/500 validation
+epoch 470/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=470 train_loss=0.281447 lr=0.001 selection=val_map_50_95:0.619148 best=false images=320/320 skipped=0 elapsed=4507.04s val_loss=0.282627 val_map50=0.922842 val_map50_95=0.619148
+epoch 471/500 training
+epoch 471/500 validation
+epoch 471/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=471 train_loss=0.273696 lr=0.001 selection=val_map_50_95:0.624902 best=false images=320/320 skipped=0 elapsed=4516.30s val_loss=0.278467 val_map50=0.921715 val_map50_95=0.624902
+epoch 472/500 training
+epoch 472/500 validation
+epoch 472/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 472 metric=0.631968
+epoch=472 train_loss=0.270486 lr=0.001 selection=val_map_50_95:0.631968 best=true images=320/320 skipped=0 elapsed=4527.57s val_loss=0.279884 val_map50=0.939759 val_map50_95=0.631968
+epoch 473/500 training
+epoch 473/500 validation
+epoch 473/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=473 train_loss=0.276564 lr=0.001 selection=val_map_50_95:0.619374 best=false images=320/320 skipped=0 elapsed=4538.70s val_loss=0.279747 val_map50=0.921560 val_map50_95=0.619374
+epoch 474/500 training
+epoch 474/500 validation
+epoch 474/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=474 train_loss=0.269577 lr=0.001 selection=val_map_50_95:0.600886 best=false images=320/320 skipped=0 elapsed=4547.86s val_loss=0.297852 val_map50=0.928261 val_map50_95=0.600886
+epoch 475/500 training
+epoch 475/500 validation
+epoch 475/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=475 train_loss=0.267414 lr=0.001 selection=val_map_50_95:0.615959 best=false images=320/320 skipped=0 elapsed=4557.33s val_loss=0.278987 val_map50=0.911093 val_map50_95=0.615959
+epoch 476/500 training
+epoch 476/500 validation
+epoch 476/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=476 train_loss=0.282689 lr=0.001 selection=val_map_50_95:0.618692 best=false images=320/320 skipped=0 elapsed=4566.51s val_loss=0.280416 val_map50=0.921327 val_map50_95=0.618692
+epoch 477/500 training
+epoch 477/500 validation
+epoch 477/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+checkpoint best updated: epoch 477 metric=0.633209
+epoch=477 train_loss=0.278370 lr=0.001 selection=val_map_50_95:0.633209 best=true images=320/320 skipped=0 elapsed=4576.58s val_loss=0.290003 val_map50=0.947772 val_map50_95=0.633209
+epoch 478/500 training
+epoch 478/500 validation
+epoch 478/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=478 train_loss=0.269059 lr=0.001 selection=val_map_50_95:0.626225 best=false images=320/320 skipped=0 elapsed=4585.73s val_loss=0.280777 val_map50=0.930792 val_map50_95=0.626225
+epoch 479/500 training
+epoch 479/500 validation
+epoch 479/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=479 train_loss=0.275980 lr=0.001 selection=val_map_50_95:0.608804 best=false images=320/320 skipped=0 elapsed=4594.88s val_loss=0.281515 val_map50=0.903139 val_map50_95=0.608804
+epoch 480/500 training
+epoch 480/500 validation
+epoch 480/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=480 train_loss=0.279197 lr=0.001 selection=val_map_50_95:0.612273 best=false images=320/320 skipped=0 elapsed=4604.16s val_loss=0.290784 val_map50=0.923164 val_map50_95=0.612273
+epoch 481/500 training
+epoch 481/500 validation
+epoch 481/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=481 train_loss=0.272640 lr=0.001 selection=val_map_50_95:0.632615 best=false images=320/320 skipped=0 elapsed=4613.50s val_loss=0.280627 val_map50=0.940901 val_map50_95=0.632615
+epoch 482/500 training
+epoch 482/500 validation
+epoch 482/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=482 train_loss=0.265890 lr=0.001 selection=val_map_50_95:0.625025 best=false images=320/320 skipped=0 elapsed=4622.63s val_loss=0.278095 val_map50=0.930651 val_map50_95=0.625025
+epoch 483/500 training
+epoch 483/500 validation
+epoch 483/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=483 train_loss=0.273633 lr=0.001 selection=val_map_50_95:0.620398 best=false images=320/320 skipped=0 elapsed=4631.92s val_loss=0.282614 val_map50=0.921432 val_map50_95=0.620398
+epoch 484/500 training
+epoch 484/500 validation
+epoch 484/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=484 train_loss=0.275802 lr=0.001 selection=val_map_50_95:0.617715 best=false images=320/320 skipped=0 elapsed=4641.25s val_loss=0.281768 val_map50=0.920297 val_map50_95=0.617715
+epoch 485/500 training
+epoch 485/500 validation
+epoch 485/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=485 train_loss=0.269235 lr=0.001 selection=val_map_50_95:0.623846 best=false images=320/320 skipped=0 elapsed=4650.45s val_loss=0.280403 val_map50=0.929823 val_map50_95=0.623846
+epoch 486/500 training
+epoch 486/500 validation
+epoch 486/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=486 train_loss=0.271931 lr=0.001 selection=val_map_50_95:0.627363 best=false images=320/320 skipped=0 elapsed=4659.91s val_loss=0.279399 val_map50=0.930992 val_map50_95=0.627363
+epoch 487/500 training
+epoch 487/500 validation
+epoch 487/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=487 train_loss=0.273981 lr=0.001 selection=val_map_50_95:0.616901 best=false images=320/320 skipped=0 elapsed=4669.27s val_loss=0.281932 val_map50=0.919926 val_map50_95=0.616901
+epoch 488/500 training
+epoch 488/500 validation
+epoch 488/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=488 train_loss=0.272173 lr=0.001 selection=val_map_50_95:0.624366 best=false images=320/320 skipped=0 elapsed=4678.89s val_loss=0.281786 val_map50=0.930440 val_map50_95=0.624366
+epoch 489/500 training
+epoch 489/500 validation
+epoch 489/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=489 train_loss=0.272995 lr=0.001 selection=val_map_50_95:0.626894 best=false images=320/320 skipped=0 elapsed=4688.04s val_loss=0.277883 val_map50=0.930382 val_map50_95=0.626894
+epoch 490/500 training
+epoch 490/500 validation
+epoch 490/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=490 train_loss=0.271089 lr=0.001 selection=val_map_50_95:0.617787 best=false images=320/320 skipped=0 elapsed=4698.34s val_loss=0.280159 val_map50=0.921107 val_map50_95=0.617787
+epoch 491/500 training
+epoch 491/500 validation
+epoch 491/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=491 train_loss=0.263020 lr=0.001 selection=val_map_50_95:0.628368 best=false images=320/320 skipped=0 elapsed=4708.87s val_loss=0.277563 val_map50=0.931316 val_map50_95=0.628368
+epoch 492/500 training
+epoch 492/500 validation
+epoch 492/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=492 train_loss=0.276230 lr=0.001 selection=val_map_50_95:0.620484 best=false images=320/320 skipped=0 elapsed=4718.04s val_loss=0.281634 val_map50=0.920581 val_map50_95=0.620484
+epoch 493/500 training
+epoch 493/500 validation
+epoch 493/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=493 train_loss=0.266034 lr=0.001 selection=val_map_50_95:0.618496 best=false images=320/320 skipped=0 elapsed=4727.07s val_loss=0.280532 val_map50=0.920807 val_map50_95=0.618496
+epoch 494/500 training
+epoch 494/500 validation
+epoch 494/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=494 train_loss=0.266875 lr=0.001 selection=val_map_50_95:0.611523 best=false images=320/320 skipped=0 elapsed=4736.25s val_loss=0.287542 val_map50=0.930543 val_map50_95=0.611523
+epoch 495/500 training
+epoch 495/500 validation
+epoch 495/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=495 train_loss=0.268117 lr=0.001 selection=val_map_50_95:0.617269 best=false images=320/320 skipped=0 elapsed=4745.29s val_loss=0.286309 val_map50=0.930283 val_map50_95=0.617269
+epoch 496/500 training
+epoch 496/500 validation
+epoch 496/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=496 train_loss=0.269395 lr=0.001 selection=val_map_50_95:0.632356 best=false images=320/320 skipped=0 elapsed=4754.93s val_loss=0.278910 val_map50=0.941215 val_map50_95=0.632356
+epoch 497/500 training
+epoch 497/500 validation
+epoch 497/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=497 train_loss=0.273676 lr=0.001 selection=val_map_50_95:0.623669 best=false images=320/320 skipped=0 elapsed=4764.21s val_loss=0.278500 val_map50=0.922801 val_map50_95=0.623669
+epoch 498/500 training
+epoch 498/500 validation
+epoch 498/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=498 train_loss=0.273529 lr=0.001 selection=val_map_50_95:0.608548 best=false images=320/320 skipped=0 elapsed=4773.47s val_loss=0.288152 val_map50=0.929553 val_map50_95=0.608548
+epoch 499/500 training
+epoch 499/500 validation
+epoch 499/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=499 train_loss=0.275206 lr=0.001 selection=val_map_50_95:0.612491 best=false images=320/320 skipped=0 elapsed=4782.59s val_loss=0.283637 val_map50=0.920369 val_map50_95=0.612491
+epoch 500/500 training
+epoch 500/500 validation
+epoch 500/500 validation loss
+checkpoint last saved: runs/reproduced/retinanet-detector512/checkpoints/last.pt
+epoch=500 train_loss=0.272888 lr=0.001 selection=val_map_50_95:0.586122 best=false images=320/320 skipped=0 elapsed=4791.68s val_loss=0.299914 val_map50=0.900285 val_map50_95=0.586122
+training complete: best_epoch:477 best_metric=0.633209 checkpoint=runs/reproduced/retinanet-detector512/checkpoints/best.pt
+training complete; finalizing run metadata

@@ -1,0 +1,6 @@
+record generation started: split=test images=92 framework=torchvision export_confidence=0.001
+record generation complete: predictions=92 targets=92
+detection evaluation complete: backend=cabbage_detection.ap_101 map50=0.973868 map50_95=0.681113
+counting evaluation started: images=92
+counting evaluation complete: images=92 report=counting.json
+evaluation complete: tasks=detection,counting

@@ -1,0 +1,12 @@
+{
+  "expected_filename": "fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+  "framework": "torchvision",
+  "framework_version": "0.20.1",
+  "identifier": "FasterRCNN_ResNet50_FPN_Weights.COCO_V1",
+  "redistributed": false,
+  "sha256": "258fb6c638b15964ddcdd1ae0748c5eef1be9e732750120cc857feed3faac384",
+  "size_bytes": 167502836,
+  "software_license": "BSD-3-Clause",
+  "source_url": "https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+  "training_dataset": "MS COCO"
+}

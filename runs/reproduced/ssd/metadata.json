@@ -1,0 +1,447 @@
+{
+  "command": [
+    "scripts/train.py",
+    "--config",
+    "configs/torchvision/ssd.yaml"
+  ],
+  "config": {
+    "artifacts": {
+      "output_dir": "runs/reproduced/ssd",
+      "result_status": "reproduction_candidate"
+    },
+    "augmentation": {
+      "border_value": 114,
+      "degrees": 15.0,
+      "horizontal_flip": 0.5,
+      "hsv_h": 0.1,
+      "hsv_s": 0.05,
+      "hsv_v": 0.05,
+      "mosaic": 0.0,
+      "normalize": true,
+      "profile": "reproduction_augmented",
+      "scale": 0.1,
+      "translate": 0.1,
+      "vertical_flip": 0.5
+    },
+    "checkpoint": {
+      "metric": "val_map_50_95",
+      "mode": "max",
+      "retain_each_epoch": false
+    },
+    "dataset": {
+      "annotations": null,
+      "class_names": [
+        "Cabbage"
+      ],
+      "format": "coco",
+      "labels_dirname": null,
+      "root": "original_dataset",
+      "split_manifest": "splits/fold1_recovered.csv",
+      "yaml": null
+    },
+    "evaluation": {
+      "area_threshold": 0.0,
+      "backend": "pycocotools_coco_eval",
+      "confidence_owner": "repository",
+      "counting_iou_threshold": null,
+      "max_detections": 100,
+      "nms_owner": "repository"
+    },
+    "execution": {
+      "device": "cuda:0",
+      "seed": 42,
+      "workers": 2
+    },
+    "final_postprocess": {
+      "area_threshold": 100.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    },
+    "initialization": {
+      "num_classes": 2,
+      "weights": "COCO_V1"
+    },
+    "model": {
+      "detector_input": "framework_default",
+      "framework": "torchvision",
+      "name": "ssd"
+    },
+    "native_training": {
+      "cache": true,
+      "empty_target_policy": "include",
+      "patience": 500,
+      "train_shuffle": true,
+      "validation_shuffle": false,
+      "warmup_first_epoch": true
+    },
+    "overrides": {
+      "native_score_threshold": null
+    },
+    "postprocess": {
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5
+    },
+    "provenance": {
+      "augmentation": "repository_protocol",
+      "dataset.path": "historical_code",
+      "evaluation": "historical_code",
+      "execution.device": "repository_default",
+      "execution.seed": "unknown",
+      "execution.workers": "repository_default",
+      "initialization.weights": "historical_code",
+      "scheduler": "historical_code",
+      "training.checkpoint_selection": "historical_code",
+      "training.epochs": "repository_protocol",
+      "training.seed": "repository_default",
+      "training.workers": "unknown"
+    },
+    "scheduler": {
+      "final_lr_factor": null,
+      "gamma": 0.1,
+      "name": "step_lr",
+      "step_size": 1000
+    },
+    "training": {
+      "batch_size": 16,
+      "epochs": 500,
+      "image_size": [
+        512,
+        512
+      ],
+      "learning_rate": 0.001,
+      "momentum": 0.9,
+      "optimizer": "SGD",
+      "weight_decay": 0.0005
+    },
+    "validation_postprocess": {
+      "area_threshold": 0.0,
+      "confidence_owner": "repository",
+      "confidence_threshold": 0.5,
+      "iou_threshold": 0.5,
+      "native_nms_applied": true,
+      "nms_owner": "repository"
+    }
+  },
+  "config_resolved": {
+    "path": "config.yaml",
+    "sha256": "28b2b800d73cd3e4318f0b5077849ff78238a6e2a59488ade07c133c787e738b"
+  },
+  "config_sha256": "28b2b800d73cd3e4318f0b5077849ff78238a6e2a59488ade07c133c787e738b",
+  "created_at_utc": "2026-09-24T20:20:52.984372+00:00",
+  "dataset": {
+    "annotation_sha256": "f5bbb6bdffc198f782288b0320aa30d1b179384a7e6176bfdf7c8ca1a780e295",
+    "doi": "10.17632/5cp2dyjczk.2",
+    "license": "CC BY 4.0",
+    "redistributed": false,
+    "split_manifest": "splits/fold1_recovered.csv",
+    "split_manifest_sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+    "version": "2"
+  },
+  "deviations": [
+    "native detector score threshold lowered for full-range AP"
+  ],
+  "environment": {
+    "cuda": {
+      "available": true,
+      "count": 1,
+      "version": "11.8"
+    },
+    "packages": {
+      "PyYAML": "6.0.2",
+      "albumentations": "1.4.21",
+      "cabbage-detection": "1.0.0",
+      "pycocotools": "2.0.8",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "ultralytics": "8.4.9"
+    },
+    "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]"
+  },
+  "evaluation": {
+    "detection_backends": [
+      "cabbage_detection.ap_101"
+    ],
+    "deviations": [
+      "native detector score threshold lowered for full-range AP"
+    ],
+    "results_dir": "results/reproduced/ssd",
+    "splits": {
+      "test": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssd",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 3419,
+          "count_error": -0.057326703714536416,
+          "f1": 0.9295392953929539,
+          "false_negatives": 332,
+          "false_positives": 136,
+          "fdr": 0.04219671113869066,
+          "fnr": 0.09710441649605148,
+          "predicted_count": 3223,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 3087
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9497452994217417,
+          "map50_95": 0.5920495187254524,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 92,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssd/test/records/predictions.json",
+            "sha256": "3d2edb674585c3f965bb7b9853f58c24dca1ddf6e940c3bc27fb5eb3314a26a2"
+          },
+          "targets": {
+            "path": "results/reproduced/ssd/test/records/targets.json",
+            "sha256": "31e0bd23b0effebd44e29e9a4528c046b1103dbb4e6d70fab80e6d6f4cc26f42"
+          }
+        }
+      },
+      "train": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssd",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 12397,
+          "count_error": -0.09461966604823747,
+          "f1": 0.9370475424410483,
+          "false_negatives": 1330,
+          "false_positives": 157,
+          "fdr": 0.013987883107626515,
+          "fnr": 0.10728402032749859,
+          "predicted_count": 11224,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 11067
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9766579281214696,
+          "map50_95": 0.7571150384069718,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 320,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssd/train/records/predictions.json",
+            "sha256": "5563f9b3978137cc889d6878356671735487b019b7f95969145e410ecb38e1bc"
+          },
+          "targets": {
+            "path": "results/reproduced/ssd/train/records/targets.json",
+            "sha256": "a68c8ac5a7540b23f57a602ca31bd11b58426232b4e6d7aa0f45e9dc347d2225"
+          }
+        }
+      },
+      "val": {
+        "command": [
+          "scripts/evaluate.py",
+          "--run",
+          "runs/reproduced/ssd",
+          "--dataset",
+          "original_dataset",
+          "--split",
+          "all",
+          "--detection-backend",
+          "repository_ap_101",
+          "--ap-confidence",
+          "0.001",
+          "--native-score-threshold",
+          "0.001"
+        ],
+        "counting": {
+          "actual_count": 1805,
+          "count_error": -0.09529085872576178,
+          "f1": 0.9139034322280396,
+          "false_negatives": 234,
+          "false_positives": 62,
+          "fdr": 0.037966932026944275,
+          "fnr": 0.1296398891966759,
+          "predicted_count": 1633,
+          "settings": {
+            "aggregation": "micro",
+            "confidence_threshold": 0.5,
+            "iou_threshold": 0.5,
+            "macro_aggregation": "mean_over_images",
+            "matching": "one_to_one_greedy_highest_iou"
+          },
+          "true_positives": 1571
+        },
+        "detection": {
+          "backend": "cabbage_detection.ap_101",
+          "map50": 0.9591873059267815,
+          "map50_95": 0.6023962090393388,
+          "settings": {
+            "ap_iou_range": "0.50:0.95 step 0.05",
+            "ap_iou_threshold": 0.5,
+            "backend": "cabbage_detection.ap_101",
+            "backend_selection": "repository_ap_101",
+            "configured_backend": "pycocotools_coco_eval",
+            "export_confidence_threshold": 0.001,
+            "max_detections": 100,
+            "native_score_threshold": 0.001
+          }
+        },
+        "git_revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81",
+        "image_count": 46,
+        "records": {
+          "predictions": {
+            "path": "results/reproduced/ssd/val/records/predictions.json",
+            "sha256": "5a905781d2201184d7ceade73372abce12053945b66991216f8fd386ea1356d1"
+          },
+          "targets": {
+            "path": "results/reproduced/ssd/val/records/targets.json",
+            "sha256": "dd71cc47f2b68db945818049eaa6f8cd78a861d2e9c2f45945de4f95681bc3c6"
+          }
+        }
+      }
+    },
+    "summary_sha256": "255a3294cccca8c4faf0487715fac79eaa6ec821063fe0970d1b8731e498d37c"
+  },
+  "finished_at_utc": "2026-09-24T21:27:48.832323+00:00",
+  "git": {
+    "dirty": false,
+    "revision": "b0ee13d218142bf8b59a40dd4c69349df99b9d81"
+  },
+  "inputs": {
+    "split_manifest": {
+      "kind": "file",
+      "path": "splits/fold1_recovered.csv",
+      "sha256": "72e5f1dc73c62bd8a29da526dce01f570444a637297f1e74e4ed1c39073abac7",
+      "size_bytes": 67689
+    }
+  },
+  "outputs": {
+    "best_checkpoint": {
+      "path": "checkpoints/best.pt",
+      "sha256": "6a41b9a472b88393878dde65566b864c16185b679b836d0b658e35ce80612e9b",
+      "size_bytes": 189854388
+    },
+    "best_epoch": {
+      "path": "logs/best_epoch.json",
+      "sha256": "ba2b8dc3565a3789216895542eeec82821568fabbae9665bac5c9d7c5e0b7cb8",
+      "size_bytes": 373
+    },
+    "epoch_metrics": {
+      "path": "logs/training_log.csv",
+      "sha256": "838b4ad0fd145e7d3078d0dd34851fa61af7a536a4ecb709269f68ed02aad427",
+      "size_bytes": 76756
+    },
+    "last_checkpoint": {
+      "path": "checkpoints/last.pt",
+      "sha256": "db96865b9bb1a6327f2a1f422fc4867f1fdbd412949d8a20c67009bd34597173",
+      "size_bytes": 189854388
+    },
+    "metrics": {
+      "path": "evaluation/metrics.json",
+      "sha256": "255a3294cccca8c4faf0487715fac79eaa6ec821063fe0970d1b8731e498d37c",
+      "size_bytes": 2722
+    },
+    "predictions": {
+      "path": "evaluation/test_predictions.json",
+      "sha256": "3d2edb674585c3f965bb7b9853f58c24dca1ddf6e940c3bc27fb5eb3314a26a2",
+      "size_bytes": 1356602
+    },
+    "resolved_config": {
+      "path": "config.yaml",
+      "sha256": "28b2b800d73cd3e4318f0b5077849ff78238a6e2a59488ade07c133c787e738b",
+      "size_bytes": 2207
+    },
+    "training": {
+      "path": "checkpoints/best.pt",
+      "sha256": "6a41b9a472b88393878dde65566b864c16185b679b836d0b658e35ce80612e9b",
+      "size_bytes": 189854388
+    },
+    "training_log": {
+      "path": "logs/console.log",
+      "sha256": "be632a66184e39f17f8911e51b8272490d3dd47290890d6ff674b8d624da60e6",
+      "size_bytes": 164956
+    },
+    "training_loss_plot": {
+      "path": "plots/training_loss.png",
+      "sha256": "3b9bdbfdbe52221251eff4dfab0773bcb6e5dc5913fbd2529e8aac2e3ee20dd7",
+      "size_bytes": 52422
+    },
+    "validation_metrics_plot": {
+      "path": "plots/validation_metrics.png",
+      "sha256": "c5ce2365f8230e4b43a108b284abcc2b19d0547ffcdd5cc2900733af7e22ae97",
+      "size_bytes": 57595
+    }
+  },
+  "pretrained": {
+    "expected_filename": "ssd300_vgg16_coco-b556d3b4.pth",
+    "framework": "torchvision",
+    "framework_version": "0.20.1",
+    "identifier": "SSD300_VGG16_Weights.COCO_V1",
+    "redistributed": false,
+    "sha256": "b556d3b43ab6c3f63d81bfb8835fe8756ac22da664357da100dccf96b6a6b42d",
+    "size_bytes": 142594222,
+    "software_license": "BSD-3-Clause",
+    "source_url": "https://download.pytorch.org/models/ssd300_vgg16_coco-b556d3b4.pth",
+    "training_dataset": "MS COCO"
+  },
+  "python_version": "3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0]",
+  "result_status": "reproduced_verified",
+  "status": "succeeded",
+  "verified_at_utc": "2026-09-25T08:31:41.027987+00:00"
+}
