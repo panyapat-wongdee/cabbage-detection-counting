@@ -17,7 +17,7 @@
 - [x] Obtain explicit approval before deleting `cabbages_YOLO/` or historical `data/fold1_*` directories.
 - [x] Confirm pretrained and fine-tuned weight terms separately against the torchvision pre-trained model notice and the Ultralytics licence statement (checked 2026-09-24; recorded in `docs/licensing-and-attribution.md`).
 - [x] Register newly reproduced best checkpoints with size and SHA-256 in a versioned release manifest, generated from the promoted runs by `scripts/build_release_manifest.py`.
-- [ ] Build and audit per-run release archives under ignored `dist/releases/` (one per run, audit PASS).
+- [x] Build and audit per-run release archives under ignored `dist/releases/` (one per run, audit PASS).
 - [x] Keep all pretrained weights outside Git and record exact official source URL and SHA-256 for each external fine-tuned release (`weights/provenance.yaml` URLs; base-weight digests in each run's `evaluation/pretrained.json` and the release manifest).
 - [x] Include torchvision BSD-3-Clause notice and MS COCO provenance with every torchvision fine-tuned release.
 - [x] Include AGPL-3.0-only and corresponding source with every Ultralytics fine-tuned release; the notice names this repository at the run's commit and the upstream Ultralytics source.
@@ -33,11 +33,11 @@
 - [x] Track the reproduced metric reports, per-image rows, plots, and per-split provenance; keep `records/` local.
 - [x] Generate `results/reproduced/model_comparison_test.{md,json}` with one AP backend and regenerate it whenever a run is re-scored.
 - [x] Confirm the README reproduced table matches the generated comparison artifact digit for digit.
-- [ ] Upload the built archives with tag `reproduced-checkpoints-v1.0.0` and title `Reproduced checkpoints v1.0.0: fourteen detection models and five input-size variants` (manual, deliberate step; procedure in `docs/releases/publishing.md`).
+- [x] Upload the built archives with tag `reproduced-checkpoints-v1.0.0` and title `Reproduced checkpoints v1.0.0: fourteen detection models and five input-size variants` (manual, deliberate step; procedure in `docs/releases/publishing.md`).
 - [x] Inspect the final clean clone before pushing public (fresh clone from GitHub into a fresh virtual environment, CPU torch, `pytest -q`: 430 passed, 6 skipped for absent dataset/weights; working tree clean afterwards).
 - [x] Re-run every experiment from a clean clone of the code commit with `scripts/reproduce_all.py`, and commit the evidence, tables, and figures as the results commit.
-- [ ] Make the GitHub repository public; the release's AGPL corresponding-source notice needs it.
-- [ ] After it is public: enable private vulnerability reporting (named in `SECURITY.md`) and add rulesets blocking force-push/deletion on `main` and updates/deletion of `reproduced-checkpoints-*` tags.
+- [x] Make the GitHub repository public; the release's AGPL corresponding-source notice needs it.
+- [x] After it is public: enable private vulnerability reporting (named in `SECURITY.md`) and add rulesets blocking force-push/deletion on `main` and updates/deletion of `reproduced-checkpoints-*` tags.
 
 The release is one tag, `reproduced-checkpoints-v1.0.0`, titled
 `Reproduced checkpoints v1.0.0: fourteen detection models and five input-size variants`, with one archive per run represented in the manifest: the
